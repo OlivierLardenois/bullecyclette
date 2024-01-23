@@ -6,5 +6,11 @@
   },
   "homePage": {
     "title": "Accueil"
+  },
+  "footer": {
+    "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
+    "mail": "Adresse e-mail",
+    "address": "Adresse postale",
+    "phone": "Numéro de téléphone"
   }
 }

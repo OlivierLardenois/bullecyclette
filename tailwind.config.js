@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       colors: {
         eggshell: "#edebde",
+        liberty: "#3f5da6",
+        "cg-red": "#e54126",
       },
     },
   },
