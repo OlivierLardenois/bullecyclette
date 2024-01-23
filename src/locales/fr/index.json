@@ -1,5 +1,9 @@
 {
   "hello": "Bonjour",
+  "common": {
+    "fr-flag-alt": "Drapeau français",
+    "en-flag-alt": "Drapeau du Royaume-Uni"
+  },
   "homePage": {
     "title": "Accueil"
   }

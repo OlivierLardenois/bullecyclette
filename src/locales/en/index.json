@@ -1,5 +1,9 @@
 {
   "hello": "Hello",
+  "common": {
+    "fr-flag-alt": "French flag",
+    "en-flag-alt": "United Kingdom flag"
+  },
   "homePage": {
     "title": "Home"
   }
