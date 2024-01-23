@@ -1,12 +1,17 @@
-import * as React from "react";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
+import * as React from "react";
+
+import LanguageSwitcher from "./languageSwitcher";
 
 const Header: React.FC = () => {
   return (
     <header className="border-b-2 border-black">
       <div className="flex justify-between max-w-6xl mx-auto">
         <p>logo</p>
-        <HeadersLinks />
+        <div>
+          <LanguageSwitcher />
+          <HeadersLinks />
+        </div>
       </div>
     </header>
   );
