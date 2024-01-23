@@ -11,7 +11,12 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
-    "gatsby-plugin-google-gtag",
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: ["test"],
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
