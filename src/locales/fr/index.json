@@ -1,1 +1,6 @@
-{ "hello": "Bonjour" }
+{
+  "hello": "Bonjour",
+  "homePage": {
+    "title": "Accueil"
+  }
+}
