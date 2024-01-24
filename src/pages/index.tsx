@@ -57,6 +57,35 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
         layout="fullWidth"
         className="max-w-6xl mx-auto"
       />
+
+      <section className="flex flex-col justify-between max-w-6xl mx-auto">
+        <StaticImage
+          src={`../images/fr-flag.png`}
+          alt={t("")}
+          placeholder="blurred"
+          layout="constrained"
+        />
+        <div className="flex justify-between">
+          <div className="w-1/3">
+            <StaticImage
+              src={`../images/partners/blancs-coteaux.png`}
+              alt={t("")}
+              placeholder="blurred"
+              layout="constrained"
+            />
+            <h2>{t("homePage.presentation.title")}</h2>
+            <p>{t("homePage.presentation.text")}</p>
+          </div>
+          <div className="flex justify-center w-2/3">
+            <StaticImage
+              src={`../images/fr-flag.png`}
+              alt={t("")}
+              placeholder="blurred"
+              layout="constrained"
+            />
+          </div>
+        </div>
+      </section>
       <section className="flex justify-between max-w-6xl mx-auto">
         {NAV_PAGES.map(({ href, imgAltKey, imgPath }) => {
           const node = data.navImages.nodes.find(

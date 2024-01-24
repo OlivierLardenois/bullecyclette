@@ -7,7 +7,11 @@
   },
   "homePage": {
     "title": "Accueil",
-    "partners": "Nos partenaires :"
+    "partners": "Nos partenaires :",
+    "presentation": {
+      "title": "Lorem ipsum dolor sit amet",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a efficitur est, at luctus magna. Phasellus et risus eget lorem cursus accumsan. Suspendisse congue sed lectus sed tincidunt. Aliquam erat volutpat. Vivamus mattis diam at mi pellentesque, hendrerit ultrices nisl scelerisque. Morbi non eros nec orci luctus blandit sit amet quis lacus"
+    }
   },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
