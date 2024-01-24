@@ -1,7 +1,7 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 
-type CardProps = {
+export type CardProps = {
   alt: string;
   image: IGatsbyImageData;
 };
