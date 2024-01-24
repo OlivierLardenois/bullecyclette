@@ -2,10 +2,21 @@
   "hello": "Bonjour",
   "common": {
     "fr-flag-alt": "Drapeau français",
-    "en-flag-alt": "Drapeau du Royaume-Uni"
+    "en-flag-alt": "Drapeau du Royaume-Uni",
+    "counterLabel": "Jours restants avant l'évènement :"
+  },
+  "counter": {
+    "days": "jours",
+    "hours": "heures",
+    "minutes": "minutes",
+    "seconds": "secondes"
   },
   "homePage": {
     "title": "Accueil"
+  },
+  "balade": {
+    "title": "Balade",
+    "counterLabel": "Jours restants avant l'ouverture de la billeterie :"
   },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
