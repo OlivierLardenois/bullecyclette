@@ -1,5 +1,10 @@
 import { graphql, type HeadFC, type PageProps } from "gatsby";
-import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
+import {
+  GatsbyImage,
+  getImage,
+  IGatsbyImageData,
+  StaticImage,
+} from "gatsby-plugin-image";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
@@ -45,6 +50,13 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 
   return (
     <Layout>
+      <StaticImage
+        src={`../images/partners/blancs-coteaux.png`}
+        alt={t("")}
+        placeholder="blurred"
+        layout="fullWidth"
+        className="max-w-6xl mx-auto"
+      />
       <section className="flex justify-between max-w-6xl mx-auto">
         {NAV_PAGES.map(({ href, imgAltKey, imgPath }) => {
           const node = data.navImages.nodes.find(
