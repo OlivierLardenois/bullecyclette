@@ -1,9 +1,11 @@
 import { graphql, type HeadFC, type PageProps } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
+
+import Card, { CardProps } from "../components/card";
+import Carousel from "../components/carousel";
 import Layout from "../components/layout";
-import Card from "../components/card";
-import { getImage } from "gatsby-plugin-image";
 
 const NAV_PAGES = [
   {
@@ -20,6 +22,15 @@ const NAV_PAGES = [
 
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
   const { t } = useTranslation();
+
+  const carouselCards = data.carouselImages.nodes.reduce<CardProps[]>(
+    (acc, node) => {
+      const image = getImage(node.childImageSharp);
+
+      return image ? acc.concat({ alt: "", image }) : acc;
+    },
+    [],
+  );
 
   return (
     <Layout>
@@ -38,6 +49,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           ) : null;
         })}
       </div>
+      <Carousel cards={carouselCards} />
     </Layout>
   );
 };
@@ -58,6 +70,16 @@ export const query = graphql`
       }
     }
     navImages: allFile(
+      filter: { relativePath: { in: ["en-flag.png", "fr-flag.png"] } }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+    carouselImages: allFile(
       filter: { relativePath: { in: ["en-flag.png", "fr-flag.png"] } }
     ) {
       nodes {
