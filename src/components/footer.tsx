@@ -11,33 +11,35 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="border-t-2 border-black">
-      <div className="flex flex-col max-w-6xl mx-auto space-y-12">
+      <div className="flex flex-col max-w-6xl mx-auto text-center space-y-12">
         <p className="text-cg-red">{t("footer.contact")}</p>
-        <nav className="flex justify-between max-w-sm grow text-white ">
+        <nav className="flex justify-between mx-auto max-w-sm text-white ">
           <a
             href="https://www.instagram.com/la_bullecyclette?igsh=MXF2eGU3NW1sOWdndQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-liberty"
-            aria-label="Champagne Chaléroux-Ghys instagram"
+            aria-label="La Bullecyclette instagram"
           >
             <FontAwesomeIcon icon={faInstagram} size="3x" />
           </a>
           <a
-            href="https://www.instagram.com/champagnechalerouxghys/"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-liberty"
-            aria-label="Champagne Chaléroux-Ghys instagram"
+            aria-label="
+            "
           >
             <FontAwesomeIcon icon={faFacebook} size="3x" />
           </a>
           <a
-            href="https://www.instagram.com/champagnechalerouxghys/"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-liberty"
-            aria-label="Champagne Chaléroux-Ghys instagram"
+            aria-label="
+            "
           >
             <FontAwesomeIcon icon={faEnvelope} size="3x" />
           </a>
