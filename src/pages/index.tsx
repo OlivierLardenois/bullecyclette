@@ -101,6 +101,11 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           ) : null;
         })}
       </section>
+      <section className="text-center">
+        <p className="inline-block p-6 rounded-lg bg-white text-cg-red">
+          {t("homePage.placesAvailable")}
+        </p>
+      </section>
       <section className="flex max-w-6xl mx-auto">
         <Carousel cards={carouselCards} />
       </section>
