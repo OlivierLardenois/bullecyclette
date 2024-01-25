@@ -1,17 +1,11 @@
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 
-export type CardProps = {
-  alt: string;
-  image: IGatsbyImageData;
+type CardProps = {
+  children?: React.ReactNode;
 };
 
-const Card: React.FC<CardProps> = ({ alt, image }) => {
-  return (
-    <div className="bg-white px-3 pt-3 pb-10 max-w-64">
-      <GatsbyImage className="bg-blue-500" image={image} alt={alt} />
-    </div>
-  );
+const Card: React.FC<CardProps> = ({ children }) => {
+  return <div className="bg-white px-3 pt-3 pb-10 max-w-64">{children}</div>;
 };
 
 export default Card;
