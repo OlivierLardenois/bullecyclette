@@ -12,5 +12,29 @@
     "mail": "Adresse e-mail",
     "address": "Adresse postale",
     "phone": "Numéro de téléphone"
+  },
+  "preparation": {
+    "title": "Je me prépare",
+    "steps": [
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Je prépare mon vélo",
+        "text": "Pour participer à la Bullecyclette vous aurez besoin d’apporter votre propre vélo rétro. Celui-ci devra être construit avant 1987. Vous ne possédez pas de vélo rétro ?Vous avez la possibilité d’en louer lors de la réservation de votre billet.",
+        "alt": "",
+        "button": "En savoir plus"
+      },
+      {
+        "title": "Je prépare ma tenue",
+        "text": "Messieurs dames pour être dans le thème il vous faudra paufiner votre tenue rétro. Sortez des greniers vos plus belles paires de bretelles, affinez votre moustache, chinez une robe à la coupe rétro, réalisez votre plus beau rouge à lèvres, bre, amusez vous à créer une tenue des années 1950.",
+        "alt": "",
+        "button": "En savoir plus"
+      },
+      {
+        "title": "Je prends ma gourde d’eau",
+        "text": "Dans notre volonté de faire un événement le plus propre possible, nous vous recommendons d’apporter votre gourde d’eau. Vous pourrez la remplir à chaque arrêt.",
+        "alt": "",
+        "button": "En savoir plus"
+      }
+    ]
   }
 }
