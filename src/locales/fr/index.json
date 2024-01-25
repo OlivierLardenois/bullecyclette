@@ -16,7 +16,10 @@
   },
   "balade": {
     "title": "Balade",
-    "counterLabel": "Jours restants avant l'ouverture de la billeterie :"
+    "ticketCounterLabel": "Jours restants avant l'ouverture de la billeterie :",
+    "ticketTitle": "billeterie",
+    "ticketDescription": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.\nVous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.\n\n Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.\n<u>Si vous venez en groupe :</u> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.\n\nLa billeterie est ouverte du 1er Mars au 31 mai, dans la limite de 500 places vendues.",
+    "commitmentTitle": "nos engagements"
   },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
