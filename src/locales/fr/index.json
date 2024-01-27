@@ -19,7 +19,57 @@
     "ticketCounterLabel": "Jours restants avant l'ouverture de la billeterie :",
     "ticketTitle": "billeterie",
     "ticketDescription": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.\nVous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.\n\n Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.\n<u>Si vous venez en groupe :</u> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.\n\nLa billeterie est ouverte du 1er Mars au 31 mai, dans la limite de 500 places vendues.",
-    "commitmentTitle": "nos engagements"
+    "videoTitle": "lsf",
+    "artistTitle": "les artistes",
+    "whatTitle": "c'est quoi ?",
+    "whatDescription" : [
+      {
+        "text": "Parcourez les vignes et les villages de la Côte des Blancs sur votre vélo rétro. La balade d'environ 20km de la Bullecyclette est ponctuée de quatre arrêts où vous seront proposés sur fond de musique swing, du champagne et unrepas complet. Prenez le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro, typique des années 1950."
+      },
+      {
+        "text": "Avec l'achat de place vous bénéficierez d'une besace dans laquelle vous trouverez un verre à champagne, ainsi qu'un livret explicatif.\n\nVous consommerez au cours de la balade : 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de champagne."
+      }
+    ]
+  },
+  "commitment": {
+    "title": "nos engagements",
+    "steps": [
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Evènement écoresponsable",
+        "desc": "Minimisation des déchets",
+        "alt": ""
+      },
+      {
+        "src": "../images/ticket.png",
+        "title": "Mise en avant des produits locaux",
+        "desc": "Montrer la richesse culinaire et artisanale de notre région",
+        "alt": ""
+      },
+      {
+        "src": "../images/en-flag.png",
+        "title": "Evènement convivial et inclusif",
+        "desc": "Evènement pour tous, même aux personnes porteuses de handicaps",
+        "alt": ""
+      },
+      {
+        "src": "../images/icon.png",
+        "title": "Promotion du réemploi et de la seconde main",
+        "desc": "Pas d'achat neuf, que de la seconde main !",
+        "alt": ""
+      },
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Promotion du paysage",
+        "desc": "Mise en avant du patrimoine bâti et paysager de notre région.",
+        "alt": ""
+      },
+      {
+        "src": "../images/en-flag.png",
+        "title": "Partage d'un art de vivre à la champenoise",
+        "alt": ""
+      }
+    ]
   },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
