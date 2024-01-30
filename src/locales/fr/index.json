@@ -36,5 +36,57 @@
         "button": "En savoir plus"
       }
     ]
+  },
+  "schedule": {
+    "guinguette": {
+      "1500": {
+        "text": "Ouverture de la Guinguette de la Bullecyclette",
+        "alt": "15h00"
+      },
+      "1800": {
+        "text": "1er concert",
+        "alt": "18h00"
+      },
+      "2000": {
+        "text": "2nd concert",
+        "alt": "20h00"
+      },
+      "2300": {
+        "text": "Fermeture",
+        "alt": "23h00"
+      }
+    },
+    "guinguette-small": {
+      "1500": {
+        "text": "Ouverture de la Guinguette de la Bullecyclette",
+        "alt": "15h00"
+      },
+      "1800": {
+        "text": "Concerts",
+        "alt": "18h00"
+      },
+      "2300": {
+        "text": "Fermeture",
+        "alt": "23h00"
+      }
+    },
+    "bullecyclette": {
+      "830": {
+        "text": "Arrivèe des participants",
+        "alt": "8h30"
+      },
+      "1000": {
+        "text": "1er départ des vélos",
+        "alt": "10h00"
+      },
+      "1030": {
+        "text": "2nd départ des vélos",
+        "alt": "10h30"
+      },
+      "1700": {
+        "text": "Retour prévisionel des vélos",
+        "alt": "17h00"
+      }
+    }
   }
 }
