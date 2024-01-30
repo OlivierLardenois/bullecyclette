@@ -31,6 +31,74 @@
       }
     ]
   },
+  "winegrowers": {
+    "title": "les vignerons",
+    "image": "../images/ticket.png",
+    "persons": [
+      {
+        "name": "Coopérative des Grappes d'Or",
+        "desc": "16 ter rue des Grappes d'Or 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png"
+      },
+      {
+        "name": "Champagne PROUT",
+        "desc": "10 rue de la cacaouète 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png" 
+      },
+      {
+        "name": "Champagne PROUT",
+        "desc": "10 rue de la cacaouète 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png"
+      },
+      {
+        "name": "Champagne PROUT",
+        "desc": "10 rue de la cacaouète 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png"
+      }
+    ]
+  },
+  "artists": {
+    "title": "les artistes",
+    "image": "../images/artists.png",
+    "persons": [
+      {
+        "name": "Jeannick Liebert",
+        "desc": "Guitariste",
+        "url": "https://www.youtube.com/user/jeannick08360/videos",
+        "shorturl": "Voir sur Youtube",
+        "image": "../images/jeannick_liebert.jpg"
+      },
+      {
+        "name": "Les Tonneliers",
+        "desc": "Fanfare",
+        "url": "https://www.harmonietonneliersepernay.fr/",
+        "shorturl": "Plus d'information",
+        "image": "../images/tonneliers.jpg"
+      },
+      {
+        "name": "Swing Shady",
+        "desc": "Jazz et pop manouche",
+        "url": "https://www.instagram.com/therealswingshady",
+        "shorturl": "Voir sur Instagram",
+        "image": "../images/"
+      },
+      {
+        "name": "Le bal à Jojo",
+        "desc": "Orgue de barbarie",
+        "url": "https://www.facebook.com/p/Le-Bal-%C3%A0-J%C3%B6jo-100063597969100/?paipv=0&eav=AfYZu8xDd7G_FrjVCMh1yzSA6hYIIs4IO9CsnpNfpN7WECZGt1ByHOczDhqYVFjXwQU&_rdr",    
+        "shorturl": "Voir sur Facebook",
+        "image": "../images/bal_jojo.jpg" 
+      }
+    ]
+  },
   "commitment": {
     "title": "nos engagements",
     "steps": [
