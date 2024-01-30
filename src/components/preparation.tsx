@@ -15,7 +15,7 @@ const Preparation: React.FC = () => {
         <div className="flex flex-col max-w-64">
           <Card>
             <StaticImage
-              src={`../images/fr-flag.png`}
+              src={`../images/preparation/bike.png`}
               alt={t(`preparation.steps.0.alt`)}
               placeholder="blurred"
             />
@@ -31,7 +31,7 @@ const Preparation: React.FC = () => {
         <div className="flex flex-col max-w-64">
           <Card>
             <StaticImage
-              src={`../images/fr-flag.png`}
+              src={`../images/preparation/accessories.png`}
               alt={t(`preparation.steps.1.alt`)}
               placeholder="blurred"
             />
@@ -47,7 +47,7 @@ const Preparation: React.FC = () => {
         <div className="flex flex-col max-w-64">
           <Card>
             <StaticImage
-              src={`../images/fr-flag.png`}
+              src={`../images/preparation/flask.png`}
               alt={t(`preparation.steps.2.alt`)}
               placeholder="blurred"
             />
