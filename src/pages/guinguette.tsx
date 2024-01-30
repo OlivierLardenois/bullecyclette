@@ -11,6 +11,13 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = () => {
 
   return (
     <Layout>
+      <div>
+        <StaticImage
+          src={`../images/guinguette-hero.jpg`}
+          alt={t(`guinguette.hero-alt`)}
+          placeholder="blurred"
+        />
+      </div>
       <section className="flex justify-between max-w-6xl mx-auto ">
         <div className="w-5/12">
           <h2>{t("guinguette.presentation.what")}</h2>
