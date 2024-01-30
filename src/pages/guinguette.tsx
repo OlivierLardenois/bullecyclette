@@ -5,6 +5,7 @@ import * as React from "react";
 
 import Layout from "../components/layout";
 import Preparation from "../components/preparation";
+import { GuinguetteSchedule } from "../components/schedule";
 
 const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = () => {
   const { t } = useTranslation();
@@ -32,8 +33,15 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = () => {
           />
         </div>
       </section>
-      <section className="max-w-6xl mx-auto">
-        <h2>{t("guinguette.program.title")}</h2>
+      <section className="bg-liberty">
+        <div className="max-w-6xl mx-auto">
+          <h2>{t("guinguette.program.title")}</h2>
+          <div className="bg-liberty">
+            <div className="max-w-6xl mx-auto [&>*]:max-w-4xl bg-inherit">
+              <GuinguetteSchedule />
+            </div>
+          </div>
+        </div>
       </section>
       <section className="max-w-6xl mx-auto">
         <Preparation />
