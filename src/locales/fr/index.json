@@ -171,6 +171,31 @@
       }
     ]
   },
+  "guinguette": {
+    "artists": {
+      "title": "Les artistes"
+    },
+    "commitments": {
+      "title": "Nos engagements"
+    },
+    "drink": {
+      "title": "A boire"
+    },
+    "exhibitors": {
+      "title": "Les exposants"
+    },
+    "food": {
+      "title": "A manger"
+    },
+    "presentation": {
+      "what": "C'est quoi ?",
+      "when": "Quand ?",
+      "text": "La Guinguette de la Bullecyclette est une soirée festive rétro au gymnase Cattani, à Avize le 29 Juin 2024 (ouverture à 15h). Ouverte à tous, vous y retrouverez de nombreuxartisants locaux, des friperies, vendeur de vélo...mais aussi des food trucks et une buvette. Deux concerts gratuits animeront également la soirée"
+    },
+    "program": {
+      "title": "Programme"
+    }
+  },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
     "mail": "Adresse e-mail",
