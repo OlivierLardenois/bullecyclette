@@ -186,7 +186,10 @@
       "title": "Les exposants"
     },
     "food": {
-      "title": "A manger"
+      "title": "A manger",
+      "0": "Nous avons créé le food truck \"En Binôme\" en 2021 et le service traiteur en 2023. Nous proposons une carte de saison à partir de produits frais et locaux (ou Français) et une cuisine fait-maison. Nous sommes spécialisés dans les événements privés et publics, pour les professionnels ou les particuliers. Notre food truck et notre accueil reflètent nos valeurs de partage, de convivialité et d'authenticité, tout en étant en adéquation avec notre temps",
+      "1": "Nous avons créé le food truck \"En Binôme\" en 2021 et le service traiteur en 2023. Nous proposons une carte de saison à partir de produits frais et locaux (ou Français) et une cuisine fait-maison. Nous sommes spécialisés dans les événements privés et publics, pour les professionnels ou les particuliers. Notre food truck et notre accueil reflètent nos valeurs de partage, de convivialité et d'authenticité, tout en étant en adéquation avec notre temps",
+      "2": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
     },
     "presentation": {
       "what": "C'est quoi ?",

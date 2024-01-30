@@ -1,13 +1,16 @@
 import { HeadFC, PageProps, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
+import Food, { FOOD_PROVIDERS } from "../components/guinguette/food";
 import Layout from "../components/layout";
 import Preparation from "../components/preparation";
 import { GuinguetteSchedule } from "../components/schedule";
 
-const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = () => {
+const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
+  data,
+}) => {
   const { t } = useTranslation();
 
   return (
@@ -54,6 +57,27 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = () => {
       </section>
       <section className="max-w-6xl mx-auto">
         <h2>{t("guinguette.food.title")}</h2>
+        <div className="flex justify-between">
+          {FOOD_PROVIDERS.map(({ index, name, phone, url, src }) => {
+            const childImageSharp = data.foodProvidersImages.nodes.find(
+              ({ relativePath }) => relativePath === src,
+            )?.childImageSharp;
+
+            const image = childImageSharp
+              ? getImage(childImageSharp)
+              : undefined;
+
+            return (
+              <Food
+                image={image}
+                index={index}
+                name={name}
+                phone={phone}
+                url={url}
+              />
+            );
+          })}
+        </div>
       </section>
       <section className="max-w-6xl mx-auto">
         <h2>{t("guinguette.drink.title")}</h2>
@@ -77,6 +101,18 @@ export const query = graphql`
           ns
           data
           language
+        }
+      }
+    }
+    foodProvidersImages: allFile(
+      filter: {
+        relativePath: { in: ["food/en-binome.png", "food/le-trio.png"] }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData
         }
       }
     }
