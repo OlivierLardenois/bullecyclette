@@ -15,7 +15,45 @@ const BaladePage: React.FC<PageProps> = () => {
   const { t } = useTranslation();
   return (
     <Layout>
-      <section className="max-w-6xl mx-auto my-10">
+      <section className="max-w-6xl mx-auto md:my-5">
+        <div className="grid md:grid-flow-row-dense md:grid-cols-3">
+          <div className="md:col-span-2 flex justify-center">
+            <div className="grid grid-flow-row flex justify-center min-w-full">
+              <StaticImage
+                src="../images/bullecyclette.png"
+                alt="bullecyclette"
+                placeholder="blurred"
+              />
+              <ArrowBullet
+                desc={t("balade.whatTitle")}
+                color="black"
+                bgcolor="white"
+              />
+              <div className="grid md:grid-cols-2 md:space-x-4">
+                <div className="text-justify whitespace-pre-line">
+                  {t("balade.whatDescription.0.text")}
+                </div>
+                <div className="text-justify whitespace-pre-line">
+                  {t("balade.whatDescription.1.text")}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="m-auto">
+            <StaticImage
+              src={`../images/what.jpg`}
+              alt="what"
+              placeholder="blurred"
+              layout="fixed"
+              width={200}
+              height={300}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto md:my-5">
         <PersonCard
           alt=""
           image={t("artists.image")}
@@ -24,7 +62,7 @@ const BaladePage: React.FC<PageProps> = () => {
         ></PersonCard>
       </section>
 
-      <section className="max-w-6xl mx-auto my-10">
+      <section className="max-w-6xl mx-auto md:my-10">
         <div className="grid grid-rows-2 grid-flow-col">
           <div className="row-span-4">
             <ArrowBullet
