@@ -94,28 +94,30 @@ const BaladePage: React.FC<PageProps> = () => {
       </section>
 
       <section className="max-w-6xl mx-auto md:my-10">
-        <div className="grid grid-rows-2 grid-flow-col">
+        <div className="grid md:grid-rows-2 md:grid-flow-col">
           <div className="row-span-4">
             <ArrowBullet
               desc={t("balade.ticketTitle")}
               color="black"
               bgcolor="white"
             />
-            <p className="text-justify">{t("balade.ticketDescription")}</p>
+            <p className="text-justify  whitespace-pre-line">
+              {t("balade.ticketDescription")}
+            </p>
           </div>
-          <div className="col-span-2 row-span-1 m-auto">
+          <div className="md:col-span-2 md:row-span-1 m-auto">
             <CountdownTimer
               title={t("common.counterLabel")}
               deadline={EVENT_DATE}
             />
           </div>
-          <div className="col-span-2 row-span-1 m-auto">
+          <div className="md:col-span-2 md:row-span-1 m-auto">
             <CountdownTimer
               title={t("balade.ticketCounterLabel")}
               deadline={SALES_DATE}
             />
           </div>
-          <div className="col-span-2 row-span-2 m-auto  justify-center">
+          <div className="md:col-span-2 md:row-span-2 m-auto  justify-center">
             <StaticImage
               src="../images/ticket.png"
               alt="ticket"
