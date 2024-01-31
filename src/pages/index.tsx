@@ -8,19 +8,24 @@ import {
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
-import Card, { CardProps } from "../components/card";
+import Card from "../components/card";
 import Carousel from "../components/carousel";
 import Layout from "../components/layout";
 
 const NAV_PAGES = [
   {
     href: "/",
-    imgPath: "en-flag.png",
+    imgPath: "index/logo-viellit.png",
     imgAltKey: "",
   },
   {
     href: "/",
-    imgPath: "fr-flag.png",
+    imgPath: "index/guinguette.jpg",
+    imgAltKey: "",
+  },
+  {
+    href: "/",
+    imgPath: "index/date.png",
     imgAltKey: "",
   },
 ];
@@ -28,14 +33,16 @@ const NAV_PAGES = [
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
   const { t } = useTranslation();
 
-  const carouselCards = data.carouselImages.nodes.reduce<CardProps[]>(
-    (acc, node) => {
-      const image = getImage(node.childImageSharp);
+  const carouselCards = data.carouselImages.nodes.reduce<
+    {
+      alt: string;
+      image: IGatsbyImageData;
+    }[]
+  >((acc, node) => {
+    const image = getImage(node.childImageSharp);
 
-      return image ? acc.concat({ alt: "", image }) : acc;
-    },
-    [],
-  );
+    return image ? acc.concat({ alt: "", image }) : acc;
+  }, []);
 
   const partnerLogos = data.partnerLogos.nodes.reduce<
     {
@@ -52,7 +59,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
     <Layout>
       <div className="space-y-12">
         <StaticImage
-          src={`../images/partners/blancs-coteaux.png`}
+          src={`../images/index/hero.jpeg`}
           alt={t("")}
           placeholder="blurred"
           layout="fullWidth"
@@ -63,7 +70,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           <div className="flex justify-between">
             <div className="w-1/3">
               <StaticImage
-                src={`../images/partners/blancs-coteaux.png`}
+                src={`../images/index/bullecyclette.png`}
                 alt={t("")}
                 placeholder="blurred"
                 layout="constrained"
@@ -73,7 +80,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             </div>
             <div className="flex justify-center w-2/3">
               <StaticImage
-                src={`../images/fr-flag.png`}
+                src={`../images/index/route.png`}
                 alt={t("")}
                 placeholder="blurred"
                 layout="constrained"
@@ -87,19 +94,39 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
               (node) => node.relativePath === imgPath,
             );
             if (!node) return null;
+            console.log("imgPath", imgPath);
+            console.log("relative", node.relativePath);
 
             const image = getImage(node.childImageSharp);
             return image ? (
               <Link to={href} className="hover:opacity-75">
-                <Card alt={t(imgAltKey)} image={image} />
+                <Card>
+                  <GatsbyImage image={image} alt={t(imgAltKey)} />
+                </Card>
               </Link>
             ) : null;
           })}
         </section>
         <section className="text-center">
-          <p className="inline-block p-6 rounded-lg bg-white text-cg-red">
-            {t("homePage.placesAvailable")}
-          </p>
+          <div className="inline-flex items-center space-x-4 p-6 rounded-lg bg-white ">
+            <StaticImage
+              src={`../images/index/star.png`}
+              alt={t("")}
+              placeholder="blurred"
+              layout="fixed"
+              width={20}
+              height={28}
+            />
+            <p className="text-cg-red">{t("homePage.placesAvailable")}</p>
+            <StaticImage
+              src={`../images/index/star.png`}
+              alt={t("")}
+              placeholder="blurred"
+              layout="fixed"
+              width={20}
+              height={28}
+            />
+          </div>
         </section>
         <section className="flex max-w-6xl mx-auto">
           <Carousel cards={carouselCards} />
@@ -109,7 +136,13 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           <div className="text-center bg-white">
             <div className="max-w-6xl mx-auto py-8 space-x-8">
               {partnerLogos.map(({ alt, image }) => {
-                return <GatsbyImage image={image} alt={alt} className="" />;
+                return (
+                  <GatsbyImage
+                    imgClassName="object-cover"
+                    image={image}
+                    alt={alt}
+                  />
+                );
               })}
             </div>
           </div>
@@ -135,12 +168,20 @@ export const query = graphql`
       }
     }
     navImages: allFile(
-      filter: { relativePath: { in: ["en-flag.png", "fr-flag.png"] } }
+      filter: {
+        relativePath: {
+          in: [
+            "index/logo-viellit.png"
+            "index/guinguette.jpg"
+            "index/date.png"
+          ]
+        }
+      }
     ) {
       nodes {
         relativePath
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(aspectRatio: 1)
         }
       }
     }
