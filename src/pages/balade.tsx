@@ -53,6 +53,37 @@ const BaladePage: React.FC<PageProps> = () => {
         </div>
       </section>
 
+      <section className="max-w-6xl mx-auto my-2 md:my-5">
+        <div className="grid md:grid-flow-row-dense md:grid-cols-3">
+          <div className="m-auto">
+            <StaticImage
+              src={`../images/when.jpg`}
+              alt="what"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={500}
+            />
+          </div>
+
+          <div className="md:col-span-2 flex justify-center">
+            <div className="grid grid-flow-row flex justify-center min-w-full">
+              <ArrowBullet
+                desc={t("balade.whenTitle")}
+                color="black"
+                bgcolor="white"
+              />
+
+              <StaticImage
+                src="../images/date.png"
+                alt="date"
+                placeholder="blurred"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-6xl mx-auto md:my-5">
         <PersonCard
           alt=""

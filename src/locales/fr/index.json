@@ -29,7 +29,8 @@
       {
         "text": "Avec l'achat de place vous bénéficierez d'une besace dans laquelle vous trouverez un verre à champagne, ainsi qu'un livret explicatif.\n\nVous consommerez au cours de la balade : 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de champagne."
       }
-    ]
+    ],
+    "whenTitle": "quand ?"
   },
   "winegrowers": {
     "title": "les vignerons",
