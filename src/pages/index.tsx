@@ -8,6 +8,7 @@ import {
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
+import Button from "../components/button";
 import Card from "../components/card";
 import Carousel from "../components/carousel";
 import Layout from "../components/layout";
@@ -136,8 +137,13 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             />
           </div>
         </section>
-        <section className="flex max-w-6xl mx-auto">
+        <section className="flex flex-col max-w-6xl mx-auto space-y-4">
           <Carousel cards={carouselCards} />
+          <div className="mx-auto">
+            <Button>
+              <Link to={"/"}>{t("homePage.gallery")}</Link>
+            </Button>
+          </div>
         </section>
         <section className="flex flex-col space-y-4">
           <h2 className="max-w-6xl mx-auto">{t("homePage.partners")}</h2>
@@ -194,11 +200,23 @@ export const query = graphql`
       }
     }
     carouselImages: allFile(
-      filter: { relativePath: { in: ["en-flag.png", "fr-flag.png"] } }
+      filter: {
+        relativePath: {
+          in: [
+            "gallery/photo-1.jpg"
+            "gallery/photo-2.jpg"
+            "gallery/photo-3.jpg"
+            "gallery/photo-4.jpg"
+          ]
+        }
+      }
     ) {
       nodes {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(
+            aspectRatio: 1
+            transformOptions: { cropFocus: CENTER }
+          )
         }
       }
     }
