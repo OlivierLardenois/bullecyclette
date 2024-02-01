@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Retroking";
+  font-display: swap;
+  src: url(/fonts/Retroking.ttf);
+}
+@font-face {
+  font-family: "The Rughton Script";
+  font-display: swap;
+  src: url(/fonts/The-Rughton-Script.ttf);
+}
+@font-face {
+  font-family: "Veteran Typewriter";
+  font-display: swap;
+  src: url(/fonts/Veteran-Typewriter.ttf);
+}
+
 @layer base {
   html {
     @apply bg-eggshell;
