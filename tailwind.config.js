@@ -5,6 +5,11 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
+    fontFamily: {
+      retroking: ["Retroking", "sans-serif"],
+      "the-rughton-script": ["The Rughton Script", "sans-serif"],
+      "veteran-typewriter": ["Veteran Typewriter", "sans-serif"],
+    },
     extend: {
       colors: {
         eggshell: "#edebde",
