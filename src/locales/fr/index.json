@@ -12,6 +12,14 @@
     "presentation": {
       "title": "Lorem ipsum dolor sit amet",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a efficitur est, at luctus magna. Phasellus et risus eget lorem cursus accumsan. Suspendisse congue sed lectus sed tincidunt. Aliquam erat volutpat. Vivamus mattis diam at mi pellentesque, hendrerit ultrices nisl scelerisque. Morbi non eros nec orci luctus blandit sit amet quis lacus"
+    },
+    "nav": {
+      "la-balade": { "alt": "Logo", "title": "La balade de la bullecyclette" },
+      "la-guinguette": {
+        "alt": "La Guinguette",
+        "title": "La guinguette de la bullecyclette"
+      },
+      "infos": { "alt": "29 Juin 2024", "title": "Infos pratiques" }
     }
   },
   "footer": {

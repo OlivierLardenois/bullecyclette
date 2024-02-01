@@ -16,17 +16,17 @@ const NAV_PAGES = [
   {
     href: "/",
     imgPath: "index/logo-viellit.png",
-    imgAltKey: "",
+    key: "la-balade",
   },
   {
     href: "/",
     imgPath: "index/guinguette.jpg",
-    imgAltKey: "",
+    key: "la-guinguette",
   },
   {
     href: "/",
     imgPath: "index/date.png",
-    imgAltKey: "",
+    key: "infos",
   },
 ];
 
@@ -68,14 +68,14 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 
         <section className="flex flex-col justify-between max-w-6xl mx-auto">
           <div className="flex justify-between">
-            <div className="w-1/3">
+            <div className="w-1/3 font-veteran-typewriter">
               <StaticImage
                 src={`../images/index/bullecyclette.png`}
                 alt={t("")}
                 placeholder="blurred"
                 layout="constrained"
               />
-              <h2>{t("homePage.presentation.title")}</h2>
+              <h3>{t("homePage.presentation.title")}</h3>
               <p>{t("homePage.presentation.text")}</p>
             </div>
             <div className="flex justify-center w-2/3">
@@ -88,22 +88,28 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             </div>
           </div>
         </section>
-        <section className="flex justify-between max-w-6xl mx-auto">
-          {NAV_PAGES.map(({ href, imgAltKey, imgPath }) => {
+        <section className="flex justify-between max-w-6xl mx-auto font-veteran-typewriter">
+          {NAV_PAGES.map(({ href, imgPath, key }) => {
             const node = data.navImages.nodes.find(
               (node) => node.relativePath === imgPath,
             );
             if (!node) return null;
-            console.log("imgPath", imgPath);
-            console.log("relative", node.relativePath);
 
             const image = getImage(node.childImageSharp);
             return image ? (
-              <Link to={href} className="hover:opacity-75">
-                <Card>
-                  <GatsbyImage image={image} alt={t(imgAltKey)} />
-                </Card>
-              </Link>
+              <div className="space-y-4">
+                <Link to={href} className="hover:opacity-75 ">
+                  <Card>
+                    <GatsbyImage
+                      image={image}
+                      alt={t(`homePage.nav.${key}.alt`)}
+                    />
+                  </Card>
+                </Link>
+                <h3 className="text-center">
+                  {t(`homePage.nav.${key}.title`)}
+                </h3>
+              </div>
             ) : null;
           })}
         </section>
@@ -117,7 +123,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
               width={20}
               height={28}
             />
-            <p className="text-cg-red">{t("homePage.placesAvailable")}</p>
+            <p className="text-cg-red text-2xl">
+              {t("homePage.placesAvailable")}
+            </p>
             <StaticImage
               src={`../images/index/star.png`}
               alt={t("")}
@@ -131,8 +139,8 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
         <section className="flex max-w-6xl mx-auto">
           <Carousel cards={carouselCards} />
         </section>
-        <section className="flex flex-col">
-          <h3 className="max-w-6xl mx-auto">{t("homePage.partners")}</h3>
+        <section className="flex flex-col space-y-4">
+          <h2 className="max-w-6xl mx-auto">{t("homePage.partners")}</h2>
           <div className="text-center bg-white">
             <div className="max-w-6xl mx-auto py-8 space-x-8">
               {partnerLogos.map(({ alt, image }) => {
