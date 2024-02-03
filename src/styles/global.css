@@ -22,4 +22,12 @@
   html {
     @apply bg-eggshell;
   }
+
+  h2 {
+    @apply font-retroking text-3xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
 }
