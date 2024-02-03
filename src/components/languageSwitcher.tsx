@@ -9,7 +9,7 @@ const LanguageSwitcher: React.FC = () => {
   const classname = "hover:opacity-75";
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 justify-center">
       <Link to={originalPath} language="fr" className={classname}>
         <StaticImage
           src={`../images/fr-flag.png`}
