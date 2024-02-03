@@ -81,6 +81,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             <div className="md:w-5/12 font-veteran-typewriter text-justify space-y-6">
               <h3>{t("homePage.presentation.title")}</h3>
               <p>{t("homePage.presentation.text")}</p>
+              <Button dark>
+                <Link to={"/"}>{t("homePage.ticket")}</Link>
+              </Button>
             </div>
             <div className="mt-6 md:my-auto md:w-6/12">
               <StaticImage
