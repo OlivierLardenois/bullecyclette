@@ -92,6 +92,15 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             </div>
           </div>
         </section>
+        <section className="mx-auto max-w-7xl">
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/gU_hqPdNylk?si=D19aq113rJI9o4h0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;"
+          ></iframe>
+        </section>
         <section className="flex flex-wrap justify-center gap-x-20 gap-y-10 lg:justify-between max-w-6xl mx-auto font-veteran-typewriter">
           {NAV_PAGES.map(({ href, imgPath, key }) => {
             const node = data.navImages.nodes.find(
