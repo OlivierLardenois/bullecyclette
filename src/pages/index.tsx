@@ -67,7 +67,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           className="max-w-7xl mx-auto"
         />
 
-        <section className="flex flex-col justify-between">
+        <section className="flex flex-col justify-between mx-8 space-y-4">
           <div className="max-w-7xl mx-auto w-full">
             <StaticImage
               src={`../images/index/bullecyclette.png`}
@@ -77,12 +77,12 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
               width={900}
             />
           </div>
-          <div className="flex justify-between max-w-5xl mx-auto">
-            <div className="w-5/12 font-veteran-typewriter text-justify space-y-6">
+          <div className="flex flex-col md:flex-row justify-between max-w-5xl mx-auto">
+            <div className="md:w-5/12 font-veteran-typewriter text-justify space-y-6">
               <h3>{t("homePage.presentation.title")}</h3>
               <p>{t("homePage.presentation.text")}</p>
             </div>
-            <div className="my-auto w-6/12">
+            <div className="mt-6 md:my-auto md:w-6/12">
               <StaticImage
                 src={`../images/index/route.png`}
                 alt={t("")}
@@ -92,7 +92,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             </div>
           </div>
         </section>
-        <section className="flex justify-between max-w-6xl mx-auto font-veteran-typewriter">
+        <section className="flex flex-wrap justify-center gap-x-20 gap-y-10 lg:justify-between max-w-6xl mx-auto font-veteran-typewriter">
           {NAV_PAGES.map(({ href, imgPath, key }) => {
             const node = data.navImages.nodes.find(
               (node) => node.relativePath === imgPath,
@@ -110,7 +110,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
                     />
                   </Card>
                 </Link>
-                <h3 className="text-center">
+                <h3 className="text-center max-w-64">
                   {t(`homePage.nav.${key}.title`)}
                 </h3>
               </div>
@@ -123,9 +123,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
               src={`../images/index/star.png`}
               alt={t("")}
               placeholder="blurred"
-              layout="fixed"
+              layout="constrained"
               width={20}
-              height={28}
+              className="shrink-0"
             />
             <p className="text-cg-red text-2xl">
               {t("homePage.placesAvailable")}
@@ -134,9 +134,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
               src={`../images/index/star.png`}
               alt={t("")}
               placeholder="blurred"
-              layout="fixed"
+              layout="constrained"
               width={20}
-              height={28}
+              className="shrink-0"
             />
           </div>
         </section>
@@ -149,17 +149,11 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           </div>
         </section>
         <section className="flex flex-col space-y-4">
-          <h2 className="max-w-6xl mx-auto">{t("homePage.partners")}</h2>
-          <div className="text-center bg-white">
-            <div className="max-w-6xl mx-auto py-8 space-x-8">
+          <h2 className="max-w-5xl mx-auto">{t("homePage.partners")}</h2>
+          <div className="bg-white">
+            <div className="flex flex-wrap justify-center max-w-5xl mx-auto py-8 gap-x-12 gap-y-10">
               {partnerLogos.map(({ alt, image }) => {
-                return (
-                  <GatsbyImage
-                    imgClassName="object-cover"
-                    image={image}
-                    alt={alt}
-                  />
-                );
+                return <GatsbyImage image={image} alt={alt} />;
               })}
             </div>
           </div>
