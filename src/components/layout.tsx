@@ -8,12 +8,14 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
-    <>
-      <Header />
+    <div className={`${isMenuOpen ? "h-screen overflow-hidden" : ""}`}>
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="relative grow">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
