@@ -8,7 +8,7 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({ children, dark }) => {
   return (
     <button
-      className={`${dark ? "bg-liberty" : "bg-white"} ${dark ? "text-white" : "text-liberty"} rounded-lg px-6 py-2`}
+      className={`${dark ? "bg-liberty" : "bg-white"} ${dark ? "text-white" : "text-liberty"} rounded-lg px-6 py-2 font-sans`}
     >
       {children}
     </button>

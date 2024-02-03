@@ -9,7 +9,7 @@ const Preparation: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="space-y-12">
       <h2>{t("preparation.title")}</h2>
       <div className="flex justify-center text-justify space-x-12">
         <div className="flex flex-col max-w-64">

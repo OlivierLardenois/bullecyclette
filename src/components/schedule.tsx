@@ -15,10 +15,12 @@ const Event: React.FC<EventProps> = ({ children, address, alt, image }) => {
     <div className="relative inline-flex flex-col items-center space-y-2 bg-inherit max-w-52 text-center">
       <div className="w-10 h-10 bg-white rounded-full"></div>
 
-      <GatsbyImage image={image} alt={alt} />
+      <div className="border-b pb-3">
+        <GatsbyImage image={image} alt={alt} />
+      </div>
       <p className="text-white">{children}</p>
       {address && (
-        <p className="bg-white py-1 px-2 rounded-md max-w-40 text-cg-red">
+        <p className="bg-white py-1 px-2 rounded-md max-w-40 text-cg-red font-sans">
           {address}
         </p>
       )}
@@ -33,7 +35,7 @@ type ScheduleProps = {
 const Schedule: React.FC<ScheduleProps> = ({ events }) => {
   return (
     <div className="relative flex justify-between bg-inherit">
-      <div className="absolute top-4 left-0 border-t w-full translate-y-1/2 border-cg-red " />
+      <div className="absolute top-4 left-0 border-t w-full border-cg-red" />
       {events.map((event) => {
         return <Event {...event} />;
       })}
@@ -63,7 +65,7 @@ function customSchedule(
         nodes {
           relativePath
           childImageSharp {
-            gatsbyImageData(width: 80)
+            gatsbyImageData(height: 30)
           }
         }
       }

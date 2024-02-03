@@ -23,11 +23,15 @@
     @apply bg-eggshell text-dark-sienna;
   }
 
-  h2 {
+  h1 {
     @apply font-retroking text-3xl;
   }
 
+  h2 {
+    @apply font-veteran-typewriter text-2xl;
+  }
+
   h3 {
-    @apply text-xl;
+    @apply font-veteran-typewriter text-xl;
   }
 }

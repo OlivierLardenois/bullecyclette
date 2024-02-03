@@ -104,7 +104,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;"
           ></iframe>
         </section>
-        <section className="flex flex-wrap justify-center gap-x-20 gap-y-10 lg:justify-between max-w-6xl mx-auto font-veteran-typewriter">
+        <section className="flex flex-wrap justify-center gap-x-20 gap-y-10 lg:justify-between max-w-6xl mx-auto">
           {NAV_PAGES.map(({ href, imgPath, key }) => {
             const node = data.navImages.nodes.find(
               (node) => node.relativePath === imgPath,
@@ -163,7 +163,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
           </div>
         </section>
         <section className="flex flex-col space-y-4">
-          <h2 className="max-w-5xl mx-auto">{t("homePage.partners")}</h2>
+          <h1 className="max-w-5xl mx-auto">{t("homePage.partners")}</h1>
           <div className="bg-white">
             <div className="flex flex-wrap justify-center max-w-5xl mx-auto py-8 gap-x-12 gap-y-10">
               {partnerLogos.map(({ alt, image }) => {
