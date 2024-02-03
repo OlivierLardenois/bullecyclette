@@ -2,7 +2,8 @@
   "hello": "Bonjour",
   "common": {
     "fr-flag-alt": "Drapeau français",
-    "en-flag-alt": "Drapeau du Royaume-Uni"
+    "en-flag-alt": "Drapeau du Royaume-Uni",
+    "logo": "Logode La Bullecyclette "
   },
   "homePage": {
     "title": "Accueil"
