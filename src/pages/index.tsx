@@ -58,28 +58,31 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 
   return (
     <Layout>
-      <div className="space-y-12">
+      <div className="space-y-24">
         <StaticImage
           src={`../images/index/hero.jpeg`}
           alt={t("")}
           placeholder="blurred"
           layout="fullWidth"
-          className="max-w-6xl mx-auto"
+          className="max-w-7xl mx-auto"
         />
 
-        <section className="flex flex-col justify-between max-w-6xl mx-auto">
-          <div className="flex justify-between">
-            <div className="w-1/3 font-veteran-typewriter">
-              <StaticImage
-                src={`../images/index/bullecyclette.png`}
-                alt={t("")}
-                placeholder="blurred"
-                layout="constrained"
-              />
+        <section className="flex flex-col justify-between">
+          <div className="max-w-7xl mx-auto w-full">
+            <StaticImage
+              src={`../images/index/bullecyclette.png`}
+              alt={t("")}
+              placeholder="blurred"
+              layout="constrained"
+              width={900}
+            />
+          </div>
+          <div className="flex justify-between max-w-5xl mx-auto">
+            <div className="w-5/12 font-veteran-typewriter text-justify space-y-6">
               <h3>{t("homePage.presentation.title")}</h3>
               <p>{t("homePage.presentation.text")}</p>
             </div>
-            <div className="flex justify-center w-2/3">
+            <div className="my-auto w-6/12">
               <StaticImage
                 src={`../images/index/route.png`}
                 alt={t("")}
@@ -137,7 +140,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
             />
           </div>
         </section>
-        <section className="flex flex-col max-w-6xl mx-auto space-y-4">
+        <section className="flex flex-col max-w-7xl mx-auto space-y-6">
           <Carousel cards={carouselCards} />
           <div className="mx-auto">
             <Button>

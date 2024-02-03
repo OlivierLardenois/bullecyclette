@@ -12,7 +12,7 @@ type CarouselProps = {
 
 const Carousel: React.FC<CarouselProps> = ({ cards }) => {
   return (
-    <div className="flex flex-1 justify-center space-x-5">
+    <div className="flex flex-1 justify-between">
       {cards.map(({ alt, image }) => {
         return (
           <Card>
