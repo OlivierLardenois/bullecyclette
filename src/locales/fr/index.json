@@ -2,10 +2,27 @@
   "hello": "Bonjour",
   "common": {
     "fr-flag-alt": "Drapeau français",
-    "en-flag-alt": "Drapeau du Royaume-Uni"
+    "en-flag-alt": "Drapeau du Royaume-Uni",
+    "logo": "Logode La Bullecyclette "
   },
   "homePage": {
-    "title": "Accueil"
+    "title": "Accueil",
+    "partners": "Nos partenaires :",
+    "placesAvailable": "Uniquement 500 places disponibles",
+    "gallery": "Galerie photos",
+    "ticket": "Achetez votre billet",
+    "presentation": {
+      "title": "La balade à vélo rétro en Champagne",
+      "text": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage. À travers les vignes et les villages de la Côte des Blancs, la balade d’environ 20 km est ponctuée de quatre arrêts où seront offert musique swing et champagne. Le but de la balade est de prendre le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro."
+    },
+    "nav": {
+      "la-balade": { "alt": "Logo", "title": "La balade de la bullecyclette" },
+      "la-guinguette": {
+        "alt": "La Guinguette",
+        "title": "La guinguette de la bullecyclette"
+      },
+      "infos": { "alt": "29 Juin 2024", "title": "Infos pratiques" }
+    }
   },
   "countdown-timer": {
     "label": {
