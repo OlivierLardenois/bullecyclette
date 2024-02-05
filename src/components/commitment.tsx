@@ -7,7 +7,7 @@ const Commitment: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div
-        className={`bg-[url('../images/fr-flag.png')] bg-cover bg-center flex size-full h-60 justify-center`}
+        className={`bg-[url('../images/commitments/commitment_1.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
       >
         <div className="grid bg-white flex h-1/2 w-3/5 items-center justify-center rounded-lg m-auto text-center">
           <div className="size-auto justify-center font-medium mx-2">
@@ -17,12 +17,12 @@ const Commitment: React.FC = () => {
             <hr className="size-1/5 border-black border-1 mx-auto" />
           </div>
           <div className="size-auto justify-center font-light mx-2">
-            {t("commitment.steps.0.desc")}
+            {t("commitment.steps.0.description")}
           </div>
         </div>
       </div>
       <div
-        className={`bg-[url('../images/ticket.png')] bg-cover bg-center flex size-full h-60 justify-center`}
+        className={`bg-[url('../images/commitments/commitment_2.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
       >
         <div className="grid bg-white flex h-1/2 w-3/5 items-center justify-center rounded-lg m-auto text-center">
           <div className="size-auto justify-center font-medium mx-2">
@@ -32,12 +32,12 @@ const Commitment: React.FC = () => {
             <hr className="size-1/5 border-black border-1 mx-auto" />
           </div>
           <div className="size-auto justify-center font-light mx-2">
-            {t("commitment.steps.1.desc")}
+            {t("commitment.steps.1.description")}
           </div>
         </div>
       </div>
       <div
-        className={`bg-[url('../images/en-flag.png')] bg-cover bg-center flex size-full h-60 justify-center`}
+        className={`bg-[url('../images/commitments/commitment_3.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
       >
         <div className="grid bg-white flex h-1/2 w-3/5 items-center justify-center rounded-lg m-auto text-center">
           <div className="size-auto justify-center font-medium mx-2">
@@ -47,12 +47,12 @@ const Commitment: React.FC = () => {
             <hr className="size-1/5 border-black border-1 mx-auto" />
           </div>
           <div className="size-auto justify-center font-light mx-2">
-            {t("commitment.steps.2.desc")}
+            {t("commitment.steps.2.description")}
           </div>
         </div>
       </div>
       <div
-        className={`bg-[url('../images/icon.png')] bg-cover bg-center flex size-full h-60 justify-center`}
+        className={`bg-[url('../images/commitments/commitment_4.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
       >
         <div className="grid bg-white flex h-1/2 w-3/5 items-center justify-center rounded-lg m-auto text-center">
           <div className="size-auto justify-center font-medium mx-2">
@@ -62,12 +62,12 @@ const Commitment: React.FC = () => {
             <hr className="size-1/5 border-black border-1 mx-auto" />
           </div>
           <div className="size-auto justify-center font-light mx-2">
-            {t("commitment.steps.3.desc")}
+            {t("commitment.steps.3.description")}
           </div>
         </div>
       </div>
       <div
-        className={`bg-[url('../images/fr-flag.png')] bg-cover bg-center flex size-full h-60 justify-center`}
+        className={`bg-[url('../images/commitments/commitment_5.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
       >
         <div className="grid bg-white flex h-1/2 w-3/5 items-center justify-center rounded-lg m-auto text-center">
           <div className="size-auto justify-center font-medium mx-2">
@@ -77,12 +77,12 @@ const Commitment: React.FC = () => {
             <hr className="size-1/5 border-black border-1 mx-auto" />
           </div>
           <div className="size-auto justify-center font-light mx-2">
-            {t("commitment.steps.4.desc")}
+            {t("commitment.steps.4.description")}
           </div>
         </div>
       </div>
       <div
-        className={`bg-[url('../images/fr-flag.png')] bg-cover bg-center flex size-full h-60 justify-center`}
+        className={`bg-[url('../images/commitments/commitment_6.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
       >
         <div className="grid bg-white flex h-1/2 w-3/5 items-center justify-center rounded-lg m-auto text-center">
           <div className="size-auto justify-center font-medium mx-2">

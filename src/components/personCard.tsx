@@ -40,7 +40,7 @@ const PersonCard: React.FC<PersonCardProps> = ({
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2  text-base">
-            {t(attribut + ".0.desc")}
+            {t(attribut + ".0.description")}
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
@@ -70,7 +70,7 @@ const PersonCard: React.FC<PersonCardProps> = ({
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2  text-base">
-            {t(attribut + ".1.desc")}
+            {t(attribut + ".1.description")}
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
@@ -100,7 +100,7 @@ const PersonCard: React.FC<PersonCardProps> = ({
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2  text-base">
-            {t(attribut + ".2.desc")}
+            {t(attribut + ".2.description")}
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
@@ -130,7 +130,7 @@ const PersonCard: React.FC<PersonCardProps> = ({
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2  text-base">
-            {t(attribut + ".3.desc")}
+            {t(attribut + ".3.description")}
           </div>
 
           <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">

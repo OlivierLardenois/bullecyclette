@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="relative grow mx-20 my-5">{children}</main>
+      <main className="relative grow">{children}</main>
       <Footer />
     </>
   );

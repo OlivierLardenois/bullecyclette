@@ -6,5 +6,154 @@
   },
   "homePage": {
     "title": "Home"
+  },
+  "countdown-timer": {
+    "label": {
+      "day-before-ticketing": "Days remaining before the ticket office opens :",
+      "day-before-event": "Days remaining before the event :"
+    },
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds"
+  },
+  "balade": {
+    "title": "Ride",
+    "video": {
+      "title": "lsf"
+    },
+    "what" : {
+      "title": "what is it ?",
+      "description": [
+        {
+          "text": "Travel through the vineyards and villages of the Côte des Blancs on your retro bike. The Bullecyclette walk of approximately 20km is punctuated by four stops where you will be offered swing music, champagne and a full meal. Take the time to discover or rediscover the Champagne landscapes in a festive and retro spirit, typical of the 1950s."
+        },
+        {
+          "text": "With the purchase of a place you will benefit from a bag in which you will find a champagne glass, as well as an explanatory booklet.\n\nYou will consume during the walk: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of champagne."
+        }
+      ]
+    },
+    "when": {
+      "title": "when ?"
+    },
+    "program": {
+      "title": "program"
+    },
+    "road": {
+      "title": "the trip"
+    },
+    "ticket": {
+      "title": "ticket office",
+      "description": "With the purchase of a place, you will benefit from the right of access to the bike ride and will obtain a bag in which you will find a champagne glass and an explanatory booklet.\nYou will consume during the ride: 1 starter, 1 main course , 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne.\n\n There will be two departure waves of 250 people for the bike ride: the first at 10 a.m. and the second at 10:30 a.m. You will choose yours when purchasing your place.\n<u>If you are coming in a group:</u> please consult each other to be able to register for the same departure time slot. If this is no longer possible, you can still meet at the first stop.\n\nThe ticket office is open from March 1 to May 31, with a limit of 500 seats sold."
+    }
+  },
+  "winegrowers": {
+    "title": "the winegrowers",
+    "image": "../images/ticket.png",
+    "persons": [
+      {
+        "name": "Coopérative des Grappes d'Or",
+        "description": "16 ter rue des Grappes d'Or 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png"
+      },
+      {
+        "name": "Champagne PROUT",
+        "description": "10 rue de la cacaouète 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png" 
+      },
+      {
+        "name": "Champagne PROUT",
+        "description": "10 rue de la cacaouète 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png"
+      },
+      {
+        "name": "Champagne PROUT",
+        "description": "10 rue de la cacaouète 51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "../images/ticket.png"
+      }
+    ]
+  },
+  "artists": {
+    "title": "the artists",
+    "image": "../images/artists.png",
+    "persons": [
+      {
+        "name": "Jeannick Liebert",
+        "description": "Guitarist",
+        "url": "https://www.youtube.com/user/jeannick08360/videos",
+        "shorturl": "See on Youtube",
+        "image": "../images/jeannick_liebert.jpg"
+      },
+      {
+        "name": "Les Tonneliers",
+        "description": "Fanfare",
+        "url": "https://www.harmonietonneliersepernay.fr/",
+        "shorturl": "More information",
+        "image": "../images/tonneliers.jpg"
+      },
+      {
+        "name": "Swing Shady",
+        "description": "Jazz and Gypsy Pop",
+        "url": "https://www.instagram.com/therealswingshady",
+        "shorturl": "See on Instagram",
+        "image": "../images/"
+      },
+      {
+        "name": "Le bal à Jojo",
+        "description": "Barrel Organ",
+        "url": "https://www.facebook.com/p/Le-Bal-%C3%A0-J%C3%B6jo-100063597969100/?paipv=0&eav=AfYZu8xDd7G_FrjVCMh1yzSA6hYIIs4IO9CsnpNfpN7WECZGt1ByHOczDhqYVFjXwQU&_rdr",    
+        "shorturl": "See on Facebook",
+        "image": "../images/bal_jojo.jpg" 
+      }
+    ]
+  },
+  "commitment": {
+    "title": "our engagements",
+    "steps": [
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Eco-responsible event",
+        "description": "Waste minimization",
+        "alt": ""
+      },
+      {
+        "src": "../images/ticket.png",
+        "title": "Promoting local products",
+        "description": "Show the culinary and artisanal wealth of our region",
+        "alt": ""
+      },
+      {
+        "src": "../images/en-flag.png",
+        "title": "Friendly and inclusive event",
+        "description": "Event for everyone, even people with disabilities",
+        "alt": ""
+      },
+      {
+        "src": "../images/icon.png",
+        "title": "Promotion of reuse and second hand",
+        "description": "No new purchases, only second hand!",
+        "alt": ""
+      },
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Promotion of the landscape",
+        "description": "Highlighting the built and landscape heritage of our region",
+        "alt": ""
+      },
+      {
+        "src": "../images/en-flag.png",
+        "title": "Sharing a Champagne-style art of living",
+        "alt": ""
+      }
+    ]
   }
+
 }

@@ -37,7 +37,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ title, deadline }) => {
           {time}
         </div>
         <div className="text-xs uppercase text-blue-800">
-          {t(`counter.${label}`)}
+          {t(`countdown-timer.${label}`)}
         </div>
       </div>
     );

@@ -93,31 +93,31 @@ const BaladePage: React.FC<PageProps> = () => {
         ></PersonCard>
       </section>
 
-      <section className="max-w-6xl mx-auto md:my-10">
+      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
         <div className="grid md:grid-rows-2 md:grid-flow-col">
           <div className="row-span-4">
             <ArrowBullet
-              desc={t("balade.ticketTitle")}
+              desc={t("balade.ticket.title")}
               color="black"
               bgcolor="white"
             />
-            <p className="text-justify  whitespace-pre-line">
-              {t("balade.ticketDescription")}
+            <p className="text-justify whitespace-pre-line">
+              {t("balade.ticket.description")}
             </p>
           </div>
           <div className="md:col-span-2 md:row-span-1 m-auto">
             <CountdownTimer
-              title={t("common.counterLabel")}
+              title={t("countdown-timer.label.day-before-event")}
               deadline={EVENT_DATE}
             />
           </div>
           <div className="md:col-span-2 md:row-span-1 m-auto">
             <CountdownTimer
-              title={t("balade.ticketCounterLabel")}
+              title={t("countdown-timer.label.day-before-ticketing")}
               deadline={SALES_DATE}
             />
           </div>
-          <div className="md:col-span-2 md:row-span-2 m-auto  justify-center">
+          <div className="md:col-span-2 md:row-span-2 m-auto justify-center">
             <StaticImage
               src="../images/ticket.png"
               alt="ticket"
@@ -129,7 +129,7 @@ const BaladePage: React.FC<PageProps> = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto my-10">
+      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
         <ArrowBullet
           desc={t("commitment.title")}
           color="black"
@@ -138,9 +138,9 @@ const BaladePage: React.FC<PageProps> = () => {
         <Commitment />
       </section>
 
-      <section className="max-w-6xl mx-auto my-10">
+      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
         <ArrowBullet
-          desc={t("balade.videoTitle")}
+          desc={t("balade.video.title")}
           color="black"
           bgcolor="white"
         />
