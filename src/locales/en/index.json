@@ -49,69 +49,67 @@
   },
   "winegrowers": {
     "title": "the winegrowers",
-    "image": "../images/ticket.png",
     "persons": [
       {
-        "name": "Coopérative des Grappes d'Or",
-        "description": "16 ter rue des Grappes d'Or 51190 OGER",
+        "name": "Champagne PROUT",
+        "description": "16 ter rue des Grappes d'Or \n51190 OGER",
         "url": "www.champagneprout.com",
         "shorturl": "www.champagneprout.com",
-        "image": "../images/ticket.png"
+        "image": "winegrowers/champagne.png"
       },
       {
         "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète 51190 OGER",
+        "description": "10 rue de la cacaouète \n51190 OGER",
         "url": "www.champagneprout.com",
         "shorturl": "www.champagneprout.com",
-        "image": "../images/ticket.png" 
+        "image": "winegrowers/champagne.png" 
       },
       {
         "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète 51190 OGER",
+        "description": "10 rue de la cacaouète \n51190 OGER",
         "url": "www.champagneprout.com",
         "shorturl": "www.champagneprout.com",
-        "image": "../images/ticket.png"
+        "image": "winegrowers/champagne.png"
       },
       {
         "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète 51190 OGER",
+        "description": "10 rue de la cacaouète \n51190 OGER",
         "url": "www.champagneprout.com",
         "shorturl": "www.champagneprout.com",
-        "image": "../images/ticket.png"
+        "image": "winegrowers/champagne.png"
       }
     ]
   },
   "artists": {
     "title": "the artists",
-    "image": "../images/artists.png",
     "persons": [
       {
         "name": "Jeannick Liebert",
         "description": "Guitarist",
         "url": "https://www.youtube.com/user/jeannick08360/videos",
         "shorturl": "See on Youtube",
-        "image": "../images/jeannick_liebert.jpg"
+        "image": "artists/jeannick_liebert.jpg"
       },
       {
         "name": "Les Tonneliers",
         "description": "Fanfare",
         "url": "https://www.harmonietonneliersepernay.fr/",
         "shorturl": "More information",
-        "image": "../images/tonneliers.jpg"
+        "image": "artists/tonneliers.jpg"
       },
       {
         "name": "Swing Shady",
         "description": "Jazz and Gypsy Pop",
         "url": "https://www.instagram.com/therealswingshady",
         "shorturl": "See on Instagram",
-        "image": "../images/"
+        "image": "artists/swing_shady.jpg"
       },
       {
         "name": "Le bal à Jojo",
         "description": "Barrel Organ",
         "url": "https://www.facebook.com/p/Le-Bal-%C3%A0-J%C3%B6jo-100063597969100/?paipv=0&eav=AfYZu8xDd7G_FrjVCMh1yzSA6hYIIs4IO9CsnpNfpN7WECZGt1ByHOczDhqYVFjXwQU&_rdr",    
         "shorturl": "See on Facebook",
-        "image": "../images/bal_jojo.jpg" 
+        "image": "artists/bal_jojo.jpg" 
       }
     ]
   },
