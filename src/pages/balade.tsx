@@ -51,36 +51,37 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
 
   return (
     <Layout>
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
-        <div className="grid md:grid-flow-row-dense md:grid-cols-3">
-          <div className="md:col-span-2 flex justify-center">
-            <div className="grid grid-flow-row flex justify-center min-w-full">
+      <section className="max-w-6xl lg:mx-auto">
+        <div className="grid md:grid-flow-row-dense md:grid-cols-3 ">
+          <div className="md:col-span-2">
+            <div className="grid grid-flow-row min-w-full">
               {bullecycletteImage && (
                 <GatsbyImage image={bullecycletteImage} alt={"bullecyclette"} />
               )}
-              <ArrowBullet>
-                <h3 className="font-veteran-typewriter">
-                  {t("balade.what.title")}
-                </h3>
-              </ArrowBullet>
-              <div className="grid md:grid-cols-2 md:space-x-4">
-                <div className="text-justify whitespace-pre-line">
-                  {t("balade.what.description.0.text")}
-                </div>
-                <div className="text-justify whitespace-pre-line">
-                  {t("balade.what.description.1.text")}
+              <div className="mx-8 md:mr-0 xl:mx-0 space-y-4">
+                <ArrowBullet>
+                  <h3 className="font-veteran-typewriter">
+                    {t("balade.what.title")}
+                  </h3>
+                </ArrowBullet>
+                <div className="grid md:grid-cols-2 md:space-x-4 font-veteran-typewriter">
+                  <div className="text-justify whitespace-pre-line">
+                    {t("balade.what.description.0.text")}
+                  </div>
+                  <div className="text-justify whitespace-pre-line">
+                    {t("balade.what.description.1.text")}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="m-auto">
+          <div className="my-4 mx-auto md:m-auto">
             <Card>
               <StaticImage
                 src={`../images/common/what.jpg`}
                 alt="what"
                 placeholder="blurred"
-                layout="fixed"
+                transformOptions={{ cropFocus: "center" }}
                 width={200}
                 height={300}
               />
@@ -89,7 +90,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <div className="grid md:grid-flow-row-dense md:grid-cols-3">
           <div className="m-auto">
             <Card>
@@ -97,7 +98,6 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
                 src={`../images/common/when.jpg`}
                 alt="what"
                 placeholder="blurred"
-                layout="constrained"
                 width={300}
                 height={500}
               />
@@ -105,7 +105,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
           </div>
 
           <div className="md:col-span-2 flex justify-center">
-            <div className="grid grid-flow-row flex justify-center min-w-full">
+            <div className="grid grid-flow-row">
               <ArrowBullet>
                 <h3 className="font-veteran-typewriter">
                   {t("balade.when.title")}
@@ -122,22 +122,18 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
       </section>
 
       <section className="bg-blue-800">
-        <div className="max-w-6xl mx-10 lg:mx-auto pt-4">
+        <div className="flex flex-col max-w-6xl mx-8 md:mx-auto space-y-12 bg-inherit">
           <ArrowBullet>
             <h3 className="font-veteran-typewriter">
               {t("balade.program.title")}
             </h3>
           </ArrowBullet>
-        </div>
-        <div className="max-w-6xl mx-10 lg:mx-auto pt-2">
-          <GuinguetteSmallSchedule />
-        </div>
-        <div className="max-w-6xl mx-10 lg:mx-auto pt-6 pb-6">
           <BullecycletteSchedule />
+          <GuinguetteSmallSchedule />
         </div>
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <div className="grid md:grid-flow-row-dense md:grid-cols-2">
           <div className="grid grid-flow-row min-w-full">
             <ArrowBullet>
@@ -149,7 +145,6 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
               src={`../images/road.png`}
               alt="road"
               placeholder="blurred"
-              layout="constrained"
               width={500}
               height={500}
               className="md:-mt-36"
@@ -180,19 +175,19 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <Preparation />
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <PersonCard person="winegrowers"></PersonCard>
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <PersonCard person="artists"></PersonCard>
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <div className="grid md:grid-rows-2 md:grid-flow-col">
           <div className="row-span-4">
             <ArrowBullet>
@@ -228,14 +223,14 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <ArrowBullet>
           <h3 className="font-veteran-typewriter">{t("commitment.title")}</h3>
         </ArrowBullet>
         <Commitment />
       </section>
 
-      <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
+      <section className="max-w-6xl mx-8 lg:mx-auto">
         <ArrowBullet>
           <h3 className="font-veteran-typewriter">{t("balade.video.title")}</h3>
         </ArrowBullet>
