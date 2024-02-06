@@ -23,7 +23,7 @@ const PersonTitle: React.FC<PersonProps> = ({ alt, image }) => {
 
 const PersonImage: React.FC<PersonProps> = ({ alt, image }) => {
   return (
-    <div className="gridw-full flex justify-center my-2">
+    <div className="grid w-full flex justify-center my-2">
       <GatsbyImage image={image} alt={alt} />
     </div>
   );
@@ -130,15 +130,15 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className="mx-2">
-          <div className="grid bg-white w-full items-center justify-center rounded-lg m-auto text-center text-blue-800  text-xl">
+          <div className="grid bg-white w-full rounded-lg m-auto text-center text-blue-800  text-xl">
             {t(person + ".persons.0.name")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-base whitespace-pre-line">
+          <div className="grid w-full m-auto text-center my-2 text-base whitespace-pre-line">
             {t(person + ".persons.0.description")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
+          <div className="grid w-full m-auto text-center my-2 text-sm">
             <a
               href={t(person + ".persons.0.url")}
               className="text-blue-800 underline underline-offset-auto"
@@ -155,15 +155,15 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
         </div>
 
         <div className="mx-2">
-          <div className="grid bg-white w-full items-center justify-center rounded-lg m-auto text-center text-blue-800  text-xl">
+          <div className="grid bg-white w-full rounded-lg m-auto text-center text-blue-800  text-xl">
             {t(person + ".persons.1.name")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-base whitespace-pre-line">
+          <div className="grid w-full m-auto text-center my-2 text-base whitespace-pre-line">
             {t(person + ".persons.1.description")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
+          <div className="grid w-full m-auto text-center my-2 text-sm">
             <a
               href={t(person + ".persons.1.url")}
               className="text-blue-800 underline underline-offset-auto"
@@ -180,15 +180,15 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
         </div>
 
         <div className="mx-2">
-          <div className="grid bg-white w-full items-center justify-center rounded-lg m-auto text-center text-blue-800  text-xl">
+          <div className="grid bg-white w-full rounded-lg m-auto text-center text-blue-800  text-xl">
             {t(person + ".persons.2.name")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-base whitespace-pre-line">
+          <div className="grid w-full m-auto text-center my-2 text-base whitespace-pre-line">
             {t(person + ".persons.2.description")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
+          <div className="grid w-full m-auto text-center my-2 text-sm">
             <a
               href={t(person + ".persons.2.url")}
               className="text-blue-800 underline underline-offset-auto"
@@ -205,15 +205,15 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
         </div>
 
         <div className="mx-2">
-          <div className="grid bg-white w-full items-center justify-center rounded-lg m-auto text-center text-blue-800  text-xl">
+          <div className="grid bg-white w-full rounded-lg m-auto text-center text-blue-800  text-xl">
             {t(person + ".persons.3.name")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-base whitespace-pre-line">
+          <div className="grid w-full m-auto text-center my-2 text-base whitespace-pre-line">
             {t(person + ".persons.3.description")}
           </div>
 
-          <div className="gridw-full items-center justify-center m-auto text-center my-2 text-sm">
+          <div className="grid w-full m-auto text-center my-2 text-sm">
             <a
               href={t(person + ".persons.3.url")}
               className="text-blue-800 underline underline-offset-auto"
