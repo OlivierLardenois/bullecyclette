@@ -1,24 +1,23 @@
 import * as React from "react";
 
-type arrowBulletProps = {
-  desc?: string;
-  color?: string;
-  bgcolor?: string;
+type ArrowBulletProps = {
+  children?: React.ReactNode;
+  dark?: boolean;
 };
 
-const ArrowBullet: React.FC<arrowBulletProps> = ({ desc, color, bgcolor }) => {
+const ArrowBullet: React.FC<ArrowBulletProps> = ({ children, dark }) => {
   return (
-    <div className="columns-2 flex my-5">
-      <div className="flex justify-center -space-x-9 -space-y-1">
+    <div className="flex items-center">
+      <div className="relative flex items-center">
         <div
-          className={`w-7 h-7 bg-${bgcolor} [clip-path:polygon(0%_0%,_100%_50%,_0%_100%,_25%_50%)]`}
-        ></div>
+          className={`w-8 h-8 z-10 ${dark ? "bg-white" : "bg-black"} [clip-path:polygon(0%_0%,_100%_50%,_0%_100%,_25%_50%)]`}
+        />
         <div
-          className={`w-8 h-8 bg-${color} [clip-path:polygon(0%_0%,_100%_50%,_0%_100%,_25%_50%)]`}
-        ></div>
+          className={`absolute w-7 h-7 top-[6px] left-[7px] ${dark ? "bg-black" : "bg-white"} [clip-path:polygon(0%_0%,_100%_50%,_0%_100%,_25%_50%)]`}
+        />
       </div>
-      <div className={`mx-3 font-medium text-${color} text-base uppercase`}>
-        {desc}
+      <div className={`mx-3 ${dark ? "text-white" : "text-black"} uppercase`}>
+        {children}
       </div>
     </div>
   );

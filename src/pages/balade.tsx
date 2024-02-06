@@ -58,11 +58,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
               {bullecycletteImage && (
                 <GatsbyImage image={bullecycletteImage} alt={"bullecyclette"} />
               )}
-              <ArrowBullet
-                desc={t("balade.what.title")}
-                color="black"
-                bgcolor="white"
-              />
+              <ArrowBullet>
+                <h3 className="font-veteran-typewriter">
+                  {t("balade.what.title")}
+                </h3>
+              </ArrowBullet>
               <div className="grid md:grid-cols-2 md:space-x-4">
                 <div className="text-justify whitespace-pre-line">
                   {t("balade.what.description.0.text")}
@@ -106,12 +106,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
 
           <div className="md:col-span-2 flex justify-center">
             <div className="grid grid-flow-row flex justify-center min-w-full">
-              <ArrowBullet
-                desc={t("balade.when.title")}
-                color="black"
-                bgcolor="white"
-              />
-
+              <ArrowBullet>
+                <h3 className="font-veteran-typewriter">
+                  {t("balade.when.title")}
+                </h3>
+              </ArrowBullet>
               <StaticImage
                 src="../images/common/date_fr.png"
                 alt="date"
@@ -124,11 +123,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
 
       <section className="bg-blue-800">
         <div className="max-w-6xl mx-10 lg:mx-auto pt-4">
-          <ArrowBullet
-            desc={t("balade.program.title")}
-            color="white"
-            bgcolor="black"
-          />
+          <ArrowBullet>
+            <h3 className="font-veteran-typewriter">
+              {t("balade.program.title")}
+            </h3>
+          </ArrowBullet>
         </div>
         <div className="max-w-6xl mx-10 lg:mx-auto pt-2">
           <GuinguetteSmallSchedule />
@@ -141,11 +140,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
       <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
         <div className="grid md:grid-flow-row-dense md:grid-cols-2">
           <div className="grid grid-flow-row min-w-full">
-            <ArrowBullet
-              desc={t("balade.road.title")}
-              color="black"
-              bgcolor="white"
-            />
+            <ArrowBullet>
+              <h3 className="font-veteran-typewriter">
+                {t("balade.road.title")}
+              </h3>
+            </ArrowBullet>
             <StaticImage
               src={`../images/road.png`}
               alt="road"
@@ -196,11 +195,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
       <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
         <div className="grid md:grid-rows-2 md:grid-flow-col">
           <div className="row-span-4">
-            <ArrowBullet
-              desc={t("balade.ticket.title")}
-              color="black"
-              bgcolor="white"
-            />
+            <ArrowBullet>
+              <h3 className="font-veteran-typewriter">
+                {t("balade.ticket.title")}
+              </h3>
+            </ArrowBullet>
             <p className="text-justify whitespace-pre-line">
               {t("balade.ticket.description")}
             </p>
@@ -230,20 +229,16 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
       </section>
 
       <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
-        <ArrowBullet
-          desc={t("commitment.title")}
-          color="black"
-          bgcolor="white"
-        />
+        <ArrowBullet>
+          <h3 className="font-veteran-typewriter">{t("commitment.title")}</h3>
+        </ArrowBullet>
         <Commitment />
       </section>
 
       <section className="max-w-6xl mx-10 lg:mx-auto md:my-5">
-        <ArrowBullet
-          desc={t("balade.video.title")}
-          color="black"
-          bgcolor="white"
-        />
+        <ArrowBullet>
+          <h3 className="font-veteran-typewriter">{t("balade.video.title")}</h3>
+        </ArrowBullet>
         <Video
           videoSrcURL="https://www.youtube.com/embed/gU_hqPdNylk?si=sa61AmrNZUG0nxlI"
           videoTitle="LSF"

@@ -122,11 +122,9 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
   return (
     <div>
       <div>
-        <ArrowBullet
-          desc={t(person + ".title")}
-          color="black"
-          bgcolor="white"
-        />
+        <ArrowBullet>
+          <h3 className="font-veteran-typewriter">{t(person + ".title")}</h3>
+        </ArrowBullet>
       </div>
       {customPersonCard(person, true)}
 
