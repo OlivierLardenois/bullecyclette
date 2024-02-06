@@ -24,6 +24,152 @@
       "infos": { "alt": "29 Juin 2024", "title": "Infos pratiques" }
     }
   },
+  "countdown-timer": {
+    "label": {
+      "day-before-ticketing": "Jours restants avant l'ouverture de la billetterie :",
+      "day-before-event": "Jours restants avant l'évènement :"
+    },
+    "days": "jours",
+    "hours": "heures",
+    "minutes": "minutes",
+    "seconds": "secondes"
+  },
+  "balade": {
+    "title": "Balade",
+    "video": {
+      "title": "lsf"
+    },
+    "what" : {
+      "title": "c'est quoi ?",
+      "description": [
+        {
+          "text": "Parcourez les vignes et les villages de la Côte des Blancs sur votre vélo rétro. La balade d'environ 20km de la Bullecyclette est ponctuée de quatre arrêts où vous seront proposés sur fond de musique swing, du champagne et unrepas complet. Prenez le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro, typique des années 1950."
+        },
+        {
+          "text": "Avec l'achat de place vous bénéficierez d'une besace dans laquelle vous trouverez un verre à champagne, ainsi qu'un livret explicatif.\n\nVous consommerez au cours de la balade : 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de champagne."
+        }
+      ]
+    },
+    "when": {
+      "title": "quand ?"
+    },
+    "program": {
+      "title": "programme"
+    },
+    "road": {
+      "title": "le circuit"
+    },
+    "ticket": {
+      "title": "billetterie",
+      "description": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.\nVous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.\n\n Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.\n<u>Si vous venez en groupe :</u> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.\n\nLa billetterie est ouverte du 1er Mars au 31 mai, dans la limite de 500 places vendues."   
+    }
+  },
+  "winegrowers": {
+    "title": "les vignerons",
+    "persons": [
+      {
+        "name": "Champagne PROUT",
+        "description": "16 ter rue des Grappes d'Or \n51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "winegrowers/champagne.png"
+      },
+      {
+        "name": "Champagne PROUT",
+        "description": "10 rue de la cacaouète \n51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "winegrowers/champagne.png" 
+      },
+      {
+        "name": "Champagne PROUT",
+        "description": "10 rue de la cacaouète \n51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "winegrowers/champagne.png"
+      },
+      {
+        "name": "Champagne PROUT",
+        "description": "10 rue de la cacaouète \n51190 OGER",
+        "url": "www.champagneprout.com",
+        "shorturl": "www.champagneprout.com",
+        "image": "winegrowers/champagne.png"
+      }
+    ]
+  },
+  "artists": {
+    "title": "les artistes",
+    "persons": [
+      {
+        "name": "Jeannick Liebert",
+        "description": "Guitariste",
+        "url": "https://www.youtube.com/user/jeannick08360/videos",
+        "shorturl": "Voir sur Youtube",
+        "image": "artists/jeannick_liebert.jpg"
+      },
+      {
+        "name": "Les Tonneliers",
+        "description": "Fanfare",
+        "url": "https://www.harmonietonneliersepernay.fr/",
+        "shorturl": "Plus d'information",
+        "image": "artists/tonneliers.jpg"
+      },
+      {
+        "name": "Swing Shady",
+        "description": "Jazz et pop manouche",
+        "url": "https://www.instagram.com/therealswingshady",
+        "shorturl": "Voir sur Instagram",
+        "image": "artists/swing_shady.jpg"
+      },
+      {
+        "name": "Le bal à Jojo",
+        "description": "Orgue de barbarie",
+        "url": "https://www.facebook.com/p/Le-Bal-%C3%A0-J%C3%B6jo-100063597969100/?paipv=0&eav=AfYZu8xDd7G_FrjVCMh1yzSA6hYIIs4IO9CsnpNfpN7WECZGt1ByHOczDhqYVFjXwQU&_rdr",    
+        "shorturl": "Voir sur Facebook",
+        "image": "artists/bal_jojo.jpg" 
+      }
+    ]
+  },
+  "commitment": {
+    "title": "nos engagements",
+    "steps": [
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Evènement écoresponsable",
+        "description": "Minimisation des déchets",
+        "alt": ""
+      },
+      {
+        "src": "../images/ticket.png",
+        "title": "Mise en avant des produits locaux",
+        "description": "Montrer la richesse culinaire et artisanale de notre région",
+        "alt": ""
+      },
+      {
+        "src": "../images/en-flag.png",
+        "title": "Evènement convivial et inclusif",
+        "description": "Evènement pour tous, même aux personnes porteuses de handicaps",
+        "alt": ""
+      },
+      {
+        "src": "../images/icon.png",
+        "title": "Promotion du réemploi et de la seconde main",
+        "description": "Pas d'achat neuf, que de la seconde main !",
+        "alt": ""
+      },
+      {
+        "src": "../images/fr-flag.png",
+        "title": "Promotion du paysage",
+        "description": "Mise en avant du patrimoine bâti et paysager de notre région.",
+        "alt": ""
+      },
+      {
+        "src": "../images/en-flag.png",
+        "title": "Partage d'un art de vivre à la champenoise",
+        "alt": ""
+      }
+    ]
+  },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
     "mail": "Adresse e-mail",
