@@ -21,6 +21,6 @@ const Video: React.FC<videoProps> = ({
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowFullScreen
     className="m-auto"
-  ></iframe>
+  />
 );
 export default Video;
