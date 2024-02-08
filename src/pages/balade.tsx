@@ -146,12 +146,12 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
                 </h3>
               </ArrowBullet>
               <StaticImage
-                src={`../images/road.png`}
+                src={`../images/road/road.png`}
                 alt="road"
                 placeholder="blurred"
                 width={500}
                 height={500}
-                className="md:-mt-36"
+                className="md:-mt-28"
               />
             </div>
 
