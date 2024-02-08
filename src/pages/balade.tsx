@@ -1,5 +1,5 @@
-import { graphql, type HeadFC, type PageProps } from "gatsby";
-import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
+import { graphql, Link, type HeadFC, type PageProps } from "gatsby";
+import { Trans, useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 import CountdownTimer from "../components/countdownTimer";
 
@@ -70,10 +70,10 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
                   </ArrowBullet>
                   <div className="grid md:grid-cols-2 md:space-x-4 font-veteran-typewriter">
                     <div className="text-justify whitespace-pre-line">
-                      {t("balade.what.description.0.text")}
+                      <Trans i18nKey={"balade.what.description.0.text"} />
                     </div>
-                    <div className="text-justify whitespace-pre-line">
-                      {t("balade.what.description.1.text")}
+                    <div className="text-justify">
+                      <Trans i18nKey={"balade.what.description.1.text"} />
                     </div>
                   </div>
                 </div>
@@ -193,14 +193,24 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
 
         <section className="max-w-6xl mx-8 lg:mx-auto">
           <div className="grid md:grid-rows-2 md:grid-flow-col">
-            <div className="row-span-4">
+            <div className="row-span-4 font-veteran-typewriter">
               <ArrowBullet>
-                <h3 className="font-veteran-typewriter">
-                  {t("balade.ticket.title")}
-                </h3>
+                <h3>{t("balade.ticket.title")}</h3>
               </ArrowBullet>
-              <p className="text-justify whitespace-pre-line">
-                {t("balade.ticket.description")}
+              <p className="text-justify">
+                <Trans i18nKey="balade.ticket.description">
+                  text <u>Si vous venez en groupe :</u>{" "}
+                  <p className="text-white bg-red-600 size-1/3 md:size-1/5 lg:size-1/5">
+                    INFORMATIONS :{" "}
+                  </p>{" "}
+                  text{" "}
+                  <Link
+                    to="/"
+                    className="text-blue-800 underline decoration-blue-800"
+                  >
+                    içi
+                  </Link>
+                </Trans>
               </p>
             </div>
             <div className="md:col-span-2 md:row-span-1 m-auto">
