@@ -171,9 +171,8 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
                   <GatsbyImage image={descRoadImage} alt={"step_road"} />
                 )}
               </div>
-              <div className="w-auto h-auto mx-auto my-2 justify-center">
-                Les cyclistes de tout genre, de tout niveau et de tout âge
-                peuvent y participer
+              <div className="flex justify-center font-veteran-typewriter">
+                {t("balade.road.information")}
               </div>
             </div>
           </div>

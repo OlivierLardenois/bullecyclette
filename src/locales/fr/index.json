@@ -57,7 +57,8 @@
       "title": "programme"
     },
     "road": {
-      "title": "le circuit"
+      "title": "le circuit",
+      "information": "Les cyclistes de tout genre, de tout niveau et de tout âge peuvent y participer"
     },
     "ticket": {
       "title": "billetterie",

@@ -40,7 +40,8 @@
       "title": "program"
     },
     "road": {
-      "title": "the trip"
+      "title": "the trip",
+      "information": "Cyclists of all genders, all levels and all ages can participate"
     },
     "ticket": {
       "title": "ticket office",
