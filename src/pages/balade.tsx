@@ -199,11 +199,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
               </ArrowBullet>
               <p className="text-justify">
                 <Trans i18nKey="balade.ticket.description">
-                  text <u>Si vous venez en groupe :</u>{" "}
-                  <p className="text-white bg-red-600 size-1/3 md:size-1/5 lg:size-1/5">
-                    INFORMATIONS :{" "}
-                  </p>{" "}
-                  text{" "}
+                  text <u>Si vous venez en groupe :</u> text
+                  <p className="text-white bg-red-600 inline-block">
+                    INFORMATIONS :
+                  </p>
+                  text
                   <Link
                     to="/"
                     className="text-blue-800 underline decoration-blue-800"
