@@ -32,6 +32,8 @@ const config: GatsbyConfig = {
             escapeValue: false, // not needed for react as it escapes by default
           },
           nsSeparator: false,
+          transSupportBasicHtmlNodes: true, // allow <br/> and simple html elements in translations
+          transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'], // don't convert to <1></1> if simple react elements
         },
       },
     },
