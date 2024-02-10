@@ -71,8 +71,10 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
           </div>
         </div>
       </section>
-      <section className="max-w-6xl mx-auto py-12 font-veteran-typewriter">
-        <Preparation />
+      <section className="flex justify-center mx-8 py-12">
+        <div className="max-w-7xl w-full">
+          <Preparation />
+        </div>
       </section>
       <section className="max-w-6xl mx-auto py-12">
         <section className="max-w-6xl mx-8 lg:mx-auto">
