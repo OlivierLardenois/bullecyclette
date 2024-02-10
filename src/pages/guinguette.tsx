@@ -18,120 +18,116 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
 
   return (
     <Layout>
-      <div className="space-y-24">
-        <div>
-          <StaticImage
-            src={`../images/guinguette-hero.jpg`}
-            alt={t(`guinguette.hero-alt`)}
-            placeholder="blurred"
-          />
-        </div>
-        <section className="bg-gradient-to-b from-[#314782] to-liberty !mt-0 pt-24 text-white">
-          <div className="flex justify-between max-w-6xl mx-auto font-veteran-typewriter text-justify ">
-            <div className="w-5/12 space-y-4">
-              <ArrowBullet dark>
-                <h3 className="font-veteran-typewriter">
-                  {t("guinguette.presentation.what")}
-                </h3>
-              </ArrowBullet>
-              <p>{t("guinguette.presentation.text")}</p>
-            </div>
-            <div className="w-6/12">
-              <ArrowBullet dark>
-                <h3 className="font-veteran-typewriter">
-                  {t("guinguette.presentation.when")}
-                </h3>
-              </ArrowBullet>
-              <StaticImage
-                src={"../images/dates/29-june.png"}
-                alt={t("")}
-                placeholder="blurred"
-              />
-            </div>
-          </div>
-        </section>
-        <section className="bg-liberty !mt-0 pt-24 pb-12 text-white">
-          <div className="max-w-6xl mx-auto space-y-12">
-            <ArrowBullet dark>
-              <h3 className="font-veteran-typewriter">
-                {t("guinguette.program.title")}
-              </h3>
-            </ArrowBullet>
-            <div className="bg-liberty">
-              <div className="max-w-6xl mx-auto [&>*]:max-w-4xl bg-inherit font-veteran-typewriter">
-                <GuinguetteSchedule />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="max-w-6xl mx-auto !mt-12 font-veteran-typewriter">
-          <Preparation />
-        </section>
-        <section className="max-w-6xl mx-auto">
-          <section className="max-w-6xl mx-8 lg:mx-auto">
-            <PersonCard person="artists" />
-          </section>
-        </section>
-        <section className="bg-liberty">
-          <div className="max-w-6xl mx-auto">
-            <ArrowBullet dark>
-              <h3 className="font-veteran-typewriter">
-                {t("guinguette.exhibitors.title")}
-              </h3>
-            </ArrowBullet>
-          </div>
-        </section>
-        <section className="bg-liberty">
-          <div className="max-w-6xl mx-auto space-y-12">
-            <ArrowBullet dark>
-              <h3 className="font-veteran-typewriter">
-                {t("guinguette.food.title")}
-              </h3>
-            </ArrowBullet>
-            <div className="flex justify-between">
-              {FOOD_PROVIDERS.map(({ index, name, phone, url, src }) => {
-                const childImageSharp = data.foodProvidersImages.nodes.find(
-                  ({ relativePath }) => relativePath === src,
-                )?.childImageSharp;
-
-                const image = childImageSharp
-                  ? getImage(childImageSharp)
-                  : undefined;
-
-                return (
-                  <Food
-                    image={image}
-                    index={index}
-                    name={name}
-                    phone={phone}
-                    url={url}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-liberty">
-          <div className="max-w-6xl mx-auto">
-            <ArrowBullet dark>
-              <h3 className="font-veteran-typewriter">
-                {t("guinguette.drink.title")}
-              </h3>
-            </ArrowBullet>
-          </div>
-        </section>
-        <section className="bg-liberty">
-          <div className="max-w-6xl mx-auto">
-            <ArrowBullet dark>
-              <h3 className="font-veteran-typewriter">
-                {t("commitment.title")}
-              </h3>
-            </ArrowBullet>
-            <Commitment />
-          </div>
-        </section>
+      <div>
+        <StaticImage
+          src={`../images/guinguette-hero.jpg`}
+          alt={t(`guinguette.hero-alt`)}
+          placeholder="blurred"
+        />
       </div>
+      <section className="bg-gradient-to-b from-[#314782] to-liberty py-12 text-white">
+        <div className="flex justify-between max-w-6xl mx-auto font-veteran-typewriter text-justify ">
+          <div className="w-5/12 space-y-4">
+            <ArrowBullet dark>
+              <h3 className="font-veteran-typewriter">
+                {t("guinguette.presentation.what")}
+              </h3>
+            </ArrowBullet>
+            <p>{t("guinguette.presentation.text")}</p>
+          </div>
+          <div className="w-6/12">
+            <ArrowBullet dark>
+              <h3 className="font-veteran-typewriter">
+                {t("guinguette.presentation.when")}
+              </h3>
+            </ArrowBullet>
+            <StaticImage
+              src={"../images/dates/29-june.png"}
+              alt={t("")}
+              placeholder="blurred"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="bg-liberty py-12 text-white">
+        <div className="max-w-6xl mx-auto space-y-12">
+          <ArrowBullet dark>
+            <h3 className="font-veteran-typewriter">
+              {t("guinguette.program.title")}
+            </h3>
+          </ArrowBullet>
+          <div className="bg-liberty">
+            <div className="max-w-6xl mx-auto [&>*]:max-w-4xl bg-inherit font-veteran-typewriter">
+              <GuinguetteSchedule />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="max-w-6xl mx-auto py-12 font-veteran-typewriter">
+        <Preparation />
+      </section>
+      <section className="max-w-6xl mx-auto py-12">
+        <section className="max-w-6xl mx-8 lg:mx-auto">
+          <PersonCard person="artists" />
+        </section>
+      </section>
+      <section className="bg-liberty py-12">
+        <div className="max-w-6xl mx-auto">
+          <ArrowBullet dark>
+            <h3 className="font-veteran-typewriter">
+              {t("guinguette.exhibitors.title")}
+            </h3>
+          </ArrowBullet>
+        </div>
+      </section>
+      <section className="bg-liberty py-12">
+        <div className="max-w-6xl mx-auto space-y-12">
+          <ArrowBullet dark>
+            <h3 className="font-veteran-typewriter">
+              {t("guinguette.food.title")}
+            </h3>
+          </ArrowBullet>
+          <div className="flex justify-between">
+            {FOOD_PROVIDERS.map(({ index, name, phone, url, src }) => {
+              const childImageSharp = data.foodProvidersImages.nodes.find(
+                ({ relativePath }) => relativePath === src,
+              )?.childImageSharp;
+
+              const image = childImageSharp
+                ? getImage(childImageSharp)
+                : undefined;
+
+              return (
+                <Food
+                  image={image}
+                  index={index}
+                  name={name}
+                  phone={phone}
+                  url={url}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-liberty py-12">
+        <div className="max-w-6xl mx-auto">
+          <ArrowBullet dark>
+            <h3 className="font-veteran-typewriter">
+              {t("guinguette.drink.title")}
+            </h3>
+          </ArrowBullet>
+        </div>
+      </section>
+      <section className="bg-liberty py-12">
+        <div className="max-w-6xl mx-auto">
+          <ArrowBullet dark>
+            <h3 className="font-veteran-typewriter">{t("commitment.title")}</h3>
+          </ArrowBullet>
+          <Commitment />
+        </div>
+      </section>
     </Layout>
   );
 };
