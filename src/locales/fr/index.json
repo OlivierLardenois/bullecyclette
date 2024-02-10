@@ -174,7 +174,9 @@
   "guinguette": {
     "hero-alt": "",
     "artists": {
-      "title": "Les artistes"
+      "title": "Les artistes",
+      "0": "Musique acoustique",
+      "1": "Jazz et pop manouche"
     },
     "commitments": {
       "title": "Nos engagements"
@@ -183,7 +185,9 @@
       "title": "A boire"
     },
     "exhibitors": {
-      "title": "Les exposants"
+      "title": "Les exposants",
+      "0": "CÉRAMIQUES",
+      "1": "CÉRAMIQUES"
     },
     "food": {
       "title": "A manger",

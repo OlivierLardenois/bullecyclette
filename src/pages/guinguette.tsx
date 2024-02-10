@@ -1,21 +1,20 @@
 import { HeadFC, PageProps, graphql } from "gatsby";
-import { StaticImage, getImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
 import ArrowBullet from "../components/arrowBullet";
 import Commitment from "../components/commitment";
 import CountdownTimer from "../components/countdownTimer";
-import Food, { FOOD_PROVIDERS } from "../components/guinguette/food";
+import Artists from "../components/entityCard/artists";
+import Exhibitors from "../components/entityCard/exhibitors";
+import Food from "../components/entityCard/food";
 import Layout from "../components/layout";
-import PersonCard from "../components/personCard";
 import Preparation from "../components/preparation";
 import { GuinguetteSchedule } from "../components/schedule";
 import { EVENT_DATE } from "../lib/const";
 
-const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
-  data,
-}) => {
+const GuinguettePage: React.FC<PageProps> = () => {
   const { t } = useTranslation();
 
   return (
@@ -76,48 +75,34 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
           <Preparation />
         </div>
       </section>
-      <section className="max-w-6xl mx-auto py-12">
-        <section className="max-w-6xl mx-8 lg:mx-auto">
-          <PersonCard person="artists" />
-        </section>
+      <section className="flex justify-center py-12">
+        <div className="max-w-6xl mx-8 space-y-12 w-full">
+          <ArrowBullet>
+            <h3 className="font-veteran-typewriter">
+              {t("guinguette.artists.title")}
+            </h3>
+          </ArrowBullet>
+          <Artists />
+        </div>
       </section>
-      <section className="bg-liberty py-12">
-        <div className="max-w-6xl mx-auto">
+      <section className="flex justify-center bg-liberty py-12">
+        <div className="max-w-6xl mx-8 space-y-12 w-full">
           <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("guinguette.exhibitors.title")}
             </h3>
           </ArrowBullet>
+          <Exhibitors />
         </div>
       </section>
-      <section className="bg-liberty py-12">
-        <div className="max-w-6xl mx-auto space-y-12">
+      <section className="flex justify-center bg-liberty py-12">
+        <div className="max-w-6xl mx-8 space-y-12 w-full">
           <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("guinguette.food.title")}
             </h3>
           </ArrowBullet>
-          <div className="flex justify-between">
-            {FOOD_PROVIDERS.map(({ index, name, phone, url, src }) => {
-              const childImageSharp = data.foodProvidersImages.nodes.find(
-                ({ relativePath }) => relativePath === src,
-              )?.childImageSharp;
-
-              const image = childImageSharp
-                ? getImage(childImageSharp)
-                : undefined;
-
-              return (
-                <Food
-                  image={image}
-                  index={index}
-                  name={name}
-                  phone={phone}
-                  url={url}
-                />
-              );
-            })}
-          </div>
+          <Food />
         </div>
       </section>
 
@@ -154,18 +139,6 @@ export const query = graphql`
           ns
           data
           language
-        }
-      }
-    }
-    foodProvidersImages: allFile(
-      filter: {
-        relativePath: { in: ["food/en-binome.png", "food/le-trio.png"] }
-      }
-    ) {
-      nodes {
-        relativePath
-        childImageSharp {
-          gatsbyImageData
         }
       }
     }
