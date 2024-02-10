@@ -212,13 +212,13 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
                 </Trans>
               </p>
             </div>
-            <div className="md:col-span-2 md:row-span-1 m-auto">
+            <div className="md:col-span-2 md:row-span-1 m-auto text-liberty">
               <CountdownTimer
                 title={t("countdown-timer.label.day-before-event")}
                 deadline={EVENT_DATE}
               />
             </div>
-            <div className="md:col-span-2 md:row-span-1 m-auto">
+            <div className="md:col-span-2 md:row-span-1 m-auto text-liberty">
               <CountdownTimer
                 title={t("countdown-timer.label.day-before-ticketing")}
                 deadline={SALES_DATE}

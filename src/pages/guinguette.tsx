@@ -5,11 +5,13 @@ import * as React from "react";
 
 import ArrowBullet from "../components/arrowBullet";
 import Commitment from "../components/commitment";
+import CountdownTimer from "../components/countdownTimer";
 import Food, { FOOD_PROVIDERS } from "../components/guinguette/food";
 import Layout from "../components/layout";
 import PersonCard from "../components/personCard";
 import Preparation from "../components/preparation";
 import { GuinguetteSchedule } from "../components/schedule";
+import { EVENT_DATE } from "../lib/const";
 
 const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
   data,
@@ -34,6 +36,12 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
               </h3>
             </ArrowBullet>
             <p>{t("guinguette.presentation.text")}</p>
+            <div className="text-center md:text-start">
+              <CountdownTimer
+                title={t("countdown-timer.label.day-before-event")}
+                deadline={EVENT_DATE}
+              />
+            </div>
           </div>
           <div className="md:w-6/12 space-y-4">
             <ArrowBullet dark>
