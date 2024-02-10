@@ -25,9 +25,9 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
           placeholder="blurred"
         />
       </div>
-      <section className="bg-gradient-to-b from-[#314782] to-liberty py-12 text-white">
-        <div className="flex justify-between max-w-6xl mx-auto font-veteran-typewriter text-justify ">
-          <div className="w-5/12 space-y-4">
+      <section className="flex justify-center bg-gradient-to-b from-[#314782] to-liberty py-12 text-white">
+        <div className="flex flex-col md:flex-row md:justify-between space-y-24 md:space-y-0 mx-8 max-w-7xl text-justify">
+          <div className="md:w-5/12 space-y-4">
             <ArrowBullet dark>
               <h3 className="font-veteran-typewriter">
                 {t("guinguette.presentation.what")}
@@ -35,7 +35,7 @@ const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
             </ArrowBullet>
             <p>{t("guinguette.presentation.text")}</p>
           </div>
-          <div className="w-6/12">
+          <div className="md:w-6/12 space-y-4">
             <ArrowBullet dark>
               <h3 className="font-veteran-typewriter">
                 {t("guinguette.presentation.when")}
