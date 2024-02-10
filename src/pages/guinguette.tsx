@@ -70,38 +70,23 @@ const GuinguettePage: React.FC<PageProps> = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center mx-8 py-12">
-        <div className="max-w-7xl w-full">
+      <section className="flex justify-center py-12">
+        <div className="max-w-7xl mx-8 w-full">
           <Preparation />
         </div>
       </section>
       <section className="flex justify-center py-12">
-        <div className="max-w-6xl mx-8 space-y-12 w-full">
-          <ArrowBullet>
-            <h3 className="font-veteran-typewriter">
-              {t("guinguette.artists.title")}
-            </h3>
-          </ArrowBullet>
+        <div className="max-w-7xl mx-8 w-full">
           <Artists />
         </div>
       </section>
       <section className="flex justify-center bg-liberty py-12">
-        <div className="max-w-6xl mx-8 space-y-12 w-full">
-          <ArrowBullet dark>
-            <h3 className="font-veteran-typewriter">
-              {t("guinguette.exhibitors.title")}
-            </h3>
-          </ArrowBullet>
+        <div className="max-w-7xl mx-8 w-full">
           <Exhibitors />
         </div>
       </section>
       <section className="flex justify-center bg-liberty py-12">
-        <div className="max-w-6xl mx-8 space-y-12 w-full">
-          <ArrowBullet dark>
-            <h3 className="font-veteran-typewriter">
-              {t("guinguette.food.title")}
-            </h3>
-          </ArrowBullet>
+        <div className="max-w-7xl mx-8 w-full">
           <Food />
         </div>
       </section>

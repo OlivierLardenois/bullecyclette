@@ -5,6 +5,7 @@ import * as React from "react";
 
 import EntityCard from ".";
 import { EXHIBITORS } from "../../lib/const";
+import ArrowBullet from "../arrowBullet";
 
 const Exhibitors: React.FC = () => {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ const Exhibitors: React.FC = () => {
       ExhibitorsImages: allFile(
         filter: {
           relativePath: {
-            in: ["Exhibitorss/barboozes.png", "Exhibitorss/jazz-of-france.png"]
+            in: ["exhibitors/barboozes.png", "exhibitors/jazz-of-france.png"]
           }
         }
       ) {
@@ -29,25 +30,30 @@ const Exhibitors: React.FC = () => {
   `);
 
   return (
-    <div className="flex flex-wrap justify-around text-justify gap-12">
-      {EXHIBITORS.map(({ index, name, url, src }) => {
-        const childImageSharp = data.ExhibitorsImages.nodes.find(
-          ({ relativePath }) => relativePath === src,
-        )?.childImageSharp;
-        const image = childImageSharp ? getImage(childImageSharp) : undefined;
-        return (
-          <EntityCard title={name} image={image}>
-            <div className="space-y-4 font-veteran-typewriter grow">
-              <p>{t(`guinguette.exhibitors.${index}`)}</p>
-              <div className="text-white">
-                <a href={url} target="_blank" rel="noopener noreferrer">
-                  {url}
-                </a>
+    <div className="space-y-12">
+      <ArrowBullet dark>
+        <h3 className="font-veteran-typewriter">{t("exhibitors.title")}</h3>
+      </ArrowBullet>
+      <div className="flex flex-wrap justify-around text-justify gap-12">
+        {EXHIBITORS.map(({ index, name, url, src }) => {
+          const childImageSharp = data.ExhibitorsImages.nodes.find(
+            ({ relativePath }) => relativePath === src,
+          )?.childImageSharp;
+          const image = childImageSharp ? getImage(childImageSharp) : undefined;
+          return (
+            <EntityCard title={name} image={image}>
+              <div className="space-y-4 font-veteran-typewriter grow">
+                <p>{t(`guinguette.exhibitors.${index}`)}</p>
+                <div className="text-white">
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    {url}
+                  </a>
+                </div>
               </div>
-            </div>
-          </EntityCard>
-        );
-      })}
+            </EntityCard>
+          );
+        })}
+      </div>
     </div>
   );
 };
