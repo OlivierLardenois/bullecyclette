@@ -20,7 +20,7 @@
 
 @layer base {
   html {
-    @apply bg-eggshell;
+    @apply bg-eggshell text-dark-sienna;
   }
 
   h2 {

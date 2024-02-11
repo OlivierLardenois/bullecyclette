@@ -16,10 +16,10 @@
       "text": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage. À travers les vignes et les villages de la Côte des Blancs, la balade d’environ 20 km est ponctuée de quatre arrêts où seront offert musique swing et champagne. Le but de la balade est de prendre le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro."
     },
     "nav": {
-      "la-balade": { "alt": "Logo", "title": "La balade de la bullecyclette" },
+      "la-balade": { "alt": "Logo", "title": "La balade de la Bullecyclette" },
       "la-guinguette": {
         "alt": "La Guinguette",
-        "title": "La guinguette de la bullecyclette"
+        "title": "La guinguette de la Bullecyclette"
       },
       "infos": { "alt": "29 Juin 2024", "title": "Infos pratiques" }
     }
@@ -39,7 +39,7 @@
     "video": {
       "title": "lsf"
     },
-    "what" : {
+    "what": {
       "title": "c'est quoi ?",
       "description": [
         {
@@ -80,7 +80,7 @@
         "description": "10 rue de la cacaouète \n51190 OGER",
         "url": "www.champagneprout.com",
         "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png" 
+        "image": "winegrowers/champagne.png"
       },
       {
         "name": "Champagne PROUT",
@@ -125,9 +125,9 @@
       {
         "name": "Le bal à Jojo",
         "description": "Orgue de barbarie",
-        "url": "https://www.facebook.com/p/Le-Bal-%C3%A0-J%C3%B6jo-100063597969100/?paipv=0&eav=AfYZu8xDd7G_FrjVCMh1yzSA6hYIIs4IO9CsnpNfpN7WECZGt1ByHOczDhqYVFjXwQU&_rdr",    
+        "url": "https://www.facebook.com/p/Le-Bal-%C3%A0-J%C3%B6jo-100063597969100/?paipv=0&eav=AfYZu8xDd7G_FrjVCMh1yzSA6hYIIs4IO9CsnpNfpN7WECZGt1ByHOczDhqYVFjXwQU&_rdr",
         "shorturl": "Voir sur Facebook",
-        "image": "artists/bal_jojo.jpg" 
+        "image": "artists/bal_jojo.jpg"
       }
     ]
   },

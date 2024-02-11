@@ -123,7 +123,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
                   </Card>
                 </Link>
                 <h3 className="text-center max-w-64">
-                  {t(`homePage.nav.${key}.title`)}
+                  <Link to={href} className="hover:opacity-75">
+                    {t(`homePage.nav.${key}.title`)}
+                  </Link>
                 </h3>
               </div>
             ) : null;
