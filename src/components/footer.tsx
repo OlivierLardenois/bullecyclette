@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="border-t-2 border-black">
+    <footer className="border-t-2 border-dark-sienna">
       <div className="flex flex-col max-w-6xl mx-auto text-center space-y-12">
         <p className="text-cg-red">{t("footer.contact")}</p>
         <div>

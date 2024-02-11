@@ -33,7 +33,7 @@ type ScheduleProps = {
 const Schedule: React.FC<ScheduleProps> = ({ events }) => {
   return (
     <div className="relative flex justify-between bg-inherit">
-      <div className="absolute top-4 left-0 border-t w-full translate-y-1/2 bg-black text border-cg-red " />
+      <div className="absolute top-4 left-0 border-t w-full translate-y-1/2 border-cg-red " />
       {events.map((event) => {
         return <Event {...event} />;
       })}

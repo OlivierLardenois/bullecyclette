@@ -14,7 +14,7 @@ const Commitment: React.FC = () => {
             {t("commitment.steps.0.title")}
           </div>
           <div className="size-auto">
-            <hr className="size-1/5 border-black border-1 mx-auto" />
+            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
           </div>
           <div className="size-auto font-light mx-2">
             {t("commitment.steps.0.description")}
@@ -29,7 +29,7 @@ const Commitment: React.FC = () => {
             {t("commitment.steps.1.title")}
           </div>
           <div className="size-auto">
-            <hr className="size-1/5 border-black border-1 mx-auto" />
+            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
           </div>
           <div className="size-auto font-light mx-2">
             {t("commitment.steps.1.description")}
@@ -44,7 +44,7 @@ const Commitment: React.FC = () => {
             {t("commitment.steps.2.title")}
           </div>
           <div className="size-auto">
-            <hr className="size-1/5 border-black border-1 mx-auto" />
+            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
           </div>
           <div className="size-auto font-light mx-2">
             {t("commitment.steps.2.description")}
@@ -59,7 +59,7 @@ const Commitment: React.FC = () => {
             {t("commitment.steps.3.title")}
           </div>
           <div className="size-auto">
-            <hr className="size-1/5 border-black border-1 mx-auto" />
+            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
           </div>
           <div className="size-auto font-light mx-2">
             {t("commitment.steps.3.description")}
@@ -74,7 +74,7 @@ const Commitment: React.FC = () => {
             {t("commitment.steps.4.title")}
           </div>
           <div className="size-auto">
-            <hr className="size-1/5 border-black border-1 mx-auto" />
+            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
           </div>
           <div className="size-auto font-light mx-2">
             {t("commitment.steps.4.description")}

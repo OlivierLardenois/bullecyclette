@@ -12,9 +12,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        eggshell: "#edebde",
-        liberty: "#3f5da6",
-        "cg-red": "#e54126",
+        eggshell: "#edebdd",
+        liberty: "#3f5da7",
+        "cg-red": "#e54225",
+        "dark-sienna": "#311e14",
       },
     },
   },
