@@ -1,95 +1,64 @@
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, IGatsbyImageData, getImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
+
+type CommitmentCardProps = {
+  title: string;
+  description: string;
+  image: IGatsbyImageData;
+};
+
+const CommitmentCard: React.FC<CommitmentCardProps> = ({
+  description,
+  title,
+  image,
+}) => {
+  return (
+    <div className="relative flex h-60 justify-center items-center font-veteran-typewriter">
+      <GatsbyImage image={image} alt={""} className="absolute inset-0" />
+      <div className="z-10 flex flex-col justify-center bg-white h-1/2 w-3/5 p-4 rounded-lg text-center space-y-3">
+        <div className="leading-none">{title}</div>
+        <div className="size-auto">
+          <hr className="size-2/12 border-black border-1 mx-auto" />
+        </div>
+        <div className="text-xs leading-none">{description}</div>
+      </div>
+    </div>
+  );
+};
 
 const Commitment: React.FC = () => {
   const { t } = useTranslation();
 
+  const data = useStaticQuery<Queries.CommitmentQuery>(graphql`
+    query Commitment {
+      commitmentImages: allFile(
+        filter: { relativeDirectory: { regex: "/commitments/" } }
+      ) {
+        nodes {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(transformOptions: { cropFocus: CENTER })
+          }
+        }
+      }
+    }
+  `);
+
+  const sortedImages = data.commitmentImages.nodes.toSorted((a, b) => {
+    return b.relativePath > a.relativePath ? -1 : 1;
+  });
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <div
-        className={`bg-[url('../images/commitments/commitment_1.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
-      >
-        <div className="grid bg-white h-1/2 w-3/5 rounded-lg m-auto text-center">
-          <div className="size-auto font-medium mx-2">
-            {t("commitment.steps.0.title")}
-          </div>
-          <div className="size-auto">
-            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
-          </div>
-          <div className="size-auto font-light mx-2">
-            {t("commitment.steps.0.description")}
-          </div>
-        </div>
-      </div>
-      <div
-        className={`bg-[url('../images/commitments/commitment_2.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
-      >
-        <div className="grid bg-white h-1/2 w-3/5 rounded-lg m-auto text-center">
-          <div className="size-auto font-medium mx-2">
-            {t("commitment.steps.1.title")}
-          </div>
-          <div className="size-auto">
-            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
-          </div>
-          <div className="size-auto font-light mx-2">
-            {t("commitment.steps.1.description")}
-          </div>
-        </div>
-      </div>
-      <div
-        className={`bg-[url('../images/commitments/commitment_3.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
-      >
-        <div className="grid bg-white h-1/2 w-3/5 rounded-lg m-auto text-center">
-          <div className="size-auto  font-medium mx-2">
-            {t("commitment.steps.2.title")}
-          </div>
-          <div className="size-auto">
-            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
-          </div>
-          <div className="size-auto font-light mx-2">
-            {t("commitment.steps.2.description")}
-          </div>
-        </div>
-      </div>
-      <div
-        className={`bg-[url('../images/commitments/commitment_4.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
-      >
-        <div className="grid bg-white h-1/2 w-3/5 rounded-lg m-auto text-center">
-          <div className="size-auto font-medium mx-2">
-            {t("commitment.steps.3.title")}
-          </div>
-          <div className="size-auto">
-            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
-          </div>
-          <div className="size-auto font-light mx-2">
-            {t("commitment.steps.3.description")}
-          </div>
-        </div>
-      </div>
-      <div
-        className={`bg-[url('../images/commitments/commitment_5.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
-      >
-        <div className="grid bg-white h-1/2 w-3/5 rounded-lg m-auto text-center">
-          <div className="size-auto font-medium mx-2">
-            {t("commitment.steps.4.title")}
-          </div>
-          <div className="size-auto">
-            <hr className="size-1/5 border-dark-sienna border-1 mx-auto" />
-          </div>
-          <div className="size-auto font-light mx-2">
-            {t("commitment.steps.4.description")}
-          </div>
-        </div>
-      </div>
-      <div
-        className={`bg-[url('../images/commitments/commitment_6.jpg')] bg-cover bg-center flex size-full h-60 justify-center`}
-      >
-        <div className="grid bg-white h-1/2 w-3/5 rounded-lg m-auto text-center">
-          <div className="size-auto font-medium mx-2">
-            {t("commitment.steps.5.title")}
-          </div>
-        </div>
-      </div>
+      {sortedImages.map((x, i) => (
+        <CommitmentCard
+          description={t(`commitment.steps.${i}.description`)}
+          image={getImage(x.childImageSharp)!}
+          title={t(`commitment.steps.${i}.title`)}
+        />
+      ))}
     </div>
   );
 };
