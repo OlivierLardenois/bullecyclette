@@ -91,8 +91,8 @@ const GuinguettePage: React.FC<PageProps> = () => {
         </div>
       </section>
 
-      <section className="bg-liberty py-12">
-        <div className="max-w-6xl mx-auto">
+      <section className="flex justify-center bg-liberty py-12">
+        <div className="max-w-7xl mx-8 w-full">
           <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("guinguette.drink.title")}
@@ -100,11 +100,13 @@ const GuinguettePage: React.FC<PageProps> = () => {
           </ArrowBullet>
         </div>
       </section>
-      <section className="bg-liberty py-12">
-        <div className="max-w-6xl mx-auto">
+      <section className="flex flex-wrap justify-center bg-liberty py-12 space-y-12">
+        <div className="max-w-7xl mx-8 w-full">
           <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">{t("commitment.title")}</h3>
           </ArrowBullet>
+        </div>
+        <div className="max-w-7xl w-full">
           <Commitment />
         </div>
       </section>
