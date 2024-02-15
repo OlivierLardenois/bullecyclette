@@ -16,7 +16,9 @@ const CommitmentCard: React.FC<CommitmentCardProps> = ({
 }) => {
   return (
     <div className="relative flex h-60 justify-center items-center font-veteran-typewriter">
-      <GatsbyImage image={image} alt={""} className="absolute inset-0" />
+      <div className="absolute inset-0">
+        <GatsbyImage image={image} alt={""} className="size-full" />
+      </div>
       <div className="z-10 flex flex-col justify-center bg-white h-1/2 w-3/5 p-4 rounded-lg text-center space-y-3">
         <div className="leading-none">{title}</div>
         <div className="size-auto">

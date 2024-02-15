@@ -68,11 +68,11 @@ const HamburgerMenu = ({ isMenuOpen, setIsMenuOpen }: HamburgerMenuProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex md:hidden z-10 items-center">
+    <div className="flex md:hidden z-50 items-center">
       <div
         className={`${
           isMenuOpen ? "fixed right-4 top-[3.4rem]" : ""
-        } z-10 space-y-2 cursor-pointer`}
+        } z-50 space-y-2 cursor-pointer`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <span
