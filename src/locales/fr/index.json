@@ -171,6 +171,42 @@
       }
     ]
   },
+  "exhibitors": {
+    "title": "Les exposants"
+  },
+  "food": {
+    "title": "A manger"
+  },
+  "guinguette": {
+    "hero-alt": "",
+    "artists": {
+      "0": "Musique acoustique",
+      "1": "Jazz et pop manouche"
+    },
+    "commitments": {
+      "title": "Nos engagements"
+    },
+    "drink": {
+      "title": "A boire"
+    },
+    "exhibitors": {
+      "0": "CÉRAMIQUES",
+      "1": "CÉRAMIQUES"
+    },
+    "food": {
+      "0": "Nous avons créé le food truck \"En Binôme\" en 2021 et le service traiteur en 2023. Nous proposons une carte de saison à partir de produits frais et locaux (ou Français) et une cuisine fait-maison. Nous sommes spécialisés dans les événements privés et publics, pour les professionnels ou les particuliers. Notre food truck et notre accueil reflètent nos valeurs de partage, de convivialité et d'authenticité, tout en étant en adéquation avec notre temps",
+      "1": "Nous avons créé le food truck \"En Binôme\" en 2021 et le service traiteur en 2023. Nous proposons une carte de saison à partir de produits frais et locaux (ou Français) et une cuisine fait-maison. Nous sommes spécialisés dans les événements privés et publics, pour les professionnels ou les particuliers. Notre food truck et notre accueil reflètent nos valeurs de partage, de convivialité et d'authenticité, tout en étant en adéquation avec notre temps",
+      "2": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
+    },
+    "presentation": {
+      "what": "C'est quoi ?",
+      "when": "Quand ?",
+      "text": "La Guinguette de la Bullecyclette est une soirée festive rétro au gymnase Cattani, à Avize le 29 Juin 2024 (ouverture à 15h). Ouverte à tous, vous y retrouverez de nombreuxartisants locaux, des friperies, vendeur de vélo...mais aussi des food trucks et une buvette. Deux concerts gratuits animeront également la soirée"
+    },
+    "program": {
+      "title": "Programme"
+    }
+  },
   "footer": {
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
     "mail": "Adresse e-mail",

@@ -1,6 +1,6 @@
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type CountdownTimerProps = {
   title: string;
@@ -32,30 +32,26 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ title, deadline }) => {
 
   const timerDisplay = (time: number, label: string) => {
     return (
-      <div className="bg-white border-2 border-blue-800 rounded-full px-2 py-2 min-w-[80px]">
-        <div id={label} className="font-bold text-xl text-blue-800">
+      <div className="border-2 border-liberty rounded-full p-2 min-w-[80px] text-liberty text-center">
+        <div id={label} className="font-bold text-xl">
           {time}
         </div>
-        <div className="text-xs uppercase text-blue-800">
-          {t(`countdown-timer.${label}`)}
-        </div>
+        <p className="text-xs uppercase">{t(`countdown-timer.${label}`)}</p>
       </div>
     );
   };
 
   return (
-    <section className="timer">
-      <div className="max-w-lg mx-auto px-6 flex flex-col m-2">
-        <p className="text-blue-800 text-sm lg:text-sm mb-1">{title}</p>
+    <div className="inline-block">
+      <p className="text-sm mb-2">{title}</p>
 
-        <div className="flex flex-wrap items-center justify-center text-center gap-4 p-2 bg-white rounded-xl">
-          <div>{timerDisplay(days, "days")}</div>
-          <div>{timerDisplay(hours, "hours")}</div>
-          <div>{timerDisplay(minutes, "minutes")}</div>
-          <div>{timerDisplay(seconds, "seconds")}</div>
-        </div>
+      <div className="inline-flex flex-wrap justify-center gap-4 p-4 bg-white rounded-xl">
+        <div>{timerDisplay(days, "days")}</div>
+        <div>{timerDisplay(hours, "hours")}</div>
+        <div>{timerDisplay(minutes, "minutes")}</div>
+        <div>{timerDisplay(seconds, "seconds")}</div>
       </div>
-    </section>
+    </div>
   );
 };
 

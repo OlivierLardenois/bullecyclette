@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -9,6 +11,7 @@ module.exports = {
       retroking: ["Retroking", "sans-serif"],
       "the-rughton-script": ["The Rughton Script", "sans-serif"],
       "veteran-typewriter": ["Veteran Typewriter", "sans-serif"],
+      sans: [...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {
