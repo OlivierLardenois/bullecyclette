@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             </a>
 
             <a
-              href={`mailto:labullecyclette@gmail.com`}
+              href={`mailto:${MAIL}`}
               className="hover:text-liberty"
               aria-label="La Bullecyclette mail"
             >
