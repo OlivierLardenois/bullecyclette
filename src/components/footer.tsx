@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           </nav>
         </div>
         <div className="flex flex-wrap gap-10 justify-center py-4 px-16 whitespace-pre-line bg-white text-cg-red rounded-3xl">
-          <p className="min-w-50 text-center">
+          <p className="min-w-52 text-center">
             <span className="underline uppercase">{`${t("footer.mail")}\n`}</span>
             {MAIL}
           </p>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             <span className="underline uppercase">{`${t("footer.address")}\n`}</span>
             {ADDRESS}
           </p>
-          <p className="min-w-50 text-center">
+          <p className="min-w-52 text-center">
             <span className="underline uppercase">{`${t("footer.phone")}\n`}</span>
             {PHONE}
           </p>
