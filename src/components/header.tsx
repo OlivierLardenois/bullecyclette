@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             height={100}
           />
         </Link>
-        <div className="hidden md:flex md:flex-col md:justify-between">
+        <div className="hidden md:flex md:flex-col md:justify-between md:items-end">
           <LanguageSwitcher />
           <HeadersLinks />
         </div>
@@ -34,14 +34,18 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   );
 };
 
-const Pages = [{ key: "homePage.title", to: "/" }];
+const Pages = [
+  { key: "homePage.title", to: "/" },
+  { key: "balade.title", to: "/balade" },
+  { key: "guinguette.title", to: "/guinguette" },
+];
 
 const HeadersLinks = () => {
   const { t } = useTranslation();
 
   return (
     <nav>
-      <ul>
+      <ul className="flex space-x-8">
         {Pages.map((page) => (
           <li
             key={page.key}

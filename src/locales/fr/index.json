@@ -35,7 +35,7 @@
     "seconds": "secondes"
   },
   "balade": {
-    "title": "Balade",
+    "title": "La Balade",
     "video": {
       "title": "lsf"
     },
@@ -178,6 +178,7 @@
     "title": "A manger"
   },
   "guinguette": {
+    "title": "La Guinguette",
     "hero-alt": "",
     "artists": {
       "0": "Musique acoustique",
