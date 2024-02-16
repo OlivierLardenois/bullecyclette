@@ -153,6 +153,70 @@
         "alt": ""
       }
     ]
+  },
+  "information": {
+    "details": {
+      "title": "useful information",
+      "text": {
+        "0": {
+          "title": "<0>Some recommendations to ensure that your bike ride goes as smoothly as possible : </0>",
+          "list": [
+            "Take a bottle of water.",
+            "Bring something to repair your bike: patch, inner tube, pump... will surely be useful to you",
+            "Adapt your outfit according to the weather conditions (wear a hat, put on sunscreen or bring rain gear) while always being in the retro theme of the 1950s of course!",
+            "Bring your identity card to collect your bag before the ride.",
+            "If you come in a group: consult each other to be able to register for the same departure time slot. If this is no longer possible, you can still find yourself at the first stop.",
+            "We estimate your return around 5 p.m.",
+            "Dogs are not allowed on the bike ride.",
+            "Minors must be accompanied by an adult.",
+            "Whatever the weather conditions, the Buiscyclette as well as the Guingette de la Bullecyclette will take place, unless there is a prefectural order."
+          ]
+        },
+        "1": {
+          "title": "<0>Purchase and reservation : </0><br/>",
+          "description": "The purchase of the ticket to participate in the bike ride is done exclusively on the website of the Epernay Tourist Office (also accessible from our website tab <1>Tickets</1>) from March 1 to 31 May 2024. <br/>All reservations are final (no refund). Payment for reservations is made by credit card only. You will receive by email a receipt summarizing your choice (departure time – number of adult and child reservations, and total payment amount).<br/>Places are limited to 500 participants (adults and children combined). They will be taken into account in order of arrival of registration forms. The organizer reserves the right to close registrations at any time as soon as the participation objective is reached. No registrations will be taken by telephone or email."
+        },
+        "2": {
+          "text": "<0>Departure : </0><br/>Reception and departure will be at Château Desbordes in Avize (5 bis rue rempart du midi, 51190 Avize). Arriving at the castle is recommended approximately 1 hour before departure, or 1.5 hours if you rent a bike. Each participant must collect at Château Desbordes, upon presentation of their identity card, a bag in which they will find “the Gazette de la Bullecyclette” (a travel diary to be presented at each break). In the bag he will also find an engraved glass (or reusable cup for children)."
+        },
+        "3": {
+          "text": "<0>Walk:</0><br/>A single visit to each of the 4 tasting stands is authorized, and must only be done upon presentation of your \"Gazette\"."
+        },
+        "4": {
+          "text": "<0>Insurance and responsibilities: </0><br/>The association is insured for civil liability. It declines all responsibility in the event of theft, illness, default of a participant, accident or loss during the event. Registration constitutes a declaration of good health and ability to participate in the walk and taste the food products offered. Minors are under the responsibility of a responsible adult."
+        },
+        "5": {
+          "text": "<0>Ethics and safety: </0><br/>Participants must respect the premises, follow the markings and the route, and comply with the rules of the highway code relating to the circulation of cyclists. It is strictly forbidden to throw waste anywhere other than in the sorting bins provided for this purpose. Smoking is strictly prohibited outside designated areas."
+        },
+        "6": {
+          "title": "<0>Information concerning the Guinguette de la Bullecyclette : </0>",
+          "list": [
+            "Entrance is free and free for all.",
+            "Dogs are allowed but must be kept on a leash."
+          ]
+        },
+        "7": {
+          "text": "<0>Alcohol (ride + Guinguette): </0><br/>Reminder: Alcohol abuse is dangerous for your health.<br/>Be sure to control your consumption before getting behind the wheel. Consider carpooling. No alcohol will be distributed to minors, even if accompanied. The organization declines all responsibility in the event of an incident and reserves the right to refuse service to a participant who is clearly intoxicated."
+        }
+      },
+      "faq": "Find the answers to the most asked questions on the FAQ in permanent story on our Instagram.<br/>However, if you have not found an answer to your question, you can contact our team using the contact form or contact us on Instagram or Facebook."
+    },
+    "access": {
+      "title": "access",
+      "text": "The 1st edition of the Bullecyclette takes place in Avize, the departure takes place from the Château Desbordes at 5 rempart du midi on June 29, 2024.<br/>La Guinguette takes place on rue des Accacias, in the parking lot of the Cattani gymnasium."
+    },
+    "parking": {
+      "title": "parking",
+      "text": "Several parking lots are available for parking during the day. We then advise you to join the starting line on your bike !"
+    },
+    "bike": {
+      "title": "find a bike"
+    },
+    "clothes": {
+      "title": "find an outfit"
+    },
+    "accommodation": {
+      "title": "to find accommodation"
+    }
   }
-
 }
