@@ -1,4 +1,4 @@
-import { graphql, Link, type HeadFC, type PageProps } from "gatsby";
+import { Link, graphql, type PageProps } from "gatsby";
 import { Trans, useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
@@ -9,6 +9,7 @@ import Layout from "../components/layout";
 
 const InformationPage: React.FC<PageProps<Queries.InformationPageQuery>> = ({
   data,
+  location,
 }) => {
   const { t } = useTranslation();
   const { language } = useI18next();
@@ -21,7 +22,7 @@ const InformationPage: React.FC<PageProps<Queries.InformationPageQuery>> = ({
     : null;
 
   return (
-    <Layout>
+    <Layout pageKey="information" pathname={location.pathname}>
       <div className="space-y-24">
         <section className="max-w-6xl lg:mx-auto">
           <div className="grid md:grid-flow-row-dense md:grid-cols-2 md:grid-rows-3">
@@ -203,8 +204,6 @@ const InformationPage: React.FC<PageProps<Queries.InformationPageQuery>> = ({
 };
 
 export default InformationPage;
-
-export const Head: HeadFC = () => <title>Home Page</title>;
 
 export const query = graphql`
   query InformationPage($language: String!) {

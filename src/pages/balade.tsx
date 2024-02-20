@@ -1,23 +1,26 @@
-import { graphql, Link, type HeadFC, type PageProps } from "gatsby";
+import { Link, graphql, type PageProps } from "gatsby";
 import { Trans, useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 import CountdownTimer from "../components/countdownTimer";
 
-import Layout from "../components/layout";
-import { EVENT_DATE, SALES_DATE } from "../lib/const";
-import ArrowBullet from "../components/arrowBullet";
 import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";
-import Video from "../components/video";
+import ArrowBullet from "../components/arrowBullet";
+import Card from "../components/card";
 import Commitment from "../components/commitment";
+import Layout from "../components/layout";
 import PersonCard from "../components/personCard";
 import Preparation from "../components/preparation";
-import Card from "../components/card";
 import {
   BullecycletteSchedule,
   GuinguetteSmallSchedule,
 } from "../components/schedule";
+import Video from "../components/video";
+import { EVENT_DATE, SALES_DATE } from "../lib/const";
 
-const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
+const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
+  data,
+  location,
+}) => {
   const { t } = useTranslation();
   const { language } = useI18next();
 
@@ -50,7 +53,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
     : null;
 
   return (
-    <Layout>
+    <Layout pageKey="balade" pathname={location.pathname}>
       <div className="space-y-24">
         <section className="max-w-6xl lg:mx-auto">
           <div className="grid md:grid-flow-row-dense md:grid-cols-3 ">
@@ -262,8 +265,6 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({ data }) => {
 };
 
 export default BaladePage;
-
-export const Head: HeadFC = () => <title>Home Page</title>;
 
 export const query = graphql`
   query BaladePage($language: String!) {

@@ -6,6 +6,10 @@
     "logo": "Logode La Bullecyclette "
   },
   "homePage": {
+    "seo": {
+      "title": "La Bullecyclette | Accueil",
+      "description": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage"
+    },
     "title": "Accueil",
     "partners": "Nos partenaires :",
     "placesAvailable": "Uniquement 500 places disponibles",
@@ -35,6 +39,10 @@
     "seconds": "secondes"
   },
   "balade": {
+    "seo": {
+      "title": "La Bullecyclette | La Balade",
+      "description": "Découvrer les étapes du trajet de la Bullecyclette"
+    },
     "title": "La Balade",
     "video": {
       "title": "lsf"
@@ -178,6 +186,10 @@
     "title": "A manger"
   },
   "guinguette": {
+    "seo": {
+      "title": "La Bullecyclette | La Guinguette",
+      "description": "Découvrer la guingette de la Bullecyclette et ses exposants"
+    },
     "title": "La Guinguette",
     "hero-alt": "",
     "artists": {
@@ -292,6 +304,10 @@
   },
   "information": {
     "details": {
+      "seo": {
+        "title": "La Bullecyclette | Informations Pratiques",
+        "description": "Trouver les réponse à vos questions concernant la Bullecyclette"
+      },
       "title": "informations pratiques",
       "text": {
         "0": {
