@@ -20,7 +20,7 @@ const LanguageSwitcher: React.FC = () => {
           height={32}
         />
       </Link>
-      <Link to={originalPath} language="en" className={classname}>
+      {/* <Link to={originalPath} language="en" className={classname}>
         <StaticImage
           src={`../images/en-flag.png`}
           alt={t("common.en-flag-alt")}
@@ -29,7 +29,7 @@ const LanguageSwitcher: React.FC = () => {
           width={32}
           height={32}
         />
-      </Link>
+      </Link> */}
     </div>
   );
 };

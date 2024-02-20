@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       colors: {
         eggshell: "#edebdd",
-        liberty: "#3f5da7",
+        liberty: "#e54225",
         "cg-red": "#e54225",
         "dark-sienna": "#311e14",
       },
