@@ -1,4 +1,4 @@
-import { HeadFC, PageProps, graphql } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
@@ -14,11 +14,11 @@ import Preparation from "../components/preparation";
 import { GuinguetteSchedule } from "../components/schedule";
 import { EVENT_DATE } from "../lib/const";
 
-const GuinguettePage: React.FC<PageProps> = () => {
+const GuinguettePage: React.FC<PageProps> = ({ location }) => {
   const { t } = useTranslation();
 
   return (
-    <Layout>
+    <Layout pageKey="guinguette" pathname={location.pathname}>
       <div>
         <StaticImage
           src={`../images/guinguette-hero.jpg`}
@@ -115,8 +115,6 @@ const GuinguettePage: React.FC<PageProps> = () => {
 };
 
 export default GuinguettePage;
-
-export const Head: HeadFC = () => <title>Home Page</title>;
 
 export const query = graphql`
   query GuinguettePage($language: String!) {

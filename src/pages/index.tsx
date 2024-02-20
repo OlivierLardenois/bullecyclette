@@ -1,4 +1,4 @@
-import { graphql, type HeadFC, type PageProps } from "gatsby";
+import { graphql, type PageProps } from "gatsby";
 import {
   GatsbyImage,
   getImage,
@@ -31,7 +31,10 @@ const NAV_PAGES = [
   },
 ];
 
-const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
+const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
+  data,
+  location,
+}) => {
   const { t } = useTranslation();
 
   const carouselCards = data.carouselImages.nodes.reduce<
@@ -57,7 +60,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
   }, []);
 
   return (
-    <Layout>
+    <Layout pageKey="homePage" pathname={location.pathname}>
       <div className="space-y-24">
         <StaticImage
           src={`../images/index/hero.jpeg`}
@@ -178,8 +181,6 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
 };
 
 export default IndexPage;
-
-export const Head: HeadFC = () => <title>Home Page</title>;
 
 export const query = graphql`
   query IndexPage($language: String!) {

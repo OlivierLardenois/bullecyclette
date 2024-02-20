@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Bullecyclette`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://labullecyclette.com/`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -21,7 +21,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         // localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`fr`, `en`],
+        languages: [`fr`],
         defaultLanguage: `fr`,
         siteUrl: `https://example.com`,
         // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
@@ -33,7 +33,7 @@ const config: GatsbyConfig = {
           },
           nsSeparator: false,
           transSupportBasicHtmlNodes: true, // allow <br/> and simple html elements in translations
-          transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'], // don't convert to <1></1> if simple react elements
+          transKeepBasicHtmlNodesFor: ["br", "strong", "i"], // don't convert to <1></1> if simple react elements
         },
       },
     },
@@ -49,7 +49,15 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        name: "La Bullecycette",
+        short_name: "Bullecycette",
+        start_url: "/",
+        background_color: "#3f5da7",
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "src/images/logo.png",
       },
     },
     "gatsby-plugin-sharp",
