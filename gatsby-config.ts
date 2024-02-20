@@ -52,7 +52,7 @@ const config: GatsbyConfig = {
         name: "La Bullecycette",
         short_name: "Bullecycette",
         start_url: "/",
-        background_color: "#e54225",
+        background_color: "#3f5da7",
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: "#663399",
