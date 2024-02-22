@@ -190,47 +190,42 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="max-w-6xl mx-8 lg:mx-auto">
-        <div className="grid md:grid-rows-2 md:grid-flow-col">
-          <div className="row-span-4 font-veteran-typewriter">
-            <ArrowBullet>
-              <h3>{t("balade.ticket.title")}</h3>
-            </ArrowBullet>
-            <p className="text-justify">
-              <Trans i18nKey="balade.ticket.description">
-                text <u>Si vous venez en groupe :</u> text
-                <p className="text-white bg-red-600 inline-block">
-                  INFORMATIONS :
-                </p>
-                text
-                <Link
-                  to="/"
-                  className="text-blue-800 underline decoration-blue-800"
-                >
-                  içi
-                </Link>
-              </Trans>
-            </p>
-          </div>
-          <div className="md:col-span-2 md:row-span-1 m-auto text-liberty">
+      <section className="flex justify-center flex-wrap py-12 space-y-12">
+        <div className="max-w-6xl mx-8 w-full">
+          <ArrowBullet>
+            <h3>{t("balade.ticket.title")}</h3>
+          </ArrowBullet>
+        </div>
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-8 w-full space-y-8">
+          <p className="text-justify md:w-1/2 font-veteran-typewriter">
+            <Trans i18nKey="balade.ticket.description">
+              text <u>Si vous venez en groupe :</u> text
+              <p className="text-white bg-red-600 inline-block">
+                INFORMATIONS :
+              </p>
+              text
+              <Link
+                to="/"
+                className="text-blue-800 underline decoration-blue-800"
+              >
+                içi
+              </Link>
+            </Trans>
+          </p>
+          <div className="flex flex-col space-y-12 items-center md:w-1/2">
             <CountdownTimer
               title={t("countdown-timer.label.day-before-event")}
               deadline={EVENT_DATE}
             />
-          </div>
-          <div className="md:col-span-2 md:row-span-1 m-auto text-liberty">
             <CountdownTimer
               title={t("countdown-timer.label.day-before-ticketing")}
               deadline={SALES_DATE}
             />
-          </div>
-          <div className="md:col-span-2 md:row-span-2 m-auto justify-center">
             <StaticImage
-              src="../images/ticket.png"
+              src="../images/common/ticket.png"
               alt="ticket"
               placeholder="blurred"
-              width={500}
-              height={300}
+              className="max-w-sm"
             />
           </div>
         </div>
