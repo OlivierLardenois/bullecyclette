@@ -172,16 +172,22 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="max-w-6xl mx-8 lg:mx-auto">
-        <Preparation />
+      <section className="flex justify-center py-12">
+        <div className="max-w-6xl mx-8 w-full">
+          <Preparation />
+        </div>
       </section>
 
-      <section className="max-w-6xl mx-8 lg:mx-auto">
-        <PersonCard person="winegrowers"></PersonCard>
+      <section className="flex justify-center py-12">
+        <div className="max-w-6xl mx-8 w-full">
+          <PersonCard person="winegrowers" />
+        </div>
       </section>
 
-      <section className="max-w-6xl mx-8 lg:mx-auto">
-        <PersonCard person="artists"></PersonCard>
+      <section className="flex justify-center py-12">
+        <div className="max-w-6xl mx-8 w-full">
+          <PersonCard person="artists" />
+        </div>
       </section>
 
       <section className="max-w-6xl mx-8 lg:mx-auto">
