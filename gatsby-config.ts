@@ -38,12 +38,6 @@ const config: GatsbyConfig = {
       },
     },
     "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-plugin-google-gtag",
-      options: {
-        trackingIds: ["test"],
-      },
-    },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {

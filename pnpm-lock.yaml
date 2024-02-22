@@ -26,9 +26,6 @@ dependencies:
   gatsby:
     specifier: ^5.13.1
     version: 5.13.2(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-  gatsby-plugin-google-gtag:
-    specifier: ^5.13.0
-    version: 5.13.1(gatsby@5.13.2)(react-dom@18.2.0)(react@18.2.0)
   gatsby-plugin-image:
     specifier: ^3.13.0
     version: 3.13.1(@babel/core@7.23.7)(gatsby-plugin-sharp@5.13.1)(gatsby-source-filesystem@5.13.1)(gatsby@5.13.2)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -6051,21 +6048,6 @@ packages:
       '@parcel/runtime-js': 2.8.3(@parcel/core@2.8.3)
       '@parcel/transformer-js': 2.8.3(@parcel/core@2.8.3)
       '@parcel/transformer-json': 2.8.3(@parcel/core@2.8.3)
-
-  /gatsby-plugin-google-gtag@5.13.1(gatsby@5.13.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-aaJKIDwUWwhooJnalse1uvcusBmCwCVK33pp1IrDU02E7IohMen3eR5TsjLbfKO7Z+SbfKJEqUoi/r0ozrJarA==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      gatsby: ^5.0.0-next
-      react: ^18.0.0 || ^0.0.0
-      react-dom: ^18.0.0 || ^0.0.0
-    dependencies:
-      '@babel/runtime': 7.23.8
-      gatsby: 5.13.2(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-      minimatch: 3.1.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
 
   /gatsby-plugin-image@3.13.1(@babel/core@7.23.7)(gatsby-plugin-sharp@5.13.1)(gatsby-source-filesystem@5.13.1)(gatsby@5.13.2)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-v5jGXxjr//iLk7LzpW6RW/9H4KNVezxee2Sgy9mxvdvekTuFQLYoQmtk2jOZINMZMP3Vm+Rl3MqWWVMfhHuWFw==}
