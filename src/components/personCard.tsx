@@ -104,7 +104,6 @@ function customPersonCard(
       <></>
     );
   } else {
-    console.log(imageName);
     const personImageFilter = data[`${person}Images`].nodes.find(
       (node) => node.relativePath == `${imageName}`,
     );

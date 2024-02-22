@@ -128,7 +128,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
           </div>
         </section>
 
-        <section className="bg-blue-800 !mt-12 py-12">
+        <section className="bg-liberty !mt-12 py-12">
           <div className="flex flex-col max-w-6xl mx-8 md:mx-auto space-y-12 bg-inherit">
             <ArrowBullet>
               <h3 className="font-veteran-typewriter">
@@ -239,11 +239,17 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
           </div>
         </section>
 
-        <section className="max-w-6xl mx-8 lg:mx-auto">
-          <ArrowBullet>
-            <h3 className="font-veteran-typewriter">{t("commitment.title")}</h3>
-          </ArrowBullet>
-          <Commitment />
+        <section className="flex flex-wrap justify-center py-12 space-y-12">
+          <div className="max-w-6xl mx-8 w-full">
+            <ArrowBullet>
+              <h3 className="font-veteran-typewriter">
+                {t("commitment.title")}
+              </h3>
+            </ArrowBullet>
+          </div>
+          <div className="max-w-7xl w-full">
+            <Commitment />
+          </div>
         </section>
 
         <section className="max-w-6xl mx-8 lg:mx-auto">
