@@ -12,6 +12,7 @@ import Button from "../components/button";
 import Card from "../components/card";
 import Carousel from "../components/carousel";
 import Layout from "../components/layout";
+import Video from "../components/video";
 
 const NAV_PAGES = [
   {
@@ -99,13 +100,10 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
           </div>
         </section>
         <section className="mx-auto max-w-7xl">
-          <iframe
-            className="w-full aspect-video"
-            src="https://www.youtube.com/embed/gU_hqPdNylk?si=D19aq113rJI9o4h0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;"
-          ></iframe>
+          <Video
+            videoSrcURL="https://www.youtube.com/embed/gU_hqPdNylk?si=D19aq113rJI9o4h0"
+            videoTitle="La Bullecyclette"
+          />
         </section>
         <section className="flex flex-wrap justify-center gap-x-20 gap-y-10 lg:justify-between max-w-6xl mx-auto">
           {NAV_PAGES.map(({ href, imgPath, key }) => {

@@ -104,7 +104,6 @@ function customPersonCard(
       <></>
     );
   } else {
-    console.log(imageName);
     const personImageFilter = data[`${person}Images`].nodes.find(
       (node) => node.relativePath == `${imageName}`,
     );
@@ -120,12 +119,10 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
   const { t } = useTranslation();
 
   return (
-    <div>
-      <div>
-        <ArrowBullet>
-          <h3 className="font-veteran-typewriter">{t(person + ".title")}</h3>
-        </ArrowBullet>
-      </div>
+    <div className="space-y-8">
+      <ArrowBullet>
+        <h3 className="font-veteran-typewriter">{t(person + ".title")}</h3>
+      </ArrowBullet>
       {customPersonCard(person, true)}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
