@@ -196,7 +196,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
             <h3>{t("balade.ticket.title")}</h3>
           </ArrowBullet>
         </div>
-        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-8 w-full space-y-8">
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-8 w-full space-y-8 gap-x-8">
           <p className="text-justify md:w-1/2 font-veteran-typewriter">
             <Trans i18nKey="balade.ticket.description">
               text <u>Si vous venez en groupe :</u> text
@@ -237,21 +237,25 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
             <h3 className="font-veteran-typewriter">{t("commitment.title")}</h3>
           </ArrowBullet>
         </div>
-        <div className="max-w-7xl w-full">
+        <div className="max-w-6xl w-full">
           <Commitment />
         </div>
       </section>
 
-      <section className="max-w-6xl mx-8 lg:mx-auto">
-        <ArrowBullet>
-          <h3 className="font-veteran-typewriter">{t("balade.video.title")}</h3>
-        </ArrowBullet>
-        <Video
-          videoSrcURL="https://www.youtube.com/embed/gU_hqPdNylk?si=sa61AmrNZUG0nxlI"
-          videoTitle="LSF"
-          height="500"
-          width="80%"
-        />
+      <section className="flex flex-wrap justify-center py-12 space-y-12">
+        <div className="max-w-6xl mx-8 w-full">
+          <ArrowBullet>
+            <h3 className="font-veteran-typewriter">
+              {t("balade.video.title")}
+            </h3>
+          </ArrowBullet>
+        </div>
+        <div className="max-w-6xl w-full">
+          <Video
+            videoSrcURL="https://www.youtube.com/embed/gU_hqPdNylk?si=sa61AmrNZUG0nxlI"
+            videoTitle="LSF"
+          />
+        </div>
       </section>
     </Layout>
   );
