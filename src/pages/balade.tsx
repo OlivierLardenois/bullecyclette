@@ -178,11 +178,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="flex justify-center py-12">
+      {/* <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
           <PersonCard person="winegrowers" />
         </div>
-      </section>
+      </section> */}
 
       <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
