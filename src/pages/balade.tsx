@@ -261,9 +261,9 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
             </h3>
           </ArrowBullet>
         </div>
-        <div className="max-w-6xl w-full">
+        <div className="max-w-6xl w-full h-[560px]">
           <Video
-            videoSrcURL="https://www.youtube.com/embed/gU_hqPdNylk?si=sa61AmrNZUG0nxlI"
+            videoSrcURL="https://youtube.com/embed/rE2050vc4Po?si=xPLu9W7dn7e4Cblk"
             videoTitle="LSF"
           />
         </div>
