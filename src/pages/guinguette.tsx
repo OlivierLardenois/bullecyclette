@@ -21,12 +21,12 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
     <Layout pageKey="guinguette" pathname={location.pathname}>
       <div>
         <StaticImage
-          src={`../images/guinguette-hero.jpg`}
+          src={`../images/guinguette-hero.png`}
           alt={t(`guinguette.hero-alt`)}
           placeholder="blurred"
         />
       </div>
-      <section className="flex justify-center bg-gradient-to-b from-[#314782] to-liberty py-12 text-white">
+      <section className="flex justify-center bg-liberty py-12 text-white">
         <div className="flex flex-col md:flex-row md:justify-between space-y-24 md:space-y-0 mx-8 max-w-7xl text-justify">
           <div className="md:w-5/12 space-y-4">
             <ArrowBullet dark>
