@@ -10,7 +10,7 @@ import Artists from "../components/entityCard/artists";
 import Exhibitors from "../components/entityCard/exhibitors";
 import Food from "../components/entityCard/food";
 import Layout from "../components/layout";
-import Preparation from "../components/preparation";
+import { GuinguettePreparation } from "../components/preparation";
 import { GuinguetteSchedule } from "../components/schedule";
 import { EVENT_DATE } from "../lib/const";
 
@@ -72,7 +72,7 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
       </section>
       <section className="flex justify-center py-12">
         <div className="max-w-7xl mx-8 w-full">
-          <Preparation />
+          <GuinguettePreparation />
         </div>
       </section>
       <section className="flex justify-center py-12">

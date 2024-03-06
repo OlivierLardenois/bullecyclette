@@ -9,7 +9,7 @@ import Card from "../components/card";
 import Commitment from "../components/commitment";
 import Layout from "../components/layout";
 import PersonCard from "../components/personCard";
-import Preparation from "../components/preparation";
+import { BaladePreparation } from "../components/preparation";
 import {
   BullecycletteSchedule,
   GuinguetteSmallSchedule,
@@ -174,7 +174,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
 
       <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
-          <Preparation />
+          <BaladePreparation />
         </div>
       </section>
 
