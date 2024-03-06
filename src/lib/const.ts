@@ -14,14 +14,6 @@ export const FOOD_PROVIDERS: {
 }[] = [
   {
     index: 0,
-    name: "En Binôme",
-    url: "https://www.enbinome.fr/",
-    phone: "06 65 42 48 28",
-    src: "food/en-binome.png",
-  },
-  { index: 1, name: "Le Gooood Truck", url: "https://www.lesbarboozes.com/" },
-  {
-    index: 2,
     name: "Le Trio",
     url: "https://www.facebook.com/boulangeriesletrio",
     phone: "03 26 49 86 31",
@@ -37,15 +29,9 @@ export const ARTISTS: {
 }[] = [
   {
     index: 0,
-    name: "Les Barboozes",
-    url: "https://www.lesbarboozes.com/",
-    src: "artists/barboozes.png",
-  },
-  {
-    index: 1,
-    name: "Jazz of France",
-    url: "https://www.lesbarboozes.com/",
-    src: "artists/jazz-of-france.png",
+    name: "Spireight Sound System",
+    url: "www.facebook.com/pro-file.php?id=100070473072318",
+    src: "artists/spireight-sound-system.jpg",
   },
 ];
 
@@ -59,15 +45,41 @@ export const EXHIBITORS: {
   {
     index: 0,
     name: "Inès Waris",
-    url: "www.labullecyclette.com",
-    phone: "03 26 49 86 31",
-    src: "artists/barboozes.png",
+    url: "https://www.instagram.com/atelierspiernes/",
   },
   {
     index: 1,
-    name: "Inès Waris",
-    url: "www.labullecyclette.com",
-    phone: "03 26 49 86 31",
-    src: "artists/barboozes.png",
+    name: "Comme Par Nature",
+    url: "www.commeparnature.fr",
+  },
+  {
+    index: 2,
+    name: "Only Yours",
+    url: "https://www.etsy.com/shop/onlyyoursmaro/?ets-rc=sdt",
+  },
+  {
+    index: 3,
+    name: "Cycles Billy Vintage",
+    url: "https://www.instagram.com/cycles.billy.vintage//",
+  },
+  {
+    index: 4,
+    name: "MARSAULT",
+    url: "www.marsaultreims.fr",
+  },
+  {
+    index: 5,
+    name: "Maison Gamet",
+    url: "www.champagne-gamet.com",
+  },
+  {
+    index: 6,
+    name: "Cour Rhéoum",
+    url: "www.cour-rheoum.com",
+  },
+  {
+    index: 7,
+    name: "Allow",
+    url: "www.allowdrink.com",
   },
 ];
