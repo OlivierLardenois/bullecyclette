@@ -7,6 +7,7 @@ import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";
 import ArrowBullet from "../components/arrowBullet";
 import Card from "../components/card";
 import Commitment from "../components/commitment";
+import Winegrowers from "../components/entityCard/winegrowers";
 import Layout from "../components/layout";
 import PersonCard from "../components/personCard";
 import { BaladePreparation } from "../components/preparation";
@@ -186,11 +187,11 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      {/* <section className="flex justify-center py-12">
+      <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
-          <PersonCard person="winegrowers" />
+          <Winegrowers />
         </div>
-      </section> */}
+      </section>
 
       <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">

@@ -39,7 +39,6 @@ export const EXHIBITORS: {
   index: number;
   name: string;
   url: string;
-  phone?: string;
   src?: string;
 }[] = [
   {
@@ -81,5 +80,37 @@ export const EXHIBITORS: {
     index: 7,
     name: "Allow",
     url: "www.allowdrink.com",
+  },
+];
+
+export const WINEGROWERS: {
+  name: string;
+  address: string;
+  url: string;
+  phone: string;
+}[] = [
+  {
+    name: "Coopérative des Grappes d’Or",
+    address: "16 ter rue des Grappes d'Or\n51190 OGER",
+    phone: "03 26 57 55 79",
+    url: "www.union-champagne.fr/103-oger/",
+  },
+  {
+    name: "Champagne Gimonet-Gonet",
+    address: "Le Bas des Auges\n51190 LE MESNIL SUR OGER",
+    phone: "09 82 29 93 15",
+    url: "www.champagne-gimonet-gonet.com",
+  },
+  {
+    name: "Champagne Arthur et Agathe Sanchez",
+    address: "21 TER AV du Général de Gaulle\n51130 BLANCS-COTEAUX / VERTUS",
+    phone: "03 26 59 44 36",
+    url: "www.champagne-a2-sanchez.com",
+  },
+  {
+    name: "Champagne Michel TURGY",
+    address: "Le 17 Rue de l’Orme\n51190 Le Mesnil-sur-Oger",
+    phone: "03 26 57 53 43",
+    url: "www.champagne-turgy.com",
   },
 ];

@@ -75,37 +75,7 @@
     }
   },
   "winegrowers": {
-    "title": "les vignerons",
-    "persons": [
-      {
-        "name": "Champagne PROUT",
-        "description": "16 ter rue des Grappes d'Or \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      },
-      {
-        "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      },
-      {
-        "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      },
-      {
-        "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      }
-    ]
+    "title": "les vignerons"
   },
   "artists": {
     "title": "les artistes",
