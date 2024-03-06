@@ -10,10 +10,6 @@ import Commitment from "../components/commitment";
 import Layout from "../components/layout";
 import PersonCard from "../components/personCard";
 import { BaladePreparation } from "../components/preparation";
-import {
-  BullecycletteSchedule,
-  GuinguetteSmallSchedule,
-} from "../components/schedule";
 import Video from "../components/video";
 import { EVENT_DATE, SALES_DATE } from "../lib/const";
 
@@ -124,15 +120,27 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="flex justify-center bg-liberty py-12">
-        <div className="flex flex-col max-w-6xl mx-8 md:mx-auto space-y-12 bg-inherit">
-          <ArrowBullet>
+      <section className="flex justify-center py-12 bg-liberty">
+        <div className="max-w-6xl mx-8 w-full space-y-12">
+          <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("balade.program.title")}
             </h3>
           </ArrowBullet>
-          <BullecycletteSchedule />
-          <GuinguetteSmallSchedule />
+          <div className="hidden md:block mx-auto">
+            <StaticImage
+              src={`../images/schedule/balade-schedule-fr.png`}
+              alt={""}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="block md:hidden max-w-md mx-auto">
+            <StaticImage
+              src={`../images/schedule/balade-schedule-fr-md.png`}
+              alt={""}
+              placeholder="blurred"
+            />
+          </div>
         </div>
       </section>
 
