@@ -86,7 +86,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
               <h3>{t("homePage.presentation.title")}</h3>
               <p>{t("homePage.presentation.text")}</p>
               <Button dark>
-                <Link to={"/"}>{t("homePage.ticket")}</Link>
+                <Link to={"/balade#ticket"}>{t("homePage.ticket")}</Link>
               </Button>
             </div>
             <div className="mt-6 md:my-auto md:w-6/12">
@@ -158,9 +158,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
         <section className="flex flex-col max-w-7xl mx-auto space-y-6">
           <Carousel cards={carouselCards} />
           <div className="mx-auto">
-            <Button>
+            {/* <Button>
               <Link to={"/"}>{t("homePage.gallery")}</Link>
-            </Button>
+            </Button> */}
           </div>
         </section>
         <section className="flex flex-col space-y-4">

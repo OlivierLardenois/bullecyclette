@@ -190,7 +190,10 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="flex justify-center flex-wrap py-12 space-y-12">
+      <section
+        id="ticket"
+        className="flex justify-center flex-wrap py-12 space-y-12"
+      >
         <div className="max-w-6xl mx-8 w-full">
           <ArrowBullet>
             <h3>{t("balade.ticket.title")}</h3>
