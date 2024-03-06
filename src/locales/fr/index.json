@@ -58,6 +58,7 @@
         }
       ]
     },
+    "redirect": "Redirection vers l'Office de tourisme d'Epernay",
     "when": {
       "title": "quand ?"
     },

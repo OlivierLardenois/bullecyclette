@@ -224,12 +224,20 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
               title={t("countdown-timer.label.day-before-ticketing")}
               deadline={SALES_DATE}
             />
-            <StaticImage
-              src="../images/common/ticket.png"
-              alt="ticket"
-              placeholder="blurred"
-              className="max-w-sm"
-            />
+            <a
+              className="hover:opacity-50"
+              href="https://my.weezevent.com/la-bullecyclette?_gl=1*1idejge*_gcl_au*Nzc0MzcwMTk1LjE3MDcxMjkyNTA.*_ga*ODEzMDEwMjUuMTcwNjg3MjA1Ng..*_ga_39H9VBFX7G*MTcwOTY2MzgxOS4xMy4xLjE3MDk2NjQwMTEuNjAuMC4w"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StaticImage
+                src="../images/common/ticket.png"
+                alt="ticket"
+                placeholder="blurred"
+                className="max-w-sm"
+              />
+            </a>
+            <p>{t("balade.redirect")}</p>
           </div>
         </div>
       </section>
