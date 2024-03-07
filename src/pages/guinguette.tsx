@@ -6,6 +6,7 @@ import * as React from "react";
 import ArrowBullet from "../components/arrowBullet";
 import Commitment from "../components/commitment";
 import CountdownTimer from "../components/countdownTimer";
+import Drink from "../components/drinks";
 import Artists from "../components/entityCard/artists";
 import Exhibitors from "../components/entityCard/exhibitors";
 import Food from "../components/entityCard/food";
@@ -85,16 +86,19 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
           <GuinguettePreparation />
         </div>
       </section>
+
       <section className="flex justify-center py-12">
         <div className="max-w-7xl mx-8 w-full">
           <Artists />
         </div>
       </section>
+
       <section className="flex justify-center bg-liberty py-12">
         <div className="max-w-7xl mx-8 w-full">
           <Exhibitors />
         </div>
       </section>
+
       <section className="flex justify-center bg-liberty py-12">
         <div className="max-w-7xl mx-8 w-full">
           <Food />
@@ -103,13 +107,10 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
 
       <section className="flex justify-center bg-liberty py-12">
         <div className="max-w-7xl mx-8 w-full">
-          <ArrowBullet dark>
-            <h3 className="font-veteran-typewriter">
-              {t("guinguette.drink.title")}
-            </h3>
-          </ArrowBullet>
+          <Drink />
         </div>
       </section>
+
       <section className="flex flex-wrap justify-center bg-liberty py-12 space-y-12">
         <div className="max-w-7xl mx-8 w-full">
           <ArrowBullet dark>

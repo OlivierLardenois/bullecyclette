@@ -156,6 +156,10 @@
   "food": {
     "title": "A manger"
   },
+  "drink": {
+    "title": "A boire",
+    "description": "Champagnes présents à la buvette :"
+  },
   "guinguette": {
     "seo": {
       "title": "La Bullecyclette | La Guinguette",
@@ -168,9 +172,6 @@
     },
     "commitments": {
       "title": "Nos engagements"
-    },
-    "drink": {
-      "title": "A boire"
     },
     "exhibitors": {
       "0": "CÉRAMIQUES",

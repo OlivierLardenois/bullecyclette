@@ -5,6 +5,52 @@ export const PHONE = "06 70 94 16 84";
 export const EVENT_DATE = "June 29, 2024 08:30:00";
 export const SALES_DATE = "March 8, 2024 09:00:00";
 
+export const DRINK_PROVIDERS: {
+  name: string;
+  city: string;
+}[] = [
+  {
+    name: "Champagne Dubois",
+    city: "Avize",
+  },
+  {
+    name: "Champagne De Sousa",
+    city: "Avize",
+  },
+  {
+    name: "Champagne Henriet Bazin",
+    city: "Villers-Marmery",
+  },
+  {
+    name: "Champagne Jean Milan",
+    city: "Oger",
+  },
+  {
+    name: "Champagne Dhondt-Grellet",
+    city: "Flavigny",
+  },
+  {
+    name: "Champagne Etienne Calsac",
+    city: "Avize",
+  },
+  {
+    name: "Champagne Chapuy",
+    city: "Oger",
+  },
+  {
+    name: "Champagne Chaleroux Guy",
+    city: "Avize",
+  },
+  {
+    name: "Champagne Natalie Caqué",
+    city: "Oger",
+  },
+  {
+    name: "Champagne Pernet et Pernet",
+    city: "Vertus",
+  },
+];
+
 export const FOOD_PROVIDERS: {
   index: number;
   name: string;
