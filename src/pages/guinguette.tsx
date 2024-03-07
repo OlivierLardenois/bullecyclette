@@ -55,21 +55,22 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
           </div>
         </div>
       </section>
-      <section className="bg-liberty py-12 text-white">
-        <div className="max-w-6xl mx-auto space-y-12">
+
+      <section className="flex justify-center py-12 bg-liberty">
+        <div className="max-w-6xl mx-8 w-full space-y-12">
           <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("guinguette.program.title")}
             </h3>
           </ArrowBullet>
-          <div className="hidden md:block mx-auto">
+          <div className="hidden md:block max-w-3xl mx-auto">
             <StaticImage
               src={`../images/schedule/guinguette-schedule-fr.png`}
               alt={""}
               placeholder="blurred"
             />
           </div>
-          <div className="block md:hidden max-w-md mx-auto">
+          <div className="block md:hidden max-w-xs mx-auto">
             <StaticImage
               src={`../images/schedule/guinguette-schedule-fr-md.png`}
               alt={""}
@@ -78,6 +79,7 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
           </div>
         </div>
       </section>
+
       <section className="flex justify-center py-12">
         <div className="max-w-7xl mx-8 w-full">
           <GuinguettePreparation />
