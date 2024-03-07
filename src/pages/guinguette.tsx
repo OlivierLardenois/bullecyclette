@@ -11,7 +11,6 @@ import Exhibitors from "../components/entityCard/exhibitors";
 import Food from "../components/entityCard/food";
 import Layout from "../components/layout";
 import { GuinguettePreparation } from "../components/preparation";
-import { GuinguetteSchedule } from "../components/schedule";
 import { EVENT_DATE } from "../lib/const";
 
 const GuinguettePage: React.FC<PageProps> = ({ location }) => {
@@ -63,10 +62,19 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
               {t("guinguette.program.title")}
             </h3>
           </ArrowBullet>
-          <div className="bg-liberty">
-            <div className="max-w-6xl mx-auto [&>*]:max-w-4xl bg-inherit font-veteran-typewriter">
-              <GuinguetteSchedule />
-            </div>
+          <div className="hidden md:block mx-auto">
+            <StaticImage
+              src={`../images/schedule/guinguette-schedule-fr.png`}
+              alt={""}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="block md:hidden max-w-md mx-auto">
+            <StaticImage
+              src={`../images/schedule/guinguette-schedule-fr-md.png`}
+              alt={""}
+              placeholder="blurred"
+            />
           </div>
         </div>
       </section>
