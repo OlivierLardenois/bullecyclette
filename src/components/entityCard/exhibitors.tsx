@@ -19,8 +19,13 @@ const Exhibitors: React.FC = () => {
             <EntityCard title={name}>
               <div className="space-y-4 font-veteran-typewriter grow">
                 <p>{t(`guinguette.exhibitors.${index}`)}</p>
-                <div className="text-white">
-                  <a href={url} target="_blank" rel="noopener noreferrer">
+                <div>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:opacity-80"
+                  >
                     {url}
                   </a>
                 </div>

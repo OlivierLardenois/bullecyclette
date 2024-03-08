@@ -246,7 +246,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
                 className="max-w-sm"
               />
             </a>
-            <p>{t("balade.redirect")}</p>
+            <p className="italic text-center">{t("balade.redirect")}</p>
           </div>
         </div>
       </section>

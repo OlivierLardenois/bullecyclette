@@ -76,7 +76,7 @@ export const ARTISTS: {
   {
     index: 0,
     name: "Spireight Sound System",
-    url: "www.facebook.com/pro-file.php?id=100070473072318",
+    url: "https://www.facebook.com/p/Spireight-Sound-System-100070473072318/",
     src: "artists/spireight-sound-system.jpg",
   },
 ];
@@ -95,7 +95,7 @@ export const EXHIBITORS: {
   {
     index: 1,
     name: "Comme Par Nature",
-    url: "www.commeparnature.fr",
+    url: "https://www.commeparnature.fr",
   },
   {
     index: 2,
@@ -110,22 +110,22 @@ export const EXHIBITORS: {
   {
     index: 4,
     name: "MARSAULT",
-    url: "www.marsaultreims.fr",
+    url: "https://www.marsaultreims.fr",
   },
   {
     index: 5,
     name: "Maison Gamet",
-    url: "www.champagne-gamet.com",
+    url: "https://www.champagne-gamet.com",
   },
   {
     index: 6,
     name: "Cour Rhéoum",
-    url: "www.cour-rheoum.com",
+    url: "https://www.cour-rheoum.com",
   },
   {
     index: 7,
     name: "Allow",
-    url: "www.allowdrink.com",
+    url: "https://www.allowdrink.com",
   },
 ];
 
@@ -139,24 +139,24 @@ export const WINEGROWERS: {
     name: "Coopérative des Grappes d’Or",
     address: "16 ter rue des Grappes d'Or\n51190 OGER",
     phone: "03 26 57 55 79",
-    url: "www.union-champagne.fr/103-oger/",
+    url: "https://www.union-champagne.fr/103-oger/",
   },
   {
-    name: "Champagne Gimonet-Gonet",
+    name: "Champagne Gimonnet-Gonet",
     address: "Le Bas des Auges\n51190 LE MESNIL SUR OGER",
     phone: "09 82 29 93 15",
-    url: "www.champagne-gimonet-gonet.com",
+    url: "https://www.champagne-gimonnet-gonet.com",
   },
   {
     name: "Champagne Arthur et Agathe Sanchez",
     address: "21 TER AV du Général de Gaulle\n51130 BLANCS-COTEAUX / VERTUS",
     phone: "03 26 59 44 36",
-    url: "www.champagne-a2-sanchez.com",
+    url: "https://www.champagne-a2-sanchez.fr",
   },
   {
     name: "Champagne Michel TURGY",
     address: "Le 17 Rue de l’Orme\n51190 Le Mesnil-sur-Oger",
     phone: "03 26 57 53 43",
-    url: "www.champagne-turgy.com",
+    url: "https://www.champagne-turgy.com",
   },
 ];

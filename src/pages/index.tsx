@@ -16,12 +16,12 @@ import Video from "../components/video";
 
 const NAV_PAGES = [
   {
-    href: "/",
+    href: "/balade",
     imgPath: "index/logo-viellit.png",
     key: "la-balade",
   },
   {
-    href: "/",
+    href: "/guinguette",
     imgPath: "index/guinguette.jpg",
     key: "la-guinguette",
   },

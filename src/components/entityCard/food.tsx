@@ -37,16 +37,21 @@ const Food: React.FC = () => {
           )?.childImageSharp;
           const image = childImageSharp ? getImage(childImageSharp) : undefined;
           return (
-            <div className="w-96">
+            <div className="max-w-96">
               <EntityCard title={name} image={image}>
                 <div className="space-y-4 font-veteran-typewriter grow text-white">
                   <p>{t(`guinguette.food.${index}`)}</p>
                   <div>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-80"
+                    >
                       {url}
                     </a>
-                    {phone && <p>{phone}</p>}
                   </div>
+                  {phone && <p>{phone}</p>}
                 </div>
               </EntityCard>
             </div>

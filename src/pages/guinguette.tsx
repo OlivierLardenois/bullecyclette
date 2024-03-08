@@ -58,7 +58,7 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
       </section>
 
       <section className="flex justify-center py-12 bg-liberty">
-        <div className="max-w-6xl mx-8 w-full space-y-12">
+        <div className="max-w-7xl mx-8 w-full space-y-12">
           <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("guinguette.program.title")}

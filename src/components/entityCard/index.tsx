@@ -10,7 +10,7 @@ type EntityCardProps = {
 const EntityCard: React.FC<EntityCardProps> = ({ children, title, image }) => {
   return (
     <div className="flex flex-col items-center text-center w-full space-y-4">
-      <p className="bg-white px-2 rounded-md text-liberty text-center w-full py-2">
+      <p className="bg-white px-2 rounded-md text-liberty text-center w-full py-2 font-semibold text-lg">
         {title}
       </p>
       {children}

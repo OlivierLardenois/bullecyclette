@@ -37,12 +37,17 @@ const Artists: React.FC = () => {
           )?.childImageSharp;
           const image = childImageSharp ? getImage(childImageSharp) : undefined;
           return (
-            <div className="w-96">
+            <div className="max-w-96">
               <EntityCard title={name} image={image}>
                 <div className="space-y-4 font-veteran-typewriter grow">
                   <p>{t(`guinguette.artists.${index}`)}</p>
-                  <div className="text-liberty">
-                    <a href={url} target="_blank" rel="noopener noreferrer">
+                  <div>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-liberty hover:opacity-80"
+                    >
                       {url}
                     </a>
                   </div>

@@ -36,10 +36,10 @@ const Winegrowers: React.FC = () => {
           <GatsbyImage image={image} alt={"alt"} />
         </div>
       )}
-      <div className="flex flex-wrap justify-around text-justify gap-12">
+      <div className="flex flex-wrap justify-around text-justify gap-6">
         {WINEGROWERS.map(({ name, url, phone, address }) => {
           return (
-            <div className="w-52">
+            <div className="max-w-64">
               <EntityCard title={name}>
                 <div className="space-y-3 font-veteran-typewriter grow">
                   <p className="whitespace-pre-line">{address}</p>
@@ -49,7 +49,7 @@ const Winegrowers: React.FC = () => {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-liberty"
+                      className="text-liberty hover:opacity-80"
                     >
                       {url}
                     </a>
