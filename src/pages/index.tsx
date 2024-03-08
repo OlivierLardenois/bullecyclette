@@ -164,9 +164,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
           </div>
         </section>
         <section className="flex flex-col space-y-4">
-          <h1 className="max-w-5xl mx-auto">{t("homePage.partners")}</h1>
+          <h1 className="max-w-7xl mx-auto">{t("homePage.partners")}</h1>
           <div className="bg-white">
-            <div className="flex flex-wrap justify-center max-w-5xl mx-auto py-8 gap-x-12 gap-y-10">
+            <div className="flex flex-wrap justify-center max-w-7xl mx-auto py-8 gap-x-12 gap-y-10">
               {partnerLogos.map(({ alt, image }) => {
                 return <GatsbyImage image={image} alt={alt} />;
               })}
@@ -230,8 +230,12 @@ export const query = graphql`
         }
       }
     }
-    partnerLogos: allFile(filter: { dir: { regex: "/images/partners/" } }) {
+    partnerLogos: allFile(
+      filter: { dir: { regex: "/images/partners/" } }
+      sort: { base: ASC }
+    ) {
       nodes {
+        relativePath
         childImageSharp {
           gatsbyImageData(height: 60)
         }
