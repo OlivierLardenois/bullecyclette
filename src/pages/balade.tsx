@@ -7,13 +7,10 @@ import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";
 import ArrowBullet from "../components/arrowBullet";
 import Card from "../components/card";
 import Commitment from "../components/commitment";
+import Winegrowers from "../components/entityCard/winegrowers";
 import Layout from "../components/layout";
 import PersonCard from "../components/personCard";
-import Preparation from "../components/preparation";
-import {
-  BullecycletteSchedule,
-  GuinguetteSmallSchedule,
-} from "../components/schedule";
+import { BaladePreparation } from "../components/preparation";
 import Video from "../components/video";
 import { EVENT_DATE, SALES_DATE } from "../lib/const";
 
@@ -124,15 +121,27 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="flex justify-center bg-liberty py-12">
-        <div className="flex flex-col max-w-6xl mx-8 md:mx-auto space-y-12 bg-inherit">
-          <ArrowBullet>
+      <section className="flex justify-center py-12 bg-liberty">
+        <div className="max-w-6xl mx-8 w-full space-y-12">
+          <ArrowBullet dark>
             <h3 className="font-veteran-typewriter">
               {t("balade.program.title")}
             </h3>
           </ArrowBullet>
-          <BullecycletteSchedule />
-          <GuinguetteSmallSchedule />
+          <div className="hidden md:block mx-auto">
+            <StaticImage
+              src={`../images/schedule/balade-schedule-fr.png`}
+              alt={""}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="block md:hidden max-w-md mx-auto">
+            <StaticImage
+              src={`../images/schedule/balade-schedule-fr-md.png`}
+              alt={""}
+              placeholder="blurred"
+            />
+          </div>
         </div>
       </section>
 
@@ -174,15 +183,15 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
 
       <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
-          <Preparation />
+          <BaladePreparation />
         </div>
       </section>
 
-      {/* <section className="flex justify-center py-12">
+      <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
-          <PersonCard person="winegrowers" />
+          <Winegrowers />
         </div>
-      </section> */}
+      </section>
 
       <section className="flex justify-center py-12">
         <div className="max-w-6xl mx-8 w-full">
@@ -190,7 +199,10 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
         </div>
       </section>
 
-      <section className="flex justify-center flex-wrap py-12 space-y-12">
+      <section
+        id="ticket"
+        className="flex justify-center flex-wrap py-12 space-y-12"
+      >
         <div className="max-w-6xl mx-8 w-full">
           <ArrowBullet>
             <h3>{t("balade.ticket.title")}</h3>
@@ -221,12 +233,20 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
               title={t("countdown-timer.label.day-before-ticketing")}
               deadline={SALES_DATE}
             />
-            <StaticImage
-              src="../images/common/ticket.png"
-              alt="ticket"
-              placeholder="blurred"
-              className="max-w-sm"
-            />
+            <a
+              className="hover:opacity-50"
+              href="https://my.weezevent.com/la-bullecyclette?_gl=1*1idejge*_gcl_au*Nzc0MzcwMTk1LjE3MDcxMjkyNTA.*_ga*ODEzMDEwMjUuMTcwNjg3MjA1Ng..*_ga_39H9VBFX7G*MTcwOTY2MzgxOS4xMy4xLjE3MDk2NjQwMTEuNjAuMC4w"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StaticImage
+                src="../images/common/ticket.png"
+                alt="ticket"
+                placeholder="blurred"
+                className="max-w-sm"
+              />
+            </a>
+            <p className="italic text-center">{t("balade.redirect")}</p>
           </div>
         </div>
       </section>
@@ -250,9 +270,9 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
             </h3>
           </ArrowBullet>
         </div>
-        <div className="max-w-6xl w-full">
+        <div className="max-w-6xl w-full h-[560px]">
           <Video
-            videoSrcURL="https://www.youtube.com/embed/gU_hqPdNylk?si=sa61AmrNZUG0nxlI"
+            videoSrcURL="https://youtube.com/embed/rE2050vc4Po?si=xPLu9W7dn7e4Cblk"
             videoTitle="LSF"
           />
         </div>

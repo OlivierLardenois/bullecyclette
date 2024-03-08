@@ -13,11 +13,7 @@ const Artists: React.FC = () => {
   const data = useStaticQuery<Queries.ArtistCardQuery>(graphql`
     query ArtistCard {
       ArtistImages: allFile(
-        filter: {
-          relativePath: {
-            in: ["artists/barboozes.png", "artists/jazz-of-france.png"]
-          }
-        }
+        filter: { relativePath: { in: ["artists/spireight-sound-system.jpg"] } }
       ) {
         nodes {
           relativePath
@@ -41,16 +37,23 @@ const Artists: React.FC = () => {
           )?.childImageSharp;
           const image = childImageSharp ? getImage(childImageSharp) : undefined;
           return (
-            <EntityCard title={name} image={image}>
-              <div className="space-y-4 font-veteran-typewriter grow">
-                <p>{t(`guinguette.artists.${index}`)}</p>
-                <div className="text-white">
-                  <a href={url} target="_blank" rel="noopener noreferrer">
-                    {url}
-                  </a>
+            <div className="max-w-96">
+              <EntityCard title={name} image={image}>
+                <div className="space-y-4 font-veteran-typewriter grow">
+                  <p>{t(`guinguette.artists.${index}`)}</p>
+                  <div>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-liberty hover:opacity-80"
+                    >
+                      {url}
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </EntityCard>
+              </EntityCard>{" "}
+            </div>
           );
         })}
       </div>

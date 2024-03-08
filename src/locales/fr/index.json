@@ -58,6 +58,7 @@
         }
       ]
     },
+    "redirect": "Redirection vers l'Office de tourisme d'Epernay",
     "when": {
       "title": "quand ?"
     },
@@ -74,37 +75,7 @@
     }
   },
   "winegrowers": {
-    "title": "les vignerons",
-    "persons": [
-      {
-        "name": "Champagne PROUT",
-        "description": "16 ter rue des Grappes d'Or \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      },
-      {
-        "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      },
-      {
-        "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      },
-      {
-        "name": "Champagne PROUT",
-        "description": "10 rue de la cacaouète \n51190 OGER",
-        "url": "www.champagneprout.com",
-        "shorturl": "www.champagneprout.com",
-        "image": "winegrowers/champagne.png"
-      }
-    ]
+    "title": "les vignerons"
   },
   "artists": {
     "title": "les artistes",
@@ -117,7 +88,7 @@
         "image": "artists/jeannick_liebert.jpg"
       },
       {
-        "name": "Les Tonneliers",
+        "name": "L'Harmonie des Tonneliers d'Epernay",
         "description": "Fanfare",
         "url": "https://www.harmonietonneliersepernay.fr/",
         "shorturl": "Plus d'information",
@@ -185,6 +156,10 @@
   "food": {
     "title": "A manger"
   },
+  "drink": {
+    "title": "A boire",
+    "description": "Champagnes présents à la buvette :"
+  },
   "guinguette": {
     "seo": {
       "title": "La Bullecyclette | La Guinguette",
@@ -193,23 +168,23 @@
     "title": "La Guinguette",
     "hero-alt": "",
     "artists": {
-      "0": "Musique acoustique",
-      "1": "Jazz et pop manouche"
+      "0": "DJ"
     },
     "commitments": {
       "title": "Nos engagements"
     },
-    "drink": {
-      "title": "A boire"
-    },
     "exhibitors": {
       "0": "CÉRAMIQUES",
-      "1": "CÉRAMIQUES"
+      "1": "ARTISANAL SOAP",
+      "2": "LEATHERWORKING",
+      "3": "VINTAGE BIKES SHOP",
+      "4": "CHAMPAGNE CANDLES",
+      "5": "HONEY AND CIDER",
+      "6": "RHUBARB DRINKS",
+      "7": "FRESH ALCOHOLIC DRINKS"
     },
     "food": {
-      "0": "Nous avons créé le food truck \"En Binôme\" en 2021 et le service traiteur en 2023. Nous proposons une carte de saison à partir de produits frais et locaux (ou Français) et une cuisine fait-maison. Nous sommes spécialisés dans les événements privés et publics, pour les professionnels ou les particuliers. Notre food truck et notre accueil reflètent nos valeurs de partage, de convivialité et d'authenticité, tout en étant en adéquation avec notre temps",
-      "1": "Nous avons créé le food truck \"En Binôme\" en 2021 et le service traiteur en 2023. Nous proposons une carte de saison à partir de produits frais et locaux (ou Français) et une cuisine fait-maison. Nous sommes spécialisés dans les événements privés et publics, pour les professionnels ou les particuliers. Notre food truck et notre accueil reflètent nos valeurs de partage, de convivialité et d'authenticité, tout en étant en adéquation avec notre temps",
-      "2": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
+      "0": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
     },
     "presentation": {
       "what": "C'est quoi ?",

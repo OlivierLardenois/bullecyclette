@@ -7,7 +7,7 @@ type videoProps = {
 
 const Video: React.FC<videoProps> = ({ videoSrcURL, videoTitle }) => (
   <iframe
-    className="w-full aspect-video"
+    className="w-full h-full aspect-video "
     src={videoSrcURL}
     title={videoTitle}
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;"

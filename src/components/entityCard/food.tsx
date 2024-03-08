@@ -13,9 +13,7 @@ const Food: React.FC = () => {
   const data = useStaticQuery<Queries.FoodCardQuery>(graphql`
     query FoodCard {
       foodProvidersImages: allFile(
-        filter: {
-          relativePath: { in: ["food/en-binome.png", "food/le-trio.png"] }
-        }
+        filter: { relativePath: { in: ["food/le-trio.png"] } }
       ) {
         nodes {
           relativePath
@@ -39,17 +37,24 @@ const Food: React.FC = () => {
           )?.childImageSharp;
           const image = childImageSharp ? getImage(childImageSharp) : undefined;
           return (
-            <EntityCard title={name} image={image}>
-              <div className="space-y-4 font-veteran-typewriter grow">
-                <p>{t(`guinguette.food.${index}`)}</p>
-                <div className="text-white">
-                  <a href={url} target="_blank" rel="noopener noreferrer">
-                    {url}
-                  </a>
+            <div className="max-w-96">
+              <EntityCard title={name} image={image}>
+                <div className="space-y-4 font-veteran-typewriter grow text-white">
+                  <p>{t(`guinguette.food.${index}`)}</p>
+                  <div>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:opacity-80"
+                    >
+                      {url}
+                    </a>
+                  </div>
                   {phone && <p>{phone}</p>}
                 </div>
-              </div>
-            </EntityCard>
+              </EntityCard>
+            </div>
           );
         })}
       </div>
