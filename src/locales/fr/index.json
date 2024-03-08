@@ -58,7 +58,7 @@
         }
       ]
     },
-    "redirect": "Redirection vers l'Office de tourisme d'Epernay",
+    "redirect": "Redirection vers Weezevent",
     "when": {
       "title": "quand ?"
     },
@@ -175,13 +175,13 @@
     },
     "exhibitors": {
       "0": "CÉRAMIQUES",
-      "1": "ARTISANAL SOAP",
-      "2": "LEATHERWORKING",
-      "3": "VINTAGE BIKES SHOP",
-      "4": "CHAMPAGNE CANDLES",
-      "5": "HONEY AND CIDER",
-      "6": "RHUBARB DRINKS",
-      "7": "FRESH ALCOHOLIC DRINKS"
+      "1": "SAVONS ARTISANAUX",
+      "2": "MAROQUINERIE",
+      "3": "VENTE DE VÉLOS ANCIENS",
+      "4": "BOUGIES CHAMPENOISES",
+      "5": "MIEL ET CIDRE",
+      "6": "BOISSONS À LA RHUBARBE",
+      "7": "BOISSONS ALCOOLISÉS RAFRAICHISSANTES"
     },
     "food": {
       "0": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
@@ -189,7 +189,7 @@
     "presentation": {
       "what": "C'est quoi ?",
       "when": "Quand ?",
-      "text": "La Guinguette de la Bullecyclette est une soirée festive rétro au gymnase Cattani, à Avize le 29 Juin 2024 (ouverture à 15h). Ouverte à tous, vous y retrouverez de nombreuxartisants locaux, des friperies, vendeur de vélo...mais aussi des food trucks et une buvette. Deux concerts gratuits animeront également la soirée"
+      "text": "La Guinguette de la Bullecyclette est une soirée festive rétro au gymnase Cattani, à Avize le 29 Juin 2024 (ouverture à 15h). Ouverte à tous, vous y retrouverez de nombreux artisants locaux, des friperies, vendeur de vélo...mais aussi des food trucks et une buvette. Deux concerts gratuits animeront également la soirée"
     },
     "program": {
       "title": "Programme"
