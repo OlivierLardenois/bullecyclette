@@ -1,17 +1,18 @@
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
-import { ADDRESS, MAIL, PHONE } from "../lib/const";
+import { ADDRESS, DESIGNER, MAIL, PHONE } from "../lib/const";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <footer className="flex justify-center py-12">
-      <div className="flex flex-col max-w-6xl mx-8 space-y-12">
+      <div className="flex flex-col max-w-6xl w-full mx-8 space-y-12">
         <p className="text-cg-red text-center">{t("footer.contact")}</p>
         <div className="flex justify-center">
           <nav className="flex justify-center flex-wrap gap-20 gap-y-12 max-w-sm text-white ">
@@ -56,6 +57,39 @@ const Footer: React.FC = () => {
             <span className="underline uppercase">{`${t("footer.phone")}\n`}</span>
             {PHONE}
           </p>
+        </div>
+        <div className="text-center space-y-8">
+          <p>{`${t("footer.design")} : ${DESIGNER}`}</p>
+          <p>
+            © 2023 La Bullecyclette. All rights reserved
+            <br />
+            RNA : W51 200 57 30
+            <br />
+            SIRET : 922 47 22 79 000 12
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-between mx-auto">
+            <div className="flex-1">
+              <Link className="underline hover:opacity-70 " to={"legal"}>
+                {t("footer.legal")}
+              </Link>
+            </div>
+            <div className="flex-1">
+              <Link
+                className="underline hover:opacity-70 flex-1"
+                to={"regulation"}
+              >
+                {t("footer.regulation")}
+              </Link>
+            </div>
+            <div className="flex-1">
+              <Link
+                className="underline hover:opacity-70 flex-1"
+                to={"privacy"}
+              >
+                {t("footer.privacy")}
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

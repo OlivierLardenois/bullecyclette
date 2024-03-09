@@ -17,7 +17,7 @@
     "ticket": "Achetez votre billet",
     "presentation": {
       "title": "La balade à vélo rétro en Champagne",
-      "text": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage. À travers les vignes et les villages de la Côte des Blancs, la balade d’environ 20 km est ponctuée de quatre arrêts où seront offert musique swing et champagne. Le but de la balade est de prendre le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro."
+      "text": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage. À travers les vignes et les villages de la Côte des Blancs, la balade d'environ 20 km est ponctuée de quatre arrêts où seront offert musique swing et champagne. Le but de la balade est de prendre le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro."
     },
     "nav": {
       "la-balade": { "alt": "Logo", "title": "La balade de la Bullecyclette" },
@@ -71,7 +71,7 @@
     },
     "ticket": {
       "title": "billetterie",
-      "description": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.<br/> Vous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.<br/><br/> Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.<br/><1>Si vous venez en groupe :</1> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.<br/><br/>La billetterie est ouverte du 8 Mars au 31 mai, dans la limite de 500 places vendues.<br/><br/> <3>INFORMATIONS : </3><br/>Durant la balade à vélo vous n’aurez pas besoin d’argent, tout est compris dans votre place.<br/>Vous aurez par contre besoin d’une gourde d’eau que vous pourrez remplir à chaque arrêts et d’un nécessaire à réparation en cas de crevaison ou autre pour votre vélos.<br/>Pour connaître toutes les informations pratiques cliquez <5>içi</5>"
+      "description": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.<br/> Vous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.<br/><br/> Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.<br/><1>Si vous venez en groupe :</1> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.<br/><br/>La billetterie est ouverte du 8 Mars au 31 mai, dans la limite de 500 places vendues.<br/><br/> <3>INFORMATIONS : </3><br/>Durant la balade à vélo vous n'aurez pas besoin d'argent, tout est compris dans votre place.<br/>Vous aurez par contre besoin d'une gourde d'eau que vous pourrez remplir à chaque arrêts et d'un nécessaire à réparation en cas de crevaison ou autre pour votre vélos.<br/>Pour connaître toutes les informations pratiques cliquez <5>içi</5>"
     }
   },
   "winegrowers": {
@@ -184,7 +184,7 @@
       "7": "BOISSONS ALCOOLISÉS RAFRAICHISSANTES"
     },
     "food": {
-      "0": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
+      "0": "Le Trio, c'est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
     },
     "presentation": {
       "what": "C'est quoi ?",
@@ -196,10 +196,14 @@
     }
   },
   "footer": {
-    "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
+    "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par mail, sur Instagram ou sur Facebook",
     "mail": "Adresse e-mail",
     "address": "Adresse postale",
-    "phone": "Numéro de téléphone"
+    "phone": "Numéro de téléphone",
+    "design": "Design",
+    "legal": "Mentions légales",
+    "regulation": "Conditions générales de participations",
+    "privacy": "Politiques de confidentialité"
   },
   "preparation": {
     "title": "Je me prépare",
@@ -207,7 +211,7 @@
       {
         "src": "../images/fr-flag.png",
         "title": "Je prépare mon vélo",
-        "text": "Pour participer à la Bullecyclette vous aurez besoin d’apporter votre propre vélo rétro. Celui-ci devra être construit avant 1987. Vous ne possédez pas de vélo rétro ?Vous avez la possibilité d’en louer lors de la réservation de votre billet.",
+        "text": "Pour participer à la Bullecyclette vous aurez besoin d'apporter votre propre vélo rétro. Celui-ci devra être construit avant 1987. Vous ne possédez pas de vélo rétro ?Vous avez la possibilité d'en louer lors de la réservation de votre billet.",
         "alt": "",
         "button": "En savoir plus"
       },
@@ -218,8 +222,8 @@
         "button": "En savoir plus"
       },
       {
-        "title": "Je prends ma gourde d’eau",
-        "text": "Dans notre volonté de faire un événement le plus propre possible, nous vous recommendons d’apporter votre gourde d’eau. Vous pourrez la remplir à chaque arrêt.",
+        "title": "Je prends ma gourde d'eau",
+        "text": "Dans notre volonté de faire un événement le plus propre possible, nous vous recommendons d'apporter votre gourde d'eau. Vous pourrez la remplir à chaque arrêt.",
         "alt": "",
         "button": "En savoir plus"
       }
@@ -288,29 +292,29 @@
         "0": {
           "title": "<0>Quelques recommandations pour que votre balade à bicyclette se déroule au mieux : </0>",
           "list": [
-            "Prendre une gourde d’eau.",
+            "Prendre une gourde d'eau.",
             "Prévoir de quoi réparer son vélo : rustine, chambre à air, pompe ... vont sûrement vous être utiles",
             "Adapter sa tenue en fonction des conditions métérologiques (porter un chapeau, mettre de la crème solaire ou apporter un vêtement de pluie) en étant toujours dans le thème rétro des années 1950 bien-sûr !",
-            "Munissez-vous de votre carte d’identité pour venir retirer votre besace avant la balade.",
-            "Si vous venez en groupe : consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n’est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.",
+            "Munissez-vous de votre carte d'identité pour venir retirer votre besace avant la balade.",
+            "Si vous venez en groupe : consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.",
             "Nous estimmons votre retour aux environs de 17h.",
             "Les chiens ne sont pas autorisés pour la balade à vélo.",
-            "Les mineurs doivent être obligatoirement accompagnés d’un adulte.",
+            "Les mineurs doivent être obligatoirement accompagnés d'un adulte.",
             "Quelles que soient les conditions métérologiques, la Bullecyclette ainsi que la Guingette de la Bullecyclette auront lieu, sauf arrété préfectoral."
           ]
         },
         "1": {
           "title": "<0>Achat et réservation : </0><br/>",
-          "description": "L’achat du ticket pour participer à la balade à vélo se fait exclusivement sur le site internet de l’Office de tourisme d’Epernay (accéssible également depuis notre site internet onglet <1>Billetterie</1> ) du 01 Mars au 31 Mai 2024. <br/>Toute réservation est définitive (pas de remboursement). Le paiement des réservations s’effectuent uniquement par carte bancaire. Vous recevrez par email un récépissé récapitulant votre choix (heure de départ – nombre de réservations adulte et enfant, et montant total du règlement).<br/>Les places sont limitées à 500 participants (adultes et enfants confondus). Elles seront prises en compte par ordre d'arrivée des bul- letins d'inscription. L'organisateur se réserve le droit de clore les inscriptions à tout moment dès que l'objectif de participation est atteint. Aucune inscription ne sera prise par téléphone ou mail."
+          "description": "L'achat du ticket pour participer à la balade à vélo se fait exclusivement sur le site internet de l'Office de tourisme d'Epernay (accéssible également depuis notre site internet onglet <1>Billetterie</1> ) du 01 Mars au 31 Mai 2024. <br/>Toute réservation est définitive (pas de remboursement). Le paiement des réservations s'effectuent uniquement par carte bancaire. Vous recevrez par email un récépissé récapitulant votre choix (heure de départ - nombre de réservations adulte et enfant, et montant total du règlement).<br/>Les places sont limitées à 500 participants (adultes et enfants confondus). Elles seront prises en compte par ordre d'arrivée des bul- letins d'inscription. L'organisateur se réserve le droit de clore les inscriptions à tout moment dès que l'objectif de participation est atteint. Aucune inscription ne sera prise par téléphone ou mail."
         },
         "2": {
-          "text": "<0>Départ : </0><br/>L’accueil et le départ se feront au château Desbordes à Avize (5 bis rue rempart du midi, 51190 Avize). L’arrivée au château est conseil- lée environ 1 heure avant le départ, ou 1h30 si vous louez un vélo. Chaque participant devra retirer au château Desbordes, sous pré- sentation de sa carte d’identité, une besace dans laquelle il trouvera « la Gazette de la Bullecyclette » (un carnet de route à présen- ter à chaque pause). Dans la besace il trouvera également un verre gravé (ou gobelet réutilisable pour les enfants)."
+          "text": "<0>Départ : </0><br/>L'accueil et le départ se feront au château Desbordes à Avize (5 bis rue rempart du midi, 51190 Avize). L'arrivée au château est conseil- lée environ 1 heure avant le départ, ou 1h30 si vous louez un vélo. Chaque participant devra retirer au château Desbordes, sous pré- sentation de sa carte d'identité, une besace dans laquelle il trouvera « la Gazette de la Bullecyclette » (un carnet de route à présen- ter à chaque pause). Dans la besace il trouvera également un verre gravé (ou gobelet réutilisable pour les enfants)."
         },
         "3": {
           "text": "<0>Balade :</0><br/>Un seul passage à chacun des 4 stands dégustation est autorisé, et doit se faire uniquement sous présentation de sa \"Gazette\"."
         },
         "4": {
-          "text": "<0>Assurance et responsabilités : </0><br/>L'association est assurée en responsabilité civile. Elle décline toute responsabilité en cas de vol, maladie, défaut d’un participant, accident ou perte durant la manifestation. L'inscription vaut déclaration de bonne santé et d’aptitude à participer à la balade et à déguster les produits alimentaires proposés. Les mineurs sont sous la responsabilité d’un adulte référent."
+          "text": "<0>Assurance et responsabilités : </0><br/>L'association est assurée en responsabilité civile. Elle décline toute responsabilité en cas de vol, maladie, défaut d'un participant, accident ou perte durant la manifestation. L'inscription vaut déclaration de bonne santé et d'aptitude à participer à la balade et à déguster les produits alimentaires proposés. Les mineurs sont sous la responsabilité d'un adulte référent."
         },
         "5": {
           "text": "<0>Éthique et sécurité : </0><br/>Les participants doivent respecter les lieux, suivre le balisage et le parcours, se conformer aux règles du code de la route relatives à la circulation des cyclistes. Il est rigoureusement interdit de jeter des déchets ailleurs que dans les poubelles de tri prévues à cet effet. Il est strictement interdit de fumer en dehors des zones délimitées."
@@ -323,14 +327,14 @@
           ]
         },
         "7": {
-          "text": "<0>Alcool (balade + Guinguette) : </0><br/>Rappel : L’abus d’alcool est dangereux pour la santé.<br/>Veillez à contrôler votre consommation avant de prendre le volant. Pensez au covoiturage. Aucun alcool ne sera distribué aux mineurs, même accompagnés. L’organisation décline toute responsabilité en cas d’incident et se réserve le droit de refuser de servir un participant qui serait en état manifeste d’ébriété."
+          "text": "<0>Alcool (balade + Guinguette) : </0><br/>Rappel : L'abus d'alcool est dangereux pour la santé.<br/>Veillez à contrôler votre consommation avant de prendre le volant. Pensez au covoiturage. Aucun alcool ne sera distribué aux mineurs, même accompagnés. L'organisation décline toute responsabilité en cas d'incident et se réserve le droit de refuser de servir un participant qui serait en état manifeste d'ébriété."
         }
       },
-      "faq": "Trouvez les réponses aux questions les plus posées sur la FAQ en story permanante sur notre Instagram.<br/>Néanmoins si vous n’avez pas trouvé de réponse à votre question, vous pouvez contacter notre équipe par le formulaire de contact ou contactez-nous sur Instagram ou Facebook."
+      "faq": "Trouvez les réponses aux questions les plus posées sur la FAQ en story permanante sur notre Instagram.<br/>Néanmoins si vous n'avez pas trouvé de réponse à votre question, vous pouvez contacter notre équipe par le formulaire de contact ou contactez-nous sur Instagram ou Facebook."
     },
     "access": {
       "title": "ACCÈS",
-      "text": "La 1ère édition de la Bullecyclette se déroule à Avize, le départ s’effectue depuis l ze château Desbordes au 5 rempart du midi le 29 Juin 2024.<br/>La Guinguette se déroule rue des Accacias, au parking du gymnase Cattani."
+      "text": "La 1ère édition de la Bullecyclette se déroule à Avize, le départ s'effectue depuis l ze château Desbordes au 5 rempart du midi le 29 Juin 2024.<br/>La Guinguette se déroule rue des Accacias, au parking du gymnase Cattani."
     },
     "parking": {
       "title": "parking",
@@ -345,5 +349,128 @@
     "accommodation": {
       "title": "se loger"
     }
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "seo": {
+      "title": "La Bullecyclette | Mentions légales",
+      "description": "Mentions légales du site labullecyclette.com"
+    },
+    "section": [
+      {
+        "title": "ORGANISATION",
+        "content": "Association La Bullecyclette\nAssociation Loi 1901\n12 place Léon Bourgeois - 51190 AVIZE - France\nSIREN / APE : 922 47 22 79 / 8230Z\nRNA : W51 200 57 30\nlabullecyclette@gmail.com"
+      },
+      {
+        "title": "HÉBERGEMENT DU SITE",
+        "content": "L'hébergement du site est réalisé par la société Netlify.\nNetlify, Inc.\nAdresse : 512 2nd Street, Suite 200 San Francisco, CA 94107\nMail : support@netlify.com\nSite : https://www.netlify.com"
+      },
+      {
+        "title": "PROPRIÉTÉS INTELLECTUELLES",
+        "content": "La Bullecyclette est une marque déposée. Toute reproduction ou représentation réalisée sans l'accord de l'association La Bullecyclette constitue une contrefaçon. Les informations présentées sur ce site sont publiques. La reproduction des pages de ce site est interdite. Lorsque des données présentes sur ce site ont un caractère nominatif, les utilisateurs doivent en faire un usage conforme aux réglementations en vigueur et aux recommandations de la Commission nationale de l'informatique et des libertés (CNIL).\n\n© Tout le contenu du présent site, incluant, de façon non limitative, les graphismes, images,textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont lapropriété exclusive de l'association La Bullecyclette à l'exception des marques, logos oucontenus appartenant à d'autres sociétés partenaires ou auteurs. Toute reproduction,distribution, modification, adaptation, retransmission ou publication, même partielle, de cesdifférents éléments est strictement interdite sans l'accord exprès par écrit de l'association LaBullecyclette. Cette représentation ou reproduction, par quelque procédé que ce soit, constitueune contrefaçon sanctionnée par les articles L.3335-2 et suivants du Code de la propriétéintellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager laresponsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiéspourraient intenter une action en justice à votre encontre."
+      },
+      {
+        "title": "INFORMATIONS ET EXCLUSION",
+        "content": "L'association La Bullecyclette met en œuvre tous les moyens dont elle dispose, pour assurer une information fiable et une mise à jour fiable de ses sites internet. Toutefois, des erreurs ou omissions peuvent survenir. L'internaute devra donc s'assurer de l'exactitude des informations auprès de notre association, et signaler toutes modifications du site qu'il jugerait utile. La Bullecyclette n'est en aucun cas responsable de l'utilisation faite de ces informations, et de tout préjudice direct ou indirect pouvant en découler."
+      },
+      {
+        "title": "DONNÉES PERSONNELLES",
+        "content": "Pour des besoins de statistiques, le présent site utilise des cookies. Il s'agit de petits fichiers textes stockés sur votre disque dur afin d'enregistrer des données techniques sur votre navigation.\nAucune information personnelle n'est cédée à des tiers, seule l'association La Bullecyclette à accès à ces informations."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "seo": {
+      "title": "La Bullecyclette | Politique de confidentialité",
+      "description": "Politique de confidentialité du site labullecyclette.com"
+    },
+    "section": [
+      {
+        "title": "Qui sommes-nous ?",
+        "content": "L'adresse de notre site est : https://www.labullecyclette.com."
+      },
+      {
+        "title": "Médias",
+        "content": "Si vous téléversez des images sur le site, nous vous conseillons d'éviter de téléverser des images contenant des données EXIF de coordonnées GPS. Les personnes visitant votre site peuvent télécharger et extraire des données de localisation depuis ces images."
+      },
+      {
+        "title": "Cookies",
+        "content": "Si vous vous rendez sur la page de connexion, un cookie temporaire sera créé afin de déterminer si votre navigateur accepte les cookies. Il ne contient pas de données personnelles et sera supprimé automatiquement à la fermeture de votre navigateur.\nLorsque vous vous connecterez, nous mettrons en place un certain nombre de cookies pour enregistrer vos informations de connexion et vos préférences d'écran. La durée de vie d'un cookie de connexion est de deux jours, celle d'un cookie d'option d'écran est d'un an. Si vous cochez « Se souvenir de moi », votre cookie de connexion sera conservé pendant deux semaines. Si vous vous déconnectez de votre compte, le cookie de connexion sera effacé."
+      },
+      {
+        "title": "Contenu embarqué depuis d'autres sites",
+        "content": "Les articles de ce site peuvent inclure des contenus intégrés (par exemple des vidéos, images, articles…). Le contenu intégré depuis d'autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site.\nCes sites web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers, suivre vos interactions avec ces contenus embarqués si vous disposez d'un compte connecté sur leur site web."
+      },
+      {
+        "title": "Traitement de données personnelles",
+        "content": "Les participants sont informés que les données personnelles recueillies lors de l'inscription effectuée en ligne (par leur soin ou par un tiers) sur la plateforme de billetterie font l'objet d'un traitement informatique destiné exclusivement à permettre l'organisation de la manifestation La Bullecyclette.\n\nL'Association s'engage à ne pas communiquer à des tiers les données personnelles ainsi collectées.\n\nConformément à la loi « informatique et libertés » n°78-17 du 6 janvier 1978 modifiée par la loi n°2004-801 du 6 août 2004, les participants bénéficient d'un droit d'accès et de rectification aux informations les concernant. Ils pourront ainsi adresser un courrier à l'adresse suivante : La Bullecyclette - 12 places Léon Bourgeois - 51190 AVIZE ou par courriel : labullecyclette@gmail.com.\n\nLes informations communiquées par l'acheteur (tant pour lui-même que pour le compte des participants qu'il inscrit) à l'occasion de la réservation ne seront transmises à aucun autre tiers. Ces informations seront considérées comme étant confidentielles. Elles seront utilisées uniquement par l'Association La Bullecyclette pour le traitement de la réservation et pour renforcer et personnaliser la communication et l'offre de services réservés aux participants.\n\nToutes les transactions bancaires sur le module d'inscription sont sécurisées par Weezevent, sans intervention, ni récolte de données de la part de l'Association La Bullecyclette.\n\nL'Association ne conserve donc aucun numéro de carte bancaire dans sa base de données."
+      }
+    ]
+  },
+  "regulation": {
+    "title": "Règlement",
+    "seo": {
+      "title": "La Bullecyclette | Politique de confidentialité",
+      "description": "Règlement de l'évènement La Bullecyclette"
+    },
+    "section": [
+      {
+        "title": "ARTICLE 1 - CONDITIONS DE PARTICIPATION",
+        "content": "Toute inscription en ligne sur le site de Weezevent accessible via le site internet de La Bullecyclette, implique l'acceptation sans réserve des présentes conditions générales dont le participant reconnaît avoir pris connaissance dans le cadre du processus de vente en ligne.\n\nEn s'inscrivant, les participants s'engagent explicitement à respecter ledit règlement. En cas de non-respect, l'organisateur a autorité pour exclure tout participant contrevenant.\n\nLe prix du billet est indiqué par personne. Le prix des prestations proposées s'entend en euros, hors TVA et service compris. Le prix applicable à la vente de chaque produit sera celui en vigueur au jour de l'achat.\n\nLes tarifs ci-dessous sont exprimés nets de TVA, l'association n'étant pas à ce jour, soumise à la TVA « TVA non applicable selon l'article 293 B du Code Général des Impôts ». - mention susceptible de modification.\n\nLes participants au parcours de La Bullecyclette (samedi 29 Juin 2024) devront impérativement s'être acquittés de l'engagement suivant tarifs indiqués sur le site La Bullecyclette. Tous les prix indiqués s'entendent par personne.\n\n1.1 - Participation : La participation à la balade à vélo se fait uniquement sur réservation. Celle-ci est obligatoire et définitive (pas de remboursement). Les places sont limitées à 500 participants (adultes et enfants confondus). Elles seront prises en compte par ordre d'arrivée des bulletins d'inscription. L'organisateur se réserve le droit de clore les inscriptions à tout moment dès que l'objectif de participation est atteint. Les inscriptions seront prises par le biais du site Weezevent du 01 Mars au 31 Mai 2024. Aucune inscription ne sera prise par téléphone ou mail.\n\nLes mineurs doivent être obligatoirement accompagnés d'un adulte : parents, tuteurs légaux ou éducateurs,professionnels ou bénévoles diplomés.\n\n1.2 - Capacités physiques des participants : Les participants à La Bullecyclette attestent sur l'honneur être en condition physique suffisante pour effectuer le/les parcours choisi(s) et avoir pris connaissance des difficultés du parcours et des consignes de sécurité.\n\n1.3 - Départ : L'accueil et le départ se feront au château Desbordes à Avize (5 bis rue rempart du midi). À son arrivée au château, conseillée environ 1 heure avant le départ, chaque participant devra retirer une besace dans laquelle il trouvera « la Gazette de la Bullecyclette » qui est un carnet de route à présenter à chaque pause. Dans la besace il trouvera également un verre gravé (ou gobelet réutilisable pour les enfants). Un seul passage à chacun des 4 stands-dégustation est autorisé. Rappel : L'abus d'alcool est dangereux pour la santé.\n\n1.4 - Équipements : Prévoir des vêtements répondant au thème rétro des années 1950 et adaptés aux conditions météorologiques (exemple : porter un chapeau en cas de forte chaleur). Port du casque à coque rigide non obligatoire, mais très fortement conseillé. Il est obligatoire pour les mineurs.\n\n1.5 - Assurance et responsabilités : L'association est assurée en responsabilité civile. Elle décline toute responsabilité en cas de vol, maladie, défaut d'un participant, accident ou perte durant la manifestation. L'inscription vaut déclaration de bonne santé et d'aptitude à participer à la balade et à déguster les produits alimentaires proposés. Les mineurs sont sous la responsabilité d'un adulte référent."
+      },
+      {
+        "title": "ARTICLE 2 - L'ENGAGEMENT",
+        "content": "2.1 - Les modalités d'inscription : L'engagement aux “circuits/balade” de La Bullecyclette (samedi 29 Juin 2024) est nominatif, ferme et définitif.\nAu-delà de l'accès au parcours, l'engagement comprend les prestations suivantes :\n● la besace\n● le carnet de route\n● les ravitaillements\n● les animations musicales\n● la flûte à champagne ou le gobelet\nSur option :\n● la location de vélo Les prestations liées à un parcours ne sont accessibles qu'aux seules personnes inscrites sur ledit parcours et identifiées comme telles (carnet de route). Ces prestations ne sont accessibles qu'aux horaires indiqués sur le carnet de route. A défaut d'enregistrement aux dates et heures définies à l'article 3 des présentes, le participant ne pourra plus participer aux balades réservées, sans possibilité de remboursement de la part de La Bullecyclette.\n\n2.2 - Rétractation : En vertu des dispositions prévues à l'article L221-28 du Code de la Consommation, le droit de rétractation n'est pas applicable.\n\n2.3 - Annulation - modification de l'inscription : L'inscription est ferme, définitive et non modifiable (aucun changement de parcours et/ou de date et/ou d'heure et/ou de participant). Aucun remboursement même partiel ne sera appliqué une fois le paiement en ligne effectué.\n\n2.4 - Inscription nominative L'inscription sur les parcours est nominative. Tout participant qui prendrait le départ sous un nom qui n'est pas le sien contreviendrait aux conditions générales de participation. En outre, il ne pourrait bénéficier des assurances souscrites par les organisateurs et, le cas échéant, s'exposait à d'éventuelles poursuites de leur part.\n\nIl est ici précisé que chaque participant a, au moment de sa souscription, (tant par lui-même que par l'acheteur qui s'est engagé à déclarer pour lui), déclaré être couvert par une assurance responsabilité civile en cours les 12, 13 et 14 mai 2023. A défaut de couverture de la part du participant, la responsabilité de l'Association La Bulleyclette ne saurait être engagée."
+      },
+      {
+        "title": "ARTICLE 3 - RETRAIT DU PACKAGE ENGAGEMENT",
+        "content": "Pour prendre le départ, chaque participant doit préalablement s'être fait enregistré. L'enregistrement se fera sur présentation des billets (imprimés ou affichés sur un téléphone mobile) et sur présentation d'une pièce d'identité au château Desbordes, rue de Champagne, 51190 AVIZE.\nEnregistrement obligatoire : le samedi 29 Juin 2024, entre 8h30 et 10h00 ou 10h30 (suivant le créneau de départ réservé). Au-delà aucun départ ne sera admis et aucun remboursement ne sera effectué."
+      },
+      {
+        "title": "ARTICLE 4 - DROIT À L'IMAGE et PROPRIÉTÉ DE LA MARQUE",
+        "content": "L'acceptation du présent règlement implique obligatoirement que le participant (acheteur comme participant) donne son accord aux organisateurs, aux médias et aux réseaux sociaux qui couvrent l'événement pour utiliser son image pouvant figurer sur les photographies ou vidéos prises du samedi 29 Juin 2024, de 8h30 à 23h. Cette autorisation est valable pour le monde entier, pour tout usage destiné à assurer la promotion du Festival La Bullecyclette et sous toutes ses formes (films, vidéos, presse, sites internet, réseaux sociaux, etc.). L'utilisation de ces images ne pourra en aucun cas porter atteinte à la vie privée ou à la réputation du participant.\n\nL'acceptation du règlement implique obligatoirement que les représentants légaux d'un participant mineur donnent leur accord à l'Association La Bullecyclette aux médias et réseaux sociaux qui couvrent l'événement pour utiliser son image pouvant figurer sur les photographies ou vidéos prises du samedi 29 Juin 2024 de 8h30 à 23h. L'utilisation de ces images ne pourra en aucun cas porter atteinte à la vie privée ou à la réputation de l'enfant.\n\nConformément à la loi du 06.01.1978, les participants disposent d'un droit d'accès, de rectification et d'opposition au traitement des données les concernant en justifiant de leur identité auprès de l'Association La Bullecyclette : labullecyclette@gmail.com.\n\nL'association La Bullecyclette revendique le droit d'antériorité en ce qui concerne sa dénomination et ce depuis la date de publication d'existence au journal officiel. Toute communication sur l'événement ou utilisation d'images de l'événement devra se faire dans le respect du nom de l'événement, des marques déposées et avec l'accord officiel et préalable de l'Association La Bullecyclette. Tout support photographique, vidéo ou cinéma réalisé pendant l'événement ne pourra être utilisé par les participants ou leurs accompagnateurs qu'à des usages privés, sauf autorisation particulière ou accréditation de l'Association La Bullecyclette. En conséquence, tout projet de livre, de film court, moyen ou long métrage, toute publication sur les réseaux sociaux et plus généralement de toute publication devra avoir reçu préalablement l'autorisation expresse de l'Association La Bullecyclette. A cet effet, élection de domicile est élu au siège social de l'association et par mail : labullecyclette@gmail.com."
+      },
+      {
+        "title": "ARTICLE 5 - SÉCURITÉ, ASSISTANCE MÉCANIQUE ET RESPECT DE L'ENVIRONNEMENT",
+        "content": "La Bullecyclette n'est pas une compétition sportive au sens des dispositions du Code du sport, notamment ses articles R.331-6 et R.331-13. Chaque participant doit se conformer au Code de la route et à la signalisation spécifique au parcours, en ne s'éloignant pas du tracé officiel. Le port du casque n'est pas obligatoire mais vivement recommandé. Le participant déclare être apte à la pratique du cyclisme et dégage les organisateurs de toute responsabilité en cas de défaillance physique ou d'accidents. Les participants sont responsables de leur matériel et dégagent les organisateurs de toute responsabilité en cas de vol ou de détérioration sur le lieu de l'événement ou sur les parcours.\n\nLes participants s'engagent également à respecter la faune, la flore et à ne laisser aucun détritus sur le parcours et ses abords (lieux de ravitaillement et de repas). Des bacs pour la gestion des déchets sont placés sur les lieux de ravitaillement et de déjeuner. Les participants s'engagent à respecter l'ensemble des consignes indiquées par les organisateurs et les bénévoles.\nIl est strictement interdit de fumer en dehors des zones délimitées.\n\nLa Bullecyclette n'est pas une compétition sportive mais bien une randonnée à vélo. Toutefois, il est important que les participants vérifient l'étendue des garanties (et les exclusions) de leurs éventuelles assurances actuelles (Responsabilité civile notamment).\n\nEn cas d'incidents mécaniques ou corporels, ce sont les secours, qui interviennent sur la voie publique, qui seront alors prévenus. Les participants disposent dans leur carnet de route, des principaux numéros d'appel à contacter en cas d'urgence :\n● 112 : N° d'appel d'urgence européen ;\n● 15 : N° Samu.\n● 17 : N° Police Secours.\n● 18 : N° Pompiers ;\n● 114 : Numéro d'urgence pour les personnes sourdes et malentendantes\n\nEn cas d'abandon, le participant pourra également contacter le numéro d'urgence de l'organisation afin d'obtenir une assistance. Une assistance mécanique volante et fixe sera mise en œuvre sur le parcours proposé.\n\n5.1 - Utilisation de la voie publique\nChoix des itinéraires : Les parcours proposés empruntent des routes ne présentant en théorie aucun danger majeur et à faible circulation dessinés en fonction des prescriptions des différentes autorités locales pour des raisons de sécurité. Le participant se doit de ne pas s'éloigner du parcours officiel.\n\nFlux des participants : Le départ du parcours se fera groupé à l'heure indiquée. Les parcours s'effectuent à allure libre, sans classement ni mesure de performance. Il ne s'agit pas d'une compétition. Les parcours proposés ainsi que l'échelonnement prévu de chaque groupe sont de nature à faciliter le flux des participants dans la circulation et éviter l'effet de peloton massif. L'évolution du flux de participants évolue en fonction du rythme de chacun. L'organisateur se réserve le droit de réguler le flux des participants à tout moment.\n\nMarquage sur la voie publique\nL'Association LA Bullecyclette placera des panneaux à plusieurs intersections aussi bien à destination des participants que des automobilistes. Chaque participant sera également invité à consulter le CARNET DE ROUTE. Afin de garantir le parcours, un marquage au sol sera également réalisé avec des flèches grâce à l'usage de bombes conformément à la réglementation. La disparition de ce marquage temporaire s'effectue soit naturellement soit par les soins du CTS dans le cadre de sa délégation et ce au plus tard dans les 24 heures après la fin de la manifestation.\n\n5.2 - Sécurité et prévention\nPort du casque\nLe port du casque à coque rigide est vivement conseillé. Il est obligatoire pour les mineurs. Hors agglomération et par visibilité insuffisante, le port du gilet de haute visibilité conforme à la réglementation est obligatoire.\n\nDevoirs des participants\n● Comportement\nLes participants ne bénéficient en aucun cas d'une priorité de passage. Ils se doivent d'appliquer les dispositions du Code de la route et celles prises par les autorités locales compétentes, de respecter les consignes verbales et écrites des organisateurs et des bénévoles, d'exécuter les injonctions des services de police ou de gendarmerie données dans l'intérêt de la sécurité et de la circulation routières, respecter les autres usagers de la route. La responsabilité personnelle du participant demeure pleine et entière au regard de l'ensemble de ces dispositions, prescriptions, consignes et injonctions.\nLes participants doivent respecter un espace de sécurité entre chaque groupe constitué pour permettre aux véhicules à moteur d'effectuer des manœuvres de dépassement et de rabattement en toute sécurité.\nTous les participants sont tenus de respecter en tous points les prescriptions du code de la route, des arrêtés préfectoraux, départementaux ou municipaux réglementant la circulation publique et d'obéir aux injonctions que les services de police ou de gendarmerie pourraient leur donner dans l'intérêt de la sécurité.\nLes participants ne bénéficient jamais d'une priorité de passage.\nLes participants ne doivent pas rouler trop près de l'accotement, pour éviter les ornières ou les gravillons. Dans les virages, ils sont tenus de serrez au maximum à droite.\nLes participants sont tenus de rouler à deux de front ou en file indienne. Si le groupe compte plus de dix personnes, il est conseillé de le scinder.\n\n● Équipement des cycles\nLes cycles utilisés par les participants répondent aux conditions de participation, sont équipés conformément aux dispositions du Code de la route et en état de fonctionnement, notamment au niveau des organes de sécurité, de signalisation et de freinage.\n\nAssistants de parcours\nDes panneaux de prévention seront placés aux points nécessitant une vigilance accrue. Dans le cas où la sécurité des participants nécessiterait d'être renforcée, la présence de signaleurs est mise en place sur des lieux définis par les organisateurs. Ces derniers disposent d'une habilitation pour effectuer les actions de régulation de circulation des usagers (participants ou tiers). En cas d'accident, le signaleur doit protéger la ou les victimes et sécuriser le périmètre en attendant l'arrivée des secours."
+      },
+      {
+        "title": "ARTICLE 6 - RAVITAILLEMENTS",
+        "content": "Plusieurs points de ravitaillements, repas (sur option) et dégustations seront proposés sur les parcours du La Bullecyclette se tenant le 29 Juin 2024. Les quatres arrêts proposent systématiquement de l'eau et une coupe de champagne de 10cl ou un jus de fruit. Sur trois des quatres arrêts de la nourriture sera également remise à chaque participant. Aucun alcool ne sera distribué aux mineurs, même accompagnés. L'organisation décline toute responsabilité en cas d'incident et se réserve le droit de refuser de servir un participant qui serait en état manifeste d'ébriété.\nL'usage d'une gourde d'eau est fortement conseillée à chaque participant."
+      },
+      {
+        "title": "ARTICLE 7 - ANIMAUX",
+        "content": "Les chiens ne sont pas tolérés sur la manifestation."
+      },
+      {
+        "title": "ARTICLE 8 - INFORMATIONS",
+        "content": "L'ensemble des informations relatives à l'événement sont régulièrement mises à jour sur le site www.labullecyclette.com."
+      },
+      {
+        "title": "ARTICLE 9 - TRAITEMENT DE DONNÉES PERSONNELLES",
+        "content": "Les participants sont informés que les données personnelles recueillies lors de l'inscription effectuée en ligne (par leur soin ou par un tiers) sur la plateforme de billetterie font l'objet d'un traitement informatique destiné exclusivement à permettre l'organisation de la manifestation La Bullecyclette.\n\nL'Association s'engage à ne pas communiquer à des tiers les données personnelles ainsi collectées.\n\nConformément à la loi « informatique et libertés » n°78-17 du 6 janvier 1978 modifiée par la loi n°2004-801 du 6 août 2004, les participants bénéficient d'un droit d'accès et de rectification aux informations les concernant. Ils pourront ainsi adresser un courrier à l'adresse suivante : La Bullecyclette - 12 places Léon Bourgeois - 51190 AVIZE ou par courriel : labullecyclette@gmail.com.\n\nLes informations communiquées par l'acheteur (tant pour lui-même que pour le compte des participants qu'il inscrit) à l'occasion de la réservation ne seront transmises à aucun autre tiers. Ces informations seront considérées comme étant confidentielles. Elles seront utilisées uniquement par l'Association La Bullecyclette pour le traitement de la réservation et pour renforcer et personnaliser la communication et l'offre de services réservés aux participants. Toutes les transactions bancaires sur le module d'inscription sont sécurisées par Weezevent, sans intervention, ni récolte de données de la part de l'Association La Bullecyclette.\n\nL'Association ne conserve donc aucun numéro de carte bancaire dans sa base de données."
+      },
+      {
+        "title": "ARTICLE 10 - ANNULATION DE L'ÉVÈNEMENT",
+        "content": "- Du fait de l'organisateur : en cas d'ordre de la Préfecture pour mauvaises conditions météorologiques (avis de tempête par exemple), pandémie ou pour tout autre évènement exceptionnel ou si le nombre de participants est insuffisant, la manifestation sera annulée et les participants remboursés sur demande écrite.\nLes organisateurs se réservent le droit ou peuvent être contraints par les autorités compétentes (locales, départementales, nationales, etc...) de :\n● différer des départs,\n● modifier les parcours, les étapes et/ou les lieux de restauration\n● de neutraliser tout ou partie des randonnées, balades ou course\n● d'annuler ou reporter tout ou partie de l'évènement.\nDe simples conditions météorologiques défavorables ne sauraient constituer une raison d'annulation de l'évènement.\n\n- Du fait des participants : après la date limite des inscriptions, fixée au 31 Avril inclus, toute inscription sera définitive. En cas de non-participation, le montant de l'inscription reste acquis à l'organisateur. Aucun remboursement même partiel ne sera effectué."
+      },
+      {
+        "title": "ARTICLE 11 - Demande d'Informations - réclamations",
+        "content": "Toute demande d'information liées aux modalités d'inscription pourra être formulée :\n\n● par voie postale au siège social de l'association : 12 place Léon Bourgeois, AVIZE\n● par courrier électronique à l'adresse suivante : labullecyclette@gmail.com\n● par téléphone au 06.70.94.16.84."
+      },
+      {
+        "title": "ARTICLE 12 - DIVERS",
+        "content": "Le fait que l'une quelconque des présentes conditions ne soit pas invoquée à un moment donné ne peut être interprété comme valant renonciation à faire appliquer celle-ci. Au cas où l'une quelconque des présentes conditions serait déclarée nulle ou contraire à une disposition d'ordre public, elle sera réputée non écrite et les autres stipulations resteront en vigueur."
+      },
+      {
+        "title": "ARTICLE 13 - DROIT APPLICABLE",
+        "content": "La vente de la présente billetterie est régie et soumise par le droit français. Pour toute réclamation l'acheteur peut contacter l'Association aux coordonnées mentionnées à l'article 11 des présentes conditions. En cas de litige, les tribunaux français et en particulier les Tribunaux de Chalon-en-Champagne sont seuls compétents.\n\nPour toute contestation relative au dispositif de paiement en ligne, il est ici précisé que l'association La Bullecyclette utilise exclusivement la plateforme Weezevent dont les mentions légales figurent ci-après :\n\nSociété WEEZEVENT SAS, Forme sociale : SAS, Capital social : 72 212,00 euros, R.C.S. : Dijon 503 715 401 - Numéro de gestion 2008 B 368, SIRET : 503 715 401 00017, TVA intracommunautaire : FR93503715401, Siège social : 14 rue de l'Est - 21000 DIJON, France, Correspondance : 10 Rue Morice - 92110 Clichy, Téléphone : + 33 (0)1 86 65 24 00, Adresse de courrier électronique : contact@weezevent.com, Délégué à la Protection des Données : dpo@weezevent.com, Directeur de la publication : Pierre-Henri DEBALLON\n\nHébergeur : Amazon Web Services, Dénomination Sociale : Amazon CS Ireland Ltd, https://aws.amazon.com/, Unit 27 - 6400 Cork Airport Business Park - Kinsale Road - Ireland\n\nWeezevent SAS est immatriculée au registre de l'ORIAS en tant que Mandataire d'intermédiaire en assurance (MIA) sous le numéro 19004141 (site : www.orias.fr)."
+      },
+      {
+        "title": "ARTICLE 14 - ACCEPTATION DU RÈGLEMENT",
+        "content": "Les participants, représentés le cas échéant par l'Acheteur défini à l'article “Définitions” en tête des présentes, au festival La Bullecyclette agissant, le cas échéant, tant pour lui que pour les personnes qu'il représente, certifient avoir pris connaissance du règlement et s'engagent à respecter l'ensemble des articles ci-dessus. J'accepte, moi et ceux que j'inscris en qualité de participants, sans réserve ni restriction, l'ensemble des clauses et renonce à tout recours contre les organisateurs."
+      }
+    ]
   }
 }

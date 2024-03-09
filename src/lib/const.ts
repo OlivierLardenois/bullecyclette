@@ -4,6 +4,7 @@ export const ADDRESS =
 export const PHONE = "06 70 94 16 84";
 export const EVENT_DATE = "June 29, 2024 08:30:00";
 export const SALES_DATE = "March 8, 2024 12:00:00";
+export const DESIGNER = "Elisa Varnier";
 
 export const DRINK_PROVIDERS: {
   name: string;
