@@ -199,7 +199,11 @@
     "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par mail, sur Instagram ou sur Facebook",
     "mail": "Adresse e-mail",
     "address": "Adresse postale",
-    "phone": "Numéro de téléphone"
+    "phone": "Numéro de téléphone",
+    "design": "Design",
+    "legal": "Mentions légales",
+    "regulation": "Conditions générales de participations",
+    "privacy": "Politiques de confidentialité"
   },
   "preparation": {
     "title": "Je me prépare",
