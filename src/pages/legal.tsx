@@ -10,17 +10,20 @@ const LegalPage: React.FC<PageProps<Queries.LegalPageQuery>> = ({
   const { t } = useTranslation();
 
   return (
-    <Layout pageKey="legalPage" pathname={location.pathname}>
-      <div className="max-w-5xl mx-auto w-full space-y-8 mt-12">
+    <Layout pageKey="legal" pathname={location.pathname}>
+      <div className="max-w-5xl mx-auto w-full space-y-8">
+        <h1 className="text-cg-red text-6xl text-center py-12 mx-8">
+          {t("legal.title")}
+        </h1>
         {Array(5)
           .fill(null)
           .map((_, index) => {
             return (
-              <div className="space-y-4 whitespace-pre-line">
+              <div className="space-y-4 whitespace-pre-line mx-8">
                 <h4 className="text-liberty font-bold">
-                  {t(`legalPage.section.${index}.title`)}
+                  {t(`legal.section.${index}.title`)}
                 </h4>
-                <p>{t(`legalPage.section.${index}.content`)}</p>
+                <p>{t(`legal.section.${index}.content`)}</p>
               </div>
             );
           })}
