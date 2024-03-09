@@ -69,14 +69,14 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-between mx-auto">
             <div className="flex-1">
-              <Link className="underline hover:opacity-70 " to={"legal"}>
+              <Link className="underline hover:opacity-70 " to={"/legal"}>
                 {t("footer.legal")}
               </Link>
             </div>
             <div className="flex-1">
               <Link
                 className="underline hover:opacity-70 flex-1"
-                to={"regulation"}
+                to={"/regulation"}
               >
                 {t("footer.regulation")}
               </Link>
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
             <div className="flex-1">
               <Link
                 className="underline hover:opacity-70 flex-1"
-                to={"privacy"}
+                to={"/privacy"}
               >
                 {t("footer.privacy")}
               </Link>
