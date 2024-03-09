@@ -17,7 +17,7 @@
     "ticket": "Achetez votre billet",
     "presentation": {
       "title": "La balade à vélo rétro en Champagne",
-      "text": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage. À travers les vignes et les villages de la Côte des Blancs, la balade d’environ 20 km est ponctuée de quatre arrêts où seront offert musique swing et champagne. Le but de la balade est de prendre le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro."
+      "text": "La Bullecyclette est un événement oenotouristique annuel qui propose aux participants une balade à bicyclette vintage. À travers les vignes et les villages de la Côte des Blancs, la balade d'environ 20 km est ponctuée de quatre arrêts où seront offert musique swing et champagne. Le but de la balade est de prendre le temps de découvrir ou redécouvrir les paysages champenois dans un esprit festif et rétro."
     },
     "nav": {
       "la-balade": { "alt": "Logo", "title": "La balade de la Bullecyclette" },
@@ -71,7 +71,7 @@
     },
     "ticket": {
       "title": "billetterie",
-      "description": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.<br/> Vous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.<br/><br/> Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.<br/><1>Si vous venez en groupe :</1> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.<br/><br/>La billetterie est ouverte du 8 Mars au 31 mai, dans la limite de 500 places vendues.<br/><br/> <3>INFORMATIONS : </3><br/>Durant la balade à vélo vous n’aurez pas besoin d’argent, tout est compris dans votre place.<br/>Vous aurez par contre besoin d’une gourde d’eau que vous pourrez remplir à chaque arrêts et d’un nécessaire à réparation en cas de crevaison ou autre pour votre vélos.<br/>Pour connaître toutes les informations pratiques cliquez <5>içi</5>"
+      "description": "Avec l'achat de place, vous bénéficierez du droit d'accès à la balade à vélo et obtiendrez une besace dans laquelle se trouveront un verre à champagne et un livret explicatif.<br/> Vous consommerez au cours de la balade: 1 entrée, 1 plat, 1 dessert, 1 café, 1 goûter et 4 coupes de Champagne.<br/><br/> Il y aura deux vagues de départ de 250 personnes pour la balade à vélo : la première à 10h et la seconde à 10h30. Vous choisirez la vôtre lors de l'achat de votre place.<br/><1>Si vous venez en groupe :</1> consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.<br/><br/>La billetterie est ouverte du 8 Mars au 31 mai, dans la limite de 500 places vendues.<br/><br/> <3>INFORMATIONS : </3><br/>Durant la balade à vélo vous n'aurez pas besoin d'argent, tout est compris dans votre place.<br/>Vous aurez par contre besoin d'une gourde d'eau que vous pourrez remplir à chaque arrêts et d'un nécessaire à réparation en cas de crevaison ou autre pour votre vélos.<br/>Pour connaître toutes les informations pratiques cliquez <5>içi</5>"
     }
   },
   "winegrowers": {
@@ -184,7 +184,7 @@
       "7": "BOISSONS ALCOOLISÉS RAFRAICHISSANTES"
     },
     "food": {
-      "0": "Le Trio, c’est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
+      "0": "Le Trio, c'est trois boulangeries (Montchenos, Reims et Gueux) -pâtisseries, artisanales. On y trouve des pains naturels et savou-reux, des douceurs 100% maison et une cuisine gourmande."
     },
     "presentation": {
       "what": "C'est quoi ?",
@@ -196,7 +196,7 @@
     }
   },
   "footer": {
-    "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par le formulaire de contact ou par mail, sur Instagram ou sur Facebook",
+    "contact": "Si vous n'avez pas trouvé de réponse à vos questions, contactez-nous par mail, sur Instagram ou sur Facebook",
     "mail": "Adresse e-mail",
     "address": "Adresse postale",
     "phone": "Numéro de téléphone"
@@ -207,7 +207,7 @@
       {
         "src": "../images/fr-flag.png",
         "title": "Je prépare mon vélo",
-        "text": "Pour participer à la Bullecyclette vous aurez besoin d’apporter votre propre vélo rétro. Celui-ci devra être construit avant 1987. Vous ne possédez pas de vélo rétro ?Vous avez la possibilité d’en louer lors de la réservation de votre billet.",
+        "text": "Pour participer à la Bullecyclette vous aurez besoin d'apporter votre propre vélo rétro. Celui-ci devra être construit avant 1987. Vous ne possédez pas de vélo rétro ?Vous avez la possibilité d'en louer lors de la réservation de votre billet.",
         "alt": "",
         "button": "En savoir plus"
       },
@@ -218,8 +218,8 @@
         "button": "En savoir plus"
       },
       {
-        "title": "Je prends ma gourde d’eau",
-        "text": "Dans notre volonté de faire un événement le plus propre possible, nous vous recommendons d’apporter votre gourde d’eau. Vous pourrez la remplir à chaque arrêt.",
+        "title": "Je prends ma gourde d'eau",
+        "text": "Dans notre volonté de faire un événement le plus propre possible, nous vous recommendons d'apporter votre gourde d'eau. Vous pourrez la remplir à chaque arrêt.",
         "alt": "",
         "button": "En savoir plus"
       }
@@ -288,20 +288,20 @@
         "0": {
           "title": "<0>Quelques recommandations pour que votre balade à bicyclette se déroule au mieux : </0>",
           "list": [
-            "Prendre une gourde d’eau.",
+            "Prendre une gourde d'eau.",
             "Prévoir de quoi réparer son vélo : rustine, chambre à air, pompe ... vont sûrement vous être utiles",
             "Adapter sa tenue en fonction des conditions métérologiques (porter un chapeau, mettre de la crème solaire ou apporter un vêtement de pluie) en étant toujours dans le thème rétro des années 1950 bien-sûr !",
-            "Munissez-vous de votre carte d’identité pour venir retirer votre besace avant la balade.",
-            "Si vous venez en groupe : consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n’est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.",
+            "Munissez-vous de votre carte d'identité pour venir retirer votre besace avant la balade.",
+            "Si vous venez en groupe : consultez-vous pour pouvoir vous inscrire à la même tranche horaire de départ. Si cela n'est plus possible, vous pourrez néanmoins vous retrouver dès le premier arrêt.",
             "Nous estimmons votre retour aux environs de 17h.",
             "Les chiens ne sont pas autorisés pour la balade à vélo.",
-            "Les mineurs doivent être obligatoirement accompagnés d’un adulte.",
+            "Les mineurs doivent être obligatoirement accompagnés d'un adulte.",
             "Quelles que soient les conditions métérologiques, la Bullecyclette ainsi que la Guingette de la Bullecyclette auront lieu, sauf arrété préfectoral."
           ]
         },
         "1": {
           "title": "<0>Achat et réservation : </0><br/>",
-          "description": "L’achat du ticket pour participer à la balade à vélo se fait exclusivement sur le site internet de l’Office de tourisme d’Epernay (accéssible également depuis notre site internet onglet <1>Billetterie</1> ) du 01 Mars au 31 Mai 2024. <br/>Toute réservation est définitive (pas de remboursement). Le paiement des réservations s’effectuent uniquement par carte bancaire. Vous recevrez par email un récépissé récapitulant votre choix (heure de départ – nombre de réservations adulte et enfant, et montant total du règlement).<br/>Les places sont limitées à 500 participants (adultes et enfants confondus). Elles seront prises en compte par ordre d'arrivée des bul- letins d'inscription. L'organisateur se réserve le droit de clore les inscriptions à tout moment dès que l'objectif de participation est atteint. Aucune inscription ne sera prise par téléphone ou mail."
+          "description": "L'achat du ticket pour participer à la balade à vélo se fait exclusivement sur le site internet de l'Office de tourisme d’Epernay (accéssible également depuis notre site internet onglet <1>Billetterie</1> ) du 01 Mars au 31 Mai 2024. <br/>Toute réservation est définitive (pas de remboursement). Le paiement des réservations s’effectuent uniquement par carte bancaire. Vous recevrez par email un récépissé récapitulant votre choix (heure de départ - nombre de réservations adulte et enfant, et montant total du règlement).<br/>Les places sont limitées à 500 participants (adultes et enfants confondus). Elles seront prises en compte par ordre d'arrivée des bul- letins d'inscription. L'organisateur se réserve le droit de clore les inscriptions à tout moment dès que l'objectif de participation est atteint. Aucune inscription ne sera prise par téléphone ou mail."
         },
         "2": {
           "text": "<0>Départ : </0><br/>L’accueil et le départ se feront au château Desbordes à Avize (5 bis rue rempart du midi, 51190 Avize). L’arrivée au château est conseil- lée environ 1 heure avant le départ, ou 1h30 si vous louez un vélo. Chaque participant devra retirer au château Desbordes, sous pré- sentation de sa carte d’identité, une besace dans laquelle il trouvera « la Gazette de la Bullecyclette » (un carnet de route à présen- ter à chaque pause). Dans la besace il trouvera également un verre gravé (ou gobelet réutilisable pour les enfants)."
@@ -345,5 +345,34 @@
     "accommodation": {
       "title": "se loger"
     }
+  },
+  "legalPage": {
+    "title": "Mentions légales",
+    "seo": {
+      "title": "La Bullecyclette | Mentions légales",
+      "description": "Mentions légales du site labullecyclette.com"
+    },
+    "section": [
+      {
+        "title": "ORGANISATION",
+        "content": "Association La Bullecyclette\nAssociation Loi 1901\n12 place Léon Bourgeois - 51190 AVIZE - France\nSIREN / APE : 922 47 22 79 / 8230Z\nRNA : W51 200 57 30\nlabullecyclette@gmail.com"
+      },
+      {
+        "title": "HÉBERGEMENT DU SITE",
+        "content": "L'hébergement du site est réalisé par la société Netlify.\nNetlify, Inc.\nAdresse : 512 2nd Street, Suite 200 San Francisco, CA 94107\nMail : support@netlify.com\nSite : https://www.netlify.com"
+      },
+      {
+        "title": "PROPRIÉTÉS INTELLECTUELLES",
+        "content": "La Bullecyclette est une marque déposée. Toute reproduction ou représentation réalisée sans l'accord de l'association La Bullecyclette constitue une contrefaçon. Les informations présentées sur ce site sont publiques. La reproduction des pages de ce site est interdite. Lorsque des données présentes sur ce site ont un caractère nominatif, les utilisateurs doivent en faire un usage conforme aux réglementations en vigueur et aux recommandations de la Commission nationale de l'informatique et des libertés (CNIL).\n\n© Tout le contenu du présent site, incluant, de façon non limitative, les graphismes, images,textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont lapropriété exclusive de l'association La Bullecyclette à l'exception des marques, logos oucontenus appartenant à d'autres sociétés partenaires ou auteurs. Toute reproduction,distribution, modification, adaptation, retransmission ou publication, même partielle, de cesdifférents éléments est strictement interdite sans l'accord exprès par écrit de l'association LaBullecyclette. Cette représentation ou reproduction, par quelque procédé que ce soit, constitueune contrefaçon sanctionnée par les articles L.3335-2 et suivants du Code de la propriétéintellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager laresponsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiéspourraient intenter une action en justice à votre encontre."
+      },
+      {
+        "title": "INFORMATIONS ET EXCLUSION",
+        "content": "L'association La Bullecyclette met en œuvre tous les moyens dont elle dispose, pour assurer une information fiable et une mise à jour fiable de ses sites internet. Toutefois, des erreurs ou omissions peuvent survenir. L'internaute devra donc s'assurer de l'exactitude des informations auprès de notre association, et signaler toutes modifications du site qu'il jugerait utile. La Bullecyclette n'est en aucun cas responsable de l'utilisation faite de ces informations, et de tout préjudice direct ou indirect pouvant en découler."
+      },
+      {
+        "title": "DONNÉES PERSONNELLES",
+        "content": "Pour des besoins de statistiques, le présent site utilise des cookies. Il s'agit de petits fichiers textes stockés sur votre disque dur afin d'enregistrer des données techniques sur votre navigation.\nAucune information personnelle n'est cédée à des tiers, seule l'association La Bullecyclette à accès à ces informations."
+      }
+    ]
   }
 }
