@@ -4,7 +4,7 @@ import * as React from "react";
 
 import Layout from "../components/layout";
 
-const PrivacyPAge: React.FC<PageProps<Queries.PrivacyPAgeQuery>> = ({
+const PrivacyPage: React.FC<PageProps<Queries.PrivacyPageQuery>> = ({
   location,
 }) => {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ const PrivacyPAge: React.FC<PageProps<Queries.PrivacyPAgeQuery>> = ({
           .fill(null)
           .map((_, index) => {
             return (
-              <div className="space-y-4 whitespace-pre-line mx-8">
+              <div className="space-y-4 whitespace-pre-line mx-8 text-justify">
                 <h4 className="text-liberty font-bold">
                   {t(`privacy.section.${index}.title`)}
                 </h4>
@@ -32,10 +32,10 @@ const PrivacyPAge: React.FC<PageProps<Queries.PrivacyPAgeQuery>> = ({
   );
 };
 
-export default PrivacyPAge;
+export default PrivacyPage;
 
 export const query = graphql`
-  query PrivacyPAge($language: String!) {
+  query PrivacyPage($language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {

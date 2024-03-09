@@ -4,26 +4,26 @@ import * as React from "react";
 
 import Layout from "../components/layout";
 
-const LegalPage: React.FC<PageProps<Queries.LegalPageQuery>> = ({
+const RegulationPage: React.FC<PageProps<Queries.RegulationPageQuery>> = ({
   location,
 }) => {
   const { t } = useTranslation();
 
   return (
-    <Layout pageKey="legal" pathname={location.pathname}>
+    <Layout pageKey="regulation" pathname={location.pathname}>
       <div className="max-w-5xl mx-auto w-full space-y-8">
         <h1 className="text-cg-red text-6xl text-center py-12 mx-8">
-          {t("legal.title")}
+          {t("regulation.title")}
         </h1>
-        {Array(5)
+        {Array(14)
           .fill(null)
           .map((_, index) => {
             return (
               <div className="space-y-4 whitespace-pre-line mx-8 text-justify">
-                <h4 className="text-liberty font-bold">
-                  {t(`legal.section.${index}.title`)}
+                <h4 className="text-cg-red font-bold">
+                  {t(`regulation.section.${index}.title`)}
                 </h4>
-                <p>{t(`legal.section.${index}.content`)}</p>
+                <p>{t(`regulation.section.${index}.content`)}</p>
               </div>
             );
           })}
@@ -32,10 +32,10 @@ const LegalPage: React.FC<PageProps<Queries.LegalPageQuery>> = ({
   );
 };
 
-export default LegalPage;
+export default RegulationPage;
 
 export const query = graphql`
-  query LegalPage($language: String!) {
+  query RegulationPage($language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
