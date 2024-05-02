@@ -10,7 +10,7 @@
   "countdown-timer": {
     "label": {
       "day-before-ticketing": "Days remaining before the ticket office opens :",
-      "day-before-event": "Days remaining before the event :"
+      "day-before-event": "Days left until event :"
     },
     "days": "days",
     "hours": "hours",
@@ -29,7 +29,7 @@
           "text": "Travel through the vineyards and villages of the Côte des Blancs on your retro bike. The Bullecyclette walk of approximately 20km is punctuated by four stops where you will be offered swing music, champagne and a full meal. Take the time to discover or rediscover the Champagne landscapes in a festive and retro spirit, typical of the 1950s."
         },
         {
-          "text": "With the purchase of a place you will benefit from a bag in which you will find a champagne glass, as well as an explanatory booklet.\n\nYou will consume during the walk: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of champagne."
+          "text": "With the purchase of a place you will benefit from a bag in which you will find a champagne glass, as well as an explanatory booklet.\n\nYou will consume during the walk: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne."
         }
       ]
     },
@@ -45,11 +45,12 @@
     },
     "ticket": {
       "title": "ticket office",
-      "description": "With the purchase of a place, you will benefit from the right of access to the bike ride and will obtain a bag in which you will find a champagne glass and an explanatory booklet.<br/> You will consume during the ride: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne.<br/><br/> There will be two starting waves of 250 people for the bike ride: the first at 10 a.m. and the second at 10:30 a.m. You will choose yours when purchasing your place.<br/><1>If you come in a group:</1> please consult to be able to register for the same time slot of departure. If this is no longer possible, you can still meet at the first stop.<br/><br/>The ticket office is open from March 8 to May 31, with a limit of 500 seats sold.<br/ ><br/> <3>INFORMATION : </3><br/>During the bike ride you will not need money, everything is included in your place.<br/>You will however need a water bottle that you can fill at each stop and a repair kit in the event of a puncture or other for your bike.<br/>To find out all the practical information click <5>here</5>"
-    }
+      "description": "With the purchase of a place, you will benefit from the right of access to the bike ride and will obtain a bag in which you will find a champagne glass and an explanatory booklet.<br/> You will consume during the ride: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne.<br/><br/> There will be two starting waves of 250 people for the bike ride: the first at 10 a.m. and the second at 10:30 a.m. You will choose yours when purchasing your place.<br/><1>If you come in a group:</1> consult each other to be able to register for the same departure time slot. If this is no longer possible, you can still find yourself at the first stop.<br/><br/>The ticket office is open from March 1 to May 31, with a limit of 500 places sold.<br/ ><br/> <3>INFORMATION : </3><br/>During the bike ride you will not need money, everything is included in your place.<br/>You will however need a reusable water bottle that you can refill at each stop and a repair kit in the event of a puncture or other for your bike.<br/>To find out all the practical information click <5>here</5>"
+    },
+    "redirect": "Redirection to Weezevent"
   },
   "winegrowers": {
-    "title": "the winegrowers",
+    "title": "winegrowers",
     "persons": [
       {
         "name": "Champagne PROUT",
@@ -82,11 +83,11 @@
     ]
   },
   "artists": {
-    "title": "the artists",
+    "title": "artists",
     "persons": [
       {
         "name": "Jeannick Liebert",
-        "description": "Guitarist",
+        "description": "Guitard player",
         "url": "https://www.youtube.com/user/jeannick08360/videos",
         "shorturl": "See on Youtube",
         "image": "artists/jeannick_liebert.jpg"
@@ -100,7 +101,7 @@
       },
       {
         "name": "Swing Shady",
-        "description": "Jazz and Gypsy Pop",
+        "description": "Jazz and pop manouche",
         "url": "https://www.instagram.com/therealswingshady",
         "shorturl": "See on Instagram",
         "image": "artists/swing_shady.jpg"
@@ -115,18 +116,18 @@
     ]
   },
   "commitment": {
-    "title": "our engagements",
+    "title": "our PHILOSOPHY",
     "steps": [
       {
         "src": "../images/fr-flag.png",
         "title": "Eco-responsible event",
-        "description": "Waste minimization",
+        "description": "Waste minimization, Cycling = zero carbon",
         "alt": ""
       },
       {
         "src": "../images/ticket.png",
         "title": "Promoting local products",
-        "description": "Show the culinary and artisanal wealth of our region",
+        "description": "Promote artisanal and culinary richness from our region.",
         "alt": ""
       },
       {
@@ -137,19 +138,20 @@
       },
       {
         "src": "../images/icon.png",
-        "title": "Promotion of reuse and second hand",
-        "description": "No new purchases, only second hand!",
+        "title": "Second hand promotion",
+        "description": "No new purchase of equipment,only second hand or loan!",
         "alt": ""
       },
       {
         "src": "../images/fr-flag.png",
-        "title": "Promotion of the landscape",
+        "title": "Promotion of the champagne landscape",
         "description": "Highlighting the built and landscape heritage of our region",
         "alt": ""
       },
       {
         "src": "../images/en-flag.png",
         "title": "Sharing a Champagne-style art of living",
+        "description": "",
         "alt": ""
       }
     ]
@@ -218,5 +220,91 @@
     "accommodation": {
       "title": "to find accommodation"
     }
+  },
+  "schedule": {
+    "guinguette": {
+      "1500": {
+        "text": "Openning of the Guinguette de la Bullecyclette",
+        "alt": "15h00"
+      },
+      "1800": {
+        "text": "1st concert",
+        "alt": "18h00"
+      },
+      "2000": {
+        "text": "2nd concert",
+        "alt": "20h00"
+      },
+      "2300": {
+        "text": "Closure",
+        "alt": "23h00"
+      }
+    },
+    "guinguette-small": {
+      "1500": {
+        "text": "Openning of the Guinguette de la Bullecyclette",
+        "alt": "15h00"
+      },
+      "1800": {
+        "text": "Concerts",
+        "alt": "18h00"
+      },
+      "2300": {
+        "text": "Closure",
+        "alt": "23h00"
+      }
+    },
+    "bullecyclette": {
+      "830": {
+        "text": "Arrival of participants",
+        "alt": "8h30"
+      },
+      "1000": {
+        "text": "1st departure of bikes",
+        "alt": "10h00"
+      },
+      "1030": {
+        "text": "2nd départure of bikes",
+        "alt": "10h30"
+      },
+      "1700": {
+        "text": "Estimated return of bikes",
+        "alt": "17h00"
+      }
+    }
+  },
+  "footer": {
+    "contact": "If you haven't found the answer to your questions, contact us by email, on Instagram or on Facebook",
+    "mail": "E-mail address",
+    "address": "Address",
+    "phone": "Phone number",
+    "design": "Design",
+    "legal": "Legal Notice",
+    "regulation": "General conditions of participation",
+    "privacy": "Privacy Policies"
+  },
+  "preparation": {
+    "title": "I PREPARE MYSELF",
+    "steps": [
+      {
+        "src": "../images/fr-flag.png",
+        "title": "I PREPARE MYSELF",
+        "text": "To participate at the Bullecyclette you will need to bring your own retro bike. This must be built before 1987. If you don't have a retro bike? you can rent one when booking your ticket.",
+        "alt": "",
+        "button": "Learn more"
+      },
+      {
+        "title": "I PREPARE MY OUTFIT",
+        "text": "Ladies and gentlemen, to be in the theme you will need to spruce up your retro outfit. Take out your best pairs of suspenders from the attics, refine your mustache, find a dress with a retro cut, make your best lipstick, in short, have fun creating a 1950s outfit.",
+        "alt": "",
+        "button": "Learn more"
+      },
+      {
+        "title": "I TAKE MY REUSABLE WATER BOTTLE",
+        "text": "In our desire to make the event as clean as possible, we recommend that you should bring your own reusable water bottle. You can refill it at each stop.",
+        "alt": "",
+        "button": "Learn more"
+      }
+    ]
   }
 }

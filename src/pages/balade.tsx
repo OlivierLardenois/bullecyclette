@@ -28,6 +28,13 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
     ? getImage(bullecycletteImageFilter.childImageSharp)
     : null;
 
+  const bullecycletteDateFilter = data.bullecycletteDateImages.nodes.find(
+    (node) => node.relativePath == `common/date_${language}.png`,
+  );
+  const bullecycletteDateImage = bullecycletteDateFilter
+    ? getImage(bullecycletteDateFilter.childImageSharp)
+    : null;
+
   const stepRoadImageFilter = data.stepRoadImages.nodes.find(
     (node) => node.relativePath == `road/step_road_${language}.png`,
   );
@@ -49,6 +56,21 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
     ? getImage(descRoadImageFilter.childImageSharp)
     : null;
 
+  const schedulerImageFilter = data.schedulerImages.nodes.find(
+    (node) => node.relativePath == `schedule/balade-schedule-${language}.png`,
+  );
+  const schedulerImage = schedulerImageFilter
+    ? getImage(schedulerImageFilter.childImageSharp)
+    : null;
+
+  const schedulerMDImageFilter = data.schedulerMDImages.nodes.find(
+    (node) =>
+      node.relativePath == `schedule/balade-schedule-${language}-md.png`,
+  );
+  const schedulerMDImage = schedulerMDImageFilter
+    ? getImage(schedulerMDImageFilter.childImageSharp)
+    : null;
+
   return (
     <Layout pageKey="balade" pathname={location.pathname}>
       <section className="flex justify-center pb-12">
@@ -68,7 +90,7 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
                   <div className="text-justify whitespace-pre-line">
                     <Trans i18nKey={"balade.what.description.0.text"} />
                   </div>
-                  <div className="text-justify">
+                  <div className="text-justify  whitespace-pre-line">
                     <Trans i18nKey={"balade.what.description.1.text"} />
                   </div>
                 </div>
@@ -111,11 +133,12 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
                   {t("balade.when.title")}
                 </h3>
               </ArrowBullet>
-              <StaticImage
-                src="../images/common/date_fr.png"
-                alt="date"
-                placeholder="blurred"
-              />
+              {bullecycletteDateImage && (
+                <GatsbyImage
+                  image={bullecycletteDateImage}
+                  alt={"bullecyclette"}
+                />
+              )}
             </div>
           </div>
         </div>
@@ -129,18 +152,14 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
             </h3>
           </ArrowBullet>
           <div className="hidden md:block mx-auto">
-            <StaticImage
-              src={`../images/schedule/balade-schedule-fr.png`}
-              alt={""}
-              placeholder="blurred"
-            />
+            {schedulerImage && (
+              <GatsbyImage image={schedulerImage} alt={"bullecyclette"} />
+            )}
           </div>
           <div className="block md:hidden max-w-md mx-auto">
-            <StaticImage
-              src={`../images/schedule/balade-schedule-fr-md.png`}
-              alt={""}
-              placeholder="blurred"
-            />
+            {schedulerMDImage && (
+              <GatsbyImage image={schedulerMDImage} alt={"bullecyclette"} />
+            )}
           </div>
         </div>
       </section>
@@ -160,20 +179,12 @@ const BaladePage: React.FC<PageProps<Queries.BaladePageQuery>> = ({
 
           <div className="flex-col md:w-5/12 text-center px-8 mt-8 md:mt-0 space-y-4">
             <div className="mx-auto w-3/5 max-w-80 md:max-w-56">
-              {kmRoadImage && (
-                <GatsbyImage image={kmRoadImage} alt={"km_road"} />
-              )}
+              {kmRoadImage && <GatsbyImage image={kmRoadImage} alt="" />}
             </div>
             {stepRoadImage && (
-              <GatsbyImage
-                image={stepRoadImage}
-                alt={"step_road"}
-                className="w-11/12"
-              />
+              <GatsbyImage image={stepRoadImage} alt="" className="w-11/12" />
             )}
-            {descRoadImage && (
-              <GatsbyImage image={descRoadImage} alt={"step_road"} />
-            )}
+            {descRoadImage && <GatsbyImage image={descRoadImage} alt="" />}
             <p className="mx-auto font-veteran-typewriter text-sm">
               {t("balade.road.information")}
             </p>
@@ -308,6 +319,18 @@ export const query = graphql`
         }
       }
     }
+    bullecycletteDateImages: allFile(
+      filter: {
+        relativePath: { in: ["common/date_en.png", "common/date_fr.png"] }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
+    }
     stepRoadImages: allFile(
       filter: {
         relativePath: { in: ["road/step_road_en.png", "road/step_road_fr.png"] }
@@ -333,6 +356,40 @@ export const query = graphql`
     descRoadImages: allFile(
       filter: {
         relativePath: { in: ["road/desc_road_en.png", "road/desc_road_fr.png"] }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
+    }
+    schedulerImages: allFile(
+      filter: {
+        relativePath: {
+          in: [
+            "schedule/balade-schedule-fr.png"
+            "schedule/balade-schedule-en.png"
+          ]
+        }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
+    }
+    schedulerMDImages: allFile(
+      filter: {
+        relativePath: {
+          in: [
+            "schedule/balade-schedule-fr-md.png"
+            "schedule/balade-schedule-en-md.png"
+          ]
+        }
       }
     ) {
       nodes {
