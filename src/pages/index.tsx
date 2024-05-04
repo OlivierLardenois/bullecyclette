@@ -5,7 +5,7 @@ import {
   IGatsbyImageData,
   StaticImage,
 } from "gatsby-plugin-image";
-import { Link, useTranslation } from "gatsby-plugin-react-i18next";
+import { Link, useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
 import Button from "../components/button";
@@ -37,6 +37,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
   location,
 }) => {
   const { t } = useTranslation();
+  const { language } = useI18next();
 
   const carouselCards = data.carouselImages.nodes.reduce<
     {
@@ -60,6 +61,13 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
     return image ? acc.concat({ alt: "", image }) : acc;
   }, []);
 
+  const bullecycletteImageFilter = data.bullecycletteImages.nodes.find(
+    (node) => node.relativePath == `common/bullecyclette_${language}.png`,
+  );
+  const bullecycletteImage = bullecycletteImageFilter
+    ? getImage(bullecycletteImageFilter.childImageSharp)
+    : null;
+
   return (
     <Layout pageKey="homePage" pathname={location.pathname}>
       <div className="space-y-24">
@@ -73,13 +81,9 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
 
         <section className="flex flex-col justify-between mx-8 space-y-4">
           <div className="max-w-7xl mx-auto w-full">
-            <StaticImage
-              src={`../images/index/bullecyclette.png`}
-              alt={t("")}
-              placeholder="blurred"
-              layout="constrained"
-              width={900}
-            />
+            {bullecycletteImage && (
+              <GatsbyImage image={bullecycletteImage} alt={"bullecyclette"} />
+            )}
           </div>
           <div className="flex flex-col md:flex-row justify-between max-w-5xl mx-auto">
             <div className="md:w-5/12 font-veteran-typewriter text-justify space-y-6">
@@ -238,6 +242,20 @@ export const query = graphql`
         relativePath
         childImageSharp {
           gatsbyImageData(height: 60)
+        }
+      }
+    }
+    bullecycletteImages: allFile(
+      filter: {
+        relativePath: {
+          in: ["common/bullecyclette_en.png", "common/bullecyclette_fr.png"]
+        }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, width: 900)
         }
       }
     }
