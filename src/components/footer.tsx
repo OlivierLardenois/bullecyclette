@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
-import { ADDRESS, DESIGNER, MAIL, PHONE } from "../lib/const";
+import { ADDRESS, DESIGNER, DEVELOPERS, MAIL, PHONE } from "../lib/const";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -59,7 +59,11 @@ const Footer: React.FC = () => {
           </p>
         </div>
         <div className="text-center space-y-8">
-          <p>{`${t("footer.design")} : ${DESIGNER}`}</p>
+          <p>
+            {`${t("footer.design")} : ${DESIGNER}`}
+            <br />
+            {`${t("footer.developers")} : ${DEVELOPERS}`}
+          </p>
           <p>
             © 2023 La Bullecyclette. All rights reserved
             <br />

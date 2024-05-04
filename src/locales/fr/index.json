@@ -201,6 +201,7 @@
     "address": "Adresse postale",
     "phone": "Numéro de téléphone",
     "design": "Design",
+    "developers": "Développeurs",
     "legal": "Mentions légales",
     "regulation": "Conditions générales de participations",
     "privacy": "Politiques de confidentialité"
@@ -411,7 +412,7 @@
   "regulation": {
     "title": "Règlement",
     "seo": {
-      "title": "La Bullecyclette | Politique de confidentialité",
+      "title": "La Bullecyclette | Règlement",
       "description": "Règlement de l'évènement La Bullecyclette"
     },
     "section": [
