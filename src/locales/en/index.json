@@ -5,7 +5,27 @@
     "en-flag-alt": "United Kingdom flag"
   },
   "homePage": {
-    "title": "Home"
+    "seo": {
+      "title": "La Bullecyclette | Accueil",
+      "description": "La Bullecyclette is an annual wine tourism event that offers participants a ride on a vintage bicycle."
+    },
+    "title": "Home",
+    "partners": "Our partners :",
+    "placesAvailable": "Only 500 places available",
+    "gallery": "Picture gallery",
+    "ticket": "Buy your ticket",
+    "presentation": {
+      "title": "The retro bike ride in Champagne",
+      "text": "La Bullecyclette is an annual wine tourism event that offers participants a ride on a vintage bicycle. Through the vineyards and villages of the Côte des Blancs, the walk of approximately 20 km is punctuated by four stops where swing music and champagne will be offered. The aim of the walk is to take the time to discover or rediscover the Champagne landscapes in a festive and retro spirit."
+    },
+    "nav": {
+      "la-balade": { "alt": "Logo", "title": "La balade de la Bullecyclette" },
+      "la-guinguette": {
+        "alt": "La Guinguette",
+        "title": "La guinguette de la Bullecyclette"
+      },
+      "infos": { "alt": "29 June 2024", "title": "Practical information" }
+    }
   },
   "countdown-timer": {
     "label": {
@@ -272,6 +292,51 @@
         "alt": "17h00"
       }
     }
+  },
+  "guinguette": {
+    "seo": {
+      "title": "La Bullecyclette | La Guinguette",
+      "description": "Discover the Bullecyclette tavern and its exhibitors"
+    },
+    "title": "La Guinguette",
+    "hero-alt": "",
+    "artists": {
+      "0": "DJ"
+    },
+    "commitments": {
+      "title": "Nos engagements"
+    },
+    "exhibitors": {
+      "0": "CÉRAMICS",
+      "1": "ARTISANAL SOAP",
+      "2": "LEATHERWORKING",
+      "3": "VINTAGE BIKES SHOP",
+      "4": "CHAMPAGNE CANDLES",
+      "5": "HONEY AND CIDER",
+      "6": "RHUBARB DRINKS",
+      "7": "FRESH ALCOHOLIC DRINKS"
+    },
+    "food": {
+      "0": "Le Trio is three artisanal bakeries and pastries in Montchenot, Reims and Gueux. There you can find natural and tasty breads, 100% homemade sweets and gourmet cuisine."
+    },
+    "presentation": {
+      "what": "WHAT IS IT?",
+      "when": "WHEN?",
+      "text": "La Guinguette de la Bullecyclette is a retro festive evening at the Cattani gymnasium, in Avize on June 29, 2024 (opening at 3 p.m.). Open to all, you will find many local artisans, thrift stores, bike sellers... but also food trucks and a bar. Two free concerts will also bring joy to the evening."
+    },
+    "program": {
+      "title": "Program"
+    }
+  },
+  "exhibitors": {
+    "title": "EXHIBITOR"
+  },
+  "food": {
+    "title": "Food"
+  },
+  "drink": {
+    "title": "Drink",
+    "description": "Champagnes present at the bar:"
   },
   "footer": {
     "contact": "If you haven't found the answer to your questions, contact us by email, on Instagram or on Facebook",

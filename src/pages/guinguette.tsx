@@ -1,6 +1,6 @@
 import { PageProps, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
 import ArrowBullet from "../components/arrowBullet";
@@ -14,17 +14,53 @@ import Layout from "../components/layout";
 import { GuinguettePreparation } from "../components/preparation";
 import { EVENT_DATE } from "../lib/const";
 
-const GuinguettePage: React.FC<PageProps> = ({ location }) => {
+const GuinguettePage: React.FC<PageProps<Queries.GuinguettePageQuery>> = ({
+  location,
+  data,
+}) => {
   const { t } = useTranslation();
+  const { language } = useI18next();
+
+  const guinguetteImageFilter = data.guinguetteImages.nodes.find(
+    (node) => node.relativePath == `guinguette-hero-${language}.png`,
+  );
+  const guinguetteImage = guinguetteImageFilter
+    ? getImage(guinguetteImageFilter.childImageSharp)
+    : null;
+
+  const guinguetteDateFilter = data.guinguetteDateImages.nodes.find(
+    (node) => node.relativePath == `dates/29-june-${language}.png`,
+  );
+  const guinguetteDateImage = guinguetteDateFilter
+    ? getImage(guinguetteDateFilter.childImageSharp)
+    : null;
+
+  const schedulerImageFilter = data.schedulerImages.nodes.find(
+    (node) =>
+      node.relativePath == `schedule/guinguette-schedule-${language}.png`,
+  );
+  const schedulerImage = schedulerImageFilter
+    ? getImage(schedulerImageFilter.childImageSharp)
+    : null;
+
+  const schedulerMDImageFilter = data.schedulerMDImages.nodes.find(
+    (node) =>
+      node.relativePath == `schedule/guinguette-schedule-${language}-md.png`,
+  );
+  const schedulerMDImage = schedulerMDImageFilter
+    ? getImage(schedulerMDImageFilter.childImageSharp)
+    : null;
 
   return (
     <Layout pageKey="guinguette" pathname={location.pathname}>
       <div>
-        <StaticImage
-          src={`../images/guinguette-hero.png`}
-          alt={t(`guinguette.hero-alt`)}
-          placeholder="blurred"
-        />
+        {guinguetteImage && (
+          <GatsbyImage
+            backgroundColor="#3F5DA7"
+            image={guinguetteImage}
+            alt={"bullecyclette"}
+          />
+        )}
       </div>
       <section className="flex justify-center bg-liberty py-12 text-white">
         <div className="flex flex-col md:flex-row md:justify-between space-y-24 md:space-y-0 mx-8 max-w-7xl text-justify">
@@ -48,11 +84,10 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
                 {t("guinguette.presentation.when")}
               </h3>
             </ArrowBullet>
-            <StaticImage
-              src={"../images/dates/29-june.png"}
-              alt={t("")}
-              placeholder="blurred"
-            />
+
+            {guinguetteDateImage && (
+              <GatsbyImage image={guinguetteDateImage} alt={"bullecyclette"} />
+            )}
           </div>
         </div>
       </section>
@@ -65,18 +100,22 @@ const GuinguettePage: React.FC<PageProps> = ({ location }) => {
             </h3>
           </ArrowBullet>
           <div className="hidden md:block max-w-3xl mx-auto">
-            <StaticImage
-              src={`../images/schedule/guinguette-schedule-fr.png`}
-              alt={""}
-              placeholder="blurred"
-            />
+            {schedulerImage && (
+              <GatsbyImage
+                image={schedulerImage}
+                alt={"bullecyclette"}
+                className="bg-liberty"
+              />
+            )}
           </div>
           <div className="block md:hidden max-w-xs mx-auto">
-            <StaticImage
-              src={`../images/schedule/guinguette-schedule-fr-md.png`}
-              alt={""}
-              placeholder="blurred"
-            />
+            {schedulerMDImage && (
+              <GatsbyImage
+                image={schedulerMDImage}
+                alt={"bullecyclette"}
+                className="bg-liberty"
+              />
+            )}
           </div>
         </div>
       </section>
@@ -135,6 +174,66 @@ export const query = graphql`
           ns
           data
           language
+        }
+      }
+    }
+    guinguetteImages: allFile(
+      filter: {
+        relativePath: {
+          in: ["guinguette-hero-en.png", "guinguette-hero-fr.png"]
+        }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
+    }
+    guinguetteDateImages: allFile(
+      filter: {
+        relativePath: { in: ["dates/29-june-en.png", "dates/29-june-fr.png"] }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
+    }
+    schedulerImages: allFile(
+      filter: {
+        relativePath: {
+          in: [
+            "schedule/guinguette-schedule-fr.png"
+            "schedule/guinguette-schedule-en.png"
+          ]
+        }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
+    }
+    schedulerMDImages: allFile(
+      filter: {
+        relativePath: {
+          in: [
+            "schedule/guinguette-schedule-fr-md.png"
+            "schedule/guinguette-schedule-en-md.png"
+          ]
+        }
+      }
+    ) {
+      nodes {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
         }
       }
     }
