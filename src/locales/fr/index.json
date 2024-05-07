@@ -189,7 +189,7 @@
     "presentation": {
       "what": "C'est quoi ?",
       "when": "Quand ?",
-      "text": "La Guinguette de la Bullecyclette est une soirée festive rétro au gymnase Cattani, à Avize le 29 Juin 2024 (ouverture à 15h). Ouverte à tous, vous y retrouverez de nombreux artisants locaux, des friperies, vendeur de vélo...mais aussi des food trucks et une buvette. Deux concerts gratuits animeront également la soirée"
+      "text": "La Guinguette de la Bullecyclette est une soirée festive rétro au gymnase Cattani, à Avize le 29 Juin 2024 (ouverture à 15h). Ouverte à tous, vous y retrouverez de nombreux artisants locaux, des friperies, vendeur de vélo... mais aussi des food trucks et une buvette. Deux concerts gratuits animeront également la soirée"
     },
     "program": {
       "title": "Programme"
@@ -201,6 +201,7 @@
     "address": "Adresse postale",
     "phone": "Numéro de téléphone",
     "design": "Design",
+    "developers": "Développeurs",
     "legal": "Mentions légales",
     "regulation": "Conditions générales de participations",
     "privacy": "Politiques de confidentialité"
@@ -411,7 +412,7 @@
   "regulation": {
     "title": "Règlement",
     "seo": {
-      "title": "La Bullecyclette | Politique de confidentialité",
+      "title": "La Bullecyclette | Règlement",
       "description": "Règlement de l'évènement La Bullecyclette"
     },
     "section": [

@@ -1,4 +1,4 @@
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import * as React from "react";
 
 import EntityCard from ".";
@@ -9,13 +9,22 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Winegrowers: React.FC = () => {
   const { t } = useTranslation();
+  const { language } = useI18next();
 
   const data = useStaticQuery<Queries.WinegrowersQuery>(graphql`
     query Winegrowers {
       winegrowersLabel: allFile(
-        filter: { relativePath: { in: ["winegrowers/winegrowers_fr.png"] } }
+        filter: {
+          relativePath: {
+            in: [
+              "winegrowers/winegrowers_fr.png"
+              "winegrowers/winegrowers_en.png"
+            ]
+          }
+        }
       ) {
         nodes {
+          relativePath
           childImageSharp {
             gatsbyImageData
           }
@@ -24,16 +33,21 @@ const Winegrowers: React.FC = () => {
     }
   `);
 
-  const image = getImage(data.winegrowersLabel.nodes[0].childImageSharp);
+  const dataFilter = data.winegrowersLabel.nodes.find(
+    (node) => node.relativePath == `winegrowers/winegrowers_${language}.png`,
+  );
+  const winegrowerImage = dataFilter
+    ? getImage(dataFilter.childImageSharp)
+    : null;
 
   return (
     <div className="space-y-12">
       <ArrowBullet>
         <h3 className="font-veteran-typewriter">{t("winegrowers.title")}</h3>
       </ArrowBullet>
-      {image && (
+      {winegrowerImage && (
         <div className="max-w-md mx-auto">
-          <GatsbyImage image={image} alt={"alt"} />
+          <GatsbyImage image={winegrowerImage} alt={"alt"} />
         </div>
       )}
       <div className="flex flex-wrap justify-around text-justify gap-6">

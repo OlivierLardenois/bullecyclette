@@ -5,12 +5,32 @@
     "en-flag-alt": "United Kingdom flag"
   },
   "homePage": {
-    "title": "Home"
+    "seo": {
+      "title": "La Bullecyclette | Accueil",
+      "description": "La Bullecyclette is an annual wine tourism event that offers participants a ride on a vintage bicycle."
+    },
+    "title": "Home",
+    "partners": "Our partners :",
+    "placesAvailable": "Only 500 places available",
+    "gallery": "Picture gallery",
+    "ticket": "Buy your ticket",
+    "presentation": {
+      "title": "The retro bike ride in Champagne",
+      "text": "La Bullecyclette is an annual wine tourism event that offers participants a ride on a vintage bicycle. Through the vineyards and villages of the Côte des Blancs, the walk of approximately 20 km is punctuated by four stops where swing music and champagne will be offered. The aim of the walk is to take the time to discover or rediscover the Champagne landscapes in a festive and retro spirit."
+    },
+    "nav": {
+      "la-balade": { "alt": "Logo", "title": "La balade de la Bullecyclette" },
+      "la-guinguette": {
+        "alt": "La Guinguette",
+        "title": "La guinguette de la Bullecyclette"
+      },
+      "infos": { "alt": "29 June 2024", "title": "Practical information" }
+    }
   },
   "countdown-timer": {
     "label": {
       "day-before-ticketing": "Days remaining before the ticket office opens :",
-      "day-before-event": "Days remaining before the event :"
+      "day-before-event": "Days left until event :"
     },
     "days": "days",
     "hours": "hours",
@@ -29,7 +49,7 @@
           "text": "Travel through the vineyards and villages of the Côte des Blancs on your retro bike. The Bullecyclette walk of approximately 20km is punctuated by four stops where you will be offered swing music, champagne and a full meal. Take the time to discover or rediscover the Champagne landscapes in a festive and retro spirit, typical of the 1950s."
         },
         {
-          "text": "With the purchase of a place you will benefit from a bag in which you will find a champagne glass, as well as an explanatory booklet.\n\nYou will consume during the walk: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of champagne."
+          "text": "With the purchase of a place you will benefit from a bag in which you will find a champagne glass, as well as an explanatory booklet.\n\nYou will consume during the walk: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne."
         }
       ]
     },
@@ -45,11 +65,12 @@
     },
     "ticket": {
       "title": "ticket office",
-      "description": "With the purchase of a place, you will benefit from the right of access to the bike ride and will obtain a bag in which you will find a champagne glass and an explanatory booklet.<br/> You will consume during the ride: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne.<br/><br/> There will be two starting waves of 250 people for the bike ride: the first at 10 a.m. and the second at 10:30 a.m. You will choose yours when purchasing your place.<br/><1>If you come in a group:</1> please consult to be able to register for the same time slot of departure. If this is no longer possible, you can still meet at the first stop.<br/><br/>The ticket office is open from March 8 to May 31, with a limit of 500 seats sold.<br/ ><br/> <3>INFORMATION : </3><br/>During the bike ride you will not need money, everything is included in your place.<br/>You will however need a water bottle that you can fill at each stop and a repair kit in the event of a puncture or other for your bike.<br/>To find out all the practical information click <5>here</5>"
-    }
+      "description": "With the purchase of a place, you will benefit from the right of access to the bike ride and will obtain a bag in which you will find a champagne glass and an explanatory booklet.<br/> You will consume during the ride: 1 starter, 1 main course, 1 dessert, 1 coffee, 1 snack and 4 glasses of Champagne.<br/><br/> There will be two starting waves of 250 people for the bike ride: the first at 10 a.m. and the second at 10:30 a.m. You will choose yours when purchasing your place.<br/><1>If you come in a group:</1> consult each other to be able to register for the same departure time slot. If this is no longer possible, you can still find yourself at the first stop.<br/><br/>The ticket office is open from March 1 to May 31, with a limit of 500 places sold.<br/ ><br/> <3>INFORMATION : </3><br/>During the bike ride you will not need money, everything is included in your place.<br/>You will however need a reusable water bottle that you can refill at each stop and a repair kit in the event of a puncture or other for your bike.<br/>To find out all the practical information click <5>here</5>"
+    },
+    "redirect": "Redirection to Weezevent"
   },
   "winegrowers": {
-    "title": "the winegrowers",
+    "title": "winegrowers",
     "persons": [
       {
         "name": "Champagne PROUT",
@@ -82,11 +103,11 @@
     ]
   },
   "artists": {
-    "title": "the artists",
+    "title": "artists",
     "persons": [
       {
         "name": "Jeannick Liebert",
-        "description": "Guitarist",
+        "description": "Guitard player",
         "url": "https://www.youtube.com/user/jeannick08360/videos",
         "shorturl": "See on Youtube",
         "image": "artists/jeannick_liebert.jpg"
@@ -100,7 +121,7 @@
       },
       {
         "name": "Swing Shady",
-        "description": "Jazz and Gypsy Pop",
+        "description": "Jazz and pop manouche",
         "url": "https://www.instagram.com/therealswingshady",
         "shorturl": "See on Instagram",
         "image": "artists/swing_shady.jpg"
@@ -115,18 +136,18 @@
     ]
   },
   "commitment": {
-    "title": "our engagements",
+    "title": "our PHILOSOPHY",
     "steps": [
       {
         "src": "../images/fr-flag.png",
         "title": "Eco-responsible event",
-        "description": "Waste minimization",
+        "description": "Waste minimization, Cycling = zero carbon",
         "alt": ""
       },
       {
         "src": "../images/ticket.png",
         "title": "Promoting local products",
-        "description": "Show the culinary and artisanal wealth of our region",
+        "description": "Promote artisanal and culinary richness from our region.",
         "alt": ""
       },
       {
@@ -137,19 +158,20 @@
       },
       {
         "src": "../images/icon.png",
-        "title": "Promotion of reuse and second hand",
-        "description": "No new purchases, only second hand!",
+        "title": "Second hand promotion",
+        "description": "No new purchase of equipment,only second hand or loan!",
         "alt": ""
       },
       {
         "src": "../images/fr-flag.png",
-        "title": "Promotion of the landscape",
+        "title": "Promotion of the champagne landscape",
         "description": "Highlighting the built and landscape heritage of our region",
         "alt": ""
       },
       {
         "src": "../images/en-flag.png",
         "title": "Sharing a Champagne-style art of living",
+        "description": "",
         "alt": ""
       }
     ]
@@ -218,5 +240,260 @@
     "accommodation": {
       "title": "to find accommodation"
     }
+  },
+  "schedule": {
+    "guinguette": {
+      "1500": {
+        "text": "Openning of the Guinguette de la Bullecyclette",
+        "alt": "15h00"
+      },
+      "1800": {
+        "text": "1st concert",
+        "alt": "18h00"
+      },
+      "2000": {
+        "text": "2nd concert",
+        "alt": "20h00"
+      },
+      "2300": {
+        "text": "Closure",
+        "alt": "23h00"
+      }
+    },
+    "guinguette-small": {
+      "1500": {
+        "text": "Openning of the Guinguette de la Bullecyclette",
+        "alt": "15h00"
+      },
+      "1800": {
+        "text": "Concerts",
+        "alt": "18h00"
+      },
+      "2300": {
+        "text": "Closure",
+        "alt": "23h00"
+      }
+    },
+    "bullecyclette": {
+      "830": {
+        "text": "Arrival of participants",
+        "alt": "8h30"
+      },
+      "1000": {
+        "text": "1st departure of bikes",
+        "alt": "10h00"
+      },
+      "1030": {
+        "text": "2nd départure of bikes",
+        "alt": "10h30"
+      },
+      "1700": {
+        "text": "Estimated return of bikes",
+        "alt": "17h00"
+      }
+    }
+  },
+  "guinguette": {
+    "seo": {
+      "title": "La Bullecyclette | La Guinguette",
+      "description": "Discover the Bullecyclette tavern and its exhibitors"
+    },
+    "title": "La Guinguette",
+    "hero-alt": "",
+    "artists": {
+      "0": "DJ"
+    },
+    "commitments": {
+      "title": "Nos engagements"
+    },
+    "exhibitors": {
+      "0": "CÉRAMICS",
+      "1": "ARTISANAL SOAP",
+      "2": "LEATHERWORKING",
+      "3": "VINTAGE BIKES SHOP",
+      "4": "CHAMPAGNE CANDLES",
+      "5": "HONEY AND CIDER",
+      "6": "RHUBARB DRINKS",
+      "7": "FRESH ALCOHOLIC DRINKS"
+    },
+    "food": {
+      "0": "Le Trio is three artisanal bakeries and pastries in Montchenot, Reims and Gueux. There you can find natural and tasty breads, 100% homemade sweets and gourmet cuisine."
+    },
+    "presentation": {
+      "what": "WHAT IS IT?",
+      "when": "WHEN?",
+      "text": "La Guinguette de la Bullecyclette is a retro festive evening at the Cattani gymnasium, in Avize on June 29, 2024 (opening at 3 p.m.). Open to all, you will find many local artisans, thrift stores, bike sellers... but also food trucks and a bar. Two free concerts will also bring joy to the evening."
+    },
+    "program": {
+      "title": "Program"
+    }
+  },
+  "exhibitors": {
+    "title": "EXHIBITOR"
+  },
+  "food": {
+    "title": "Food"
+  },
+  "drink": {
+    "title": "Drink",
+    "description": "Champagnes present at the bar:"
+  },
+  "footer": {
+    "contact": "If you haven't found the answer to your questions, contact us by email, on Instagram or on Facebook",
+    "mail": "E-mail address",
+    "address": "Address",
+    "phone": "Phone number",
+    "design": "Design",
+    "developers": "Developers",
+    "legal": "Legal Notice",
+    "regulation": "General conditions of participation",
+    "privacy": "Privacy Policies"
+  },
+  "preparation": {
+    "title": "I PREPARE MYSELF",
+    "steps": [
+      {
+        "src": "../images/fr-flag.png",
+        "title": "I PREPARE MYSELF",
+        "text": "To participate at the Bullecyclette you will need to bring your own retro bike. This must be built before 1987. If you don't have a retro bike? you can rent one when booking your ticket.",
+        "alt": "",
+        "button": "Learn more"
+      },
+      {
+        "title": "I PREPARE MY OUTFIT",
+        "text": "Ladies and gentlemen, to be in the theme you will need to spruce up your retro outfit. Take out your best pairs of suspenders from the attics, refine your mustache, find a dress with a retro cut, make your best lipstick, in short, have fun creating a 1950s outfit.",
+        "alt": "",
+        "button": "Learn more"
+      },
+      {
+        "title": "I TAKE MY REUSABLE WATER BOTTLE",
+        "text": "In our desire to make the event as clean as possible, we recommend that you should bring your own reusable water bottle. You can refill it at each stop.",
+        "alt": "",
+        "button": "Learn more"
+      }
+    ]
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "seo": {
+      "title": "La Bullecyclette | Legal Notice",
+      "description": "Legal notices of the site labullecyclette.com"
+    },
+    "section": [
+      {
+        "title": "ORGANIZATION",
+        "content": "Association La Bullecyclette\nAssociation Loi 1901\n12 place Léon Bourgeois - 51190 AVIZE - France\nSIREN / APE : 922 47 22 79 / 8230Z\nRNA : W51 200 57 30\nlabullecyclette@gmail.com"
+      },
+      {
+        "title": "SITE HOSTING",
+        "content": "The site is hosted by Netlify.\nNetlify, Inc.\nAddress: 512 2nd Street, Suite 200 San Francisco, CA 94107\nMail: support@netlify.com\nSite: https://www.netlify. com"
+      },
+      {
+        "title": "INTELLECTUAL PROPERTIES",
+        "content": "La Bullecyclette is a registered trademark. Any reproduction or representation made without the agreement of the La Bullecyclette association constitutes an infringement. The information presented on this site is public. Reproduction of the pages of this site is prohibited. When data present on this site is of a personal nature, users must use it in accordance with the regulations in force and the recommendations of the National Commission for Information Technology and Liberties (CNIL).\n\n© All content of this site, including, without limitation, the graphics, images, texts, videos, animations, sounds, logos, gifs and icons as well as their formatting are the exclusive property of the La Bullecyclette association with the exception of the brands , logos or content belonging to other partner companies or authors. Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these various elements is strictly prohibited without the express written consent of the LaBullecyclette association. This representation or reproduction, by any means whatsoever, constitutes an infringement punishable by articles L.3335-2 et seq. of the Intellectual Property Code. Failure to comply with this prohibition constitutes an infringement which may result in the civil and criminal liability of the infringer. In addition, the owners of the copied Content may take legal action against you."
+      },
+      {
+        "title": "INFORMATION AND EXCLUSION",
+        "content": "The La Bullecyclette association implements all the means at its disposal to ensure reliable information and reliable updating of its websites. However, errors or omissions may occur. The Internet user must therefore ensure the accuracy of the information with our association, and report any modifications to the site that he considers useful. La Bullecyclette is in no way responsible for the use made of this information, and for any direct or indirect damage that may result therefrom."
+      },
+      {
+        "title": "PERSONAL DATA",
+        "content": "For statistical purposes, this site uses cookies. These are small text files stored on your hard drive in order to record technical data about your browsing.\nNo personal information is transferred to third parties, only the La Bullecyclette association has access to this information."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "seo": {
+      "title": "La Bullecyclette | Privacy Policy",
+      "description": "Privacy policy of the site labullecyclette.com"
+    },
+    "section": [
+      {
+        "title": "Who are we ?",
+        "content": "The address of our site is: https://www.labullecyclette.com."
+      },
+      {
+        "title": "Media",
+        "content": "If you upload images to the Site, we advise you to avoid uploading images that contain EXIF ​​GPS coordinate data. People visiting your site can download and extract location data from these images."
+      },
+      {
+        "title": "Cookies",
+        "content": "If you go to the login page, a temporary cookie will be created to determine whether your browser accepts cookies. It does not contain any personal data and will be deleted automatically when you close your browser.\nWhen you log in, we will set up a number of cookies to save your login information and screen preferences. The lifespan of a connection cookie is two days, that of a screen option cookie is one year. If you check “Remember me”, your login cookie will be retained for two weeks. If you log out of your account, the login cookie will be deleted."
+      },
+      {
+        "title": "Content embedded from other sites",
+        "content": "Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Content integrated from other sites behaves in the same way as if the visitor went to that other site.\nThese websites may collect data about you, use cookies, embed third-party tracking tools, track your interactions with this embedded content if you have an account connected to their website."
+      },
+      {
+        "title": "Processing of personal data",
+        "content": "Participants are informed that the personal data collected during online registration (by themselves or by a third party) on the ticketing platform are subject to computer processing intended exclusively to enable the organization of the event. La Bullecyclette.\n\nThe Association undertakes not to communicate to third parties the personal data thus collected.\n\nIn accordance with the law “information technology and freedoms” n°78-17 of January 6, 1978 amended by law n°2004-801 of August 6, 2004, participants benefit from a right of access and rectification to information concerning them. They can therefore send a letter to the following address: La Bullecyclette - 12 places Léon Bourgeois - 51190 AVIZE or by email: labullecyclette@gmail.com.\n\nThe information communicated by the buyer (both for himself and for the account of the participants that he/she registers) at the time of the reservation will not be transmitted to any other third party. This information will be considered confidential. They will be used only by the Association La Bullecyclette for processing the reservation and to reinforce and personalize the communication and the offer of services reserved for participants.\n\nAll banking transactions on the registration module are secured by Weezevent , without intervention or data collection on the part of the La Bullecyclette Association.\n\nThe Association therefore does not keep any bank card numbers in its database."
+      }
+    ]
+  },
+  "regulation": {
+    "title": "Regulations",
+    "seo": {
+      "title": "La Bullecyclette | Regulations",
+      "description": "Rules for the La Bullecyclette event"
+    },
+    "section": [
+      {
+        "title": "ARTICLE 1 - CONDITIONS OF PARTICIPATION",
+        "content": "Any online registration on the Weezevent website, accessible via the La Bullecyclette website, implies unreserved acceptance of these general conditions, which the participant acknowledges having read as part of the online sales process.\n\nIn s By registering, participants explicitly undertake to respect the said regulations. In the event of non-compliance, the organizer has the authority to exclude any violating participant.\n\nThe ticket price is indicated per person. The price of the services offered is in euros, excluding VAT and service included. The price applicable to the sale of each product will be that in force on the day of purchase.\n\nThe prices below are expressed net of VAT, as the association is not currently subject to VAT. VAT not applicable according to article 293 B of the General Tax Code. - notice subject to change.\n\nParticipants in the La Bullecyclette course (Saturday June 29, 2024) must have paid the commitment according to the prices indicated on the La Bullecyclette website. All prices indicated are per person.\n\n1.1 - Participation: Participation in the bike ride is by reservation only. This is mandatory and final (no refund). Places are limited to 500 participants (adults and children combined). They will be taken into account in order of arrival of the registration forms. The organizer reserves the right to close registrations at any time as soon as the participation objective is reached. Registrations will be taken via the Weezevent website from March 1 to May 31, 2024. No registrations will be taken by telephone or email.\n\nMinors must be accompanied by an adult: parents, legal guardians or educators, qualified professionals or volunteers.\n\n1.2 - Physical abilities of participants: Participants in La Bullecyclette attest on their honor to be in sufficient physical condition to complete the chosen route(s) and to have become aware of the difficulties of the route and the safety instructions.\n\n1.3 - Departure: Reception and departure will be at Château Desbordes in Avize (5 bis rue southern rampart). Upon arrival at the castle, recommended approximately 1 hour before departure, each participant must remove a bag in which they will find “the Gazette de la Bullecyclette” which is a travel diary to be presented at each break. In the bag he will also find an engraved glass (or reusable cup for children). Only one visit to each of the 4 tasting stands is authorized. Reminder: Alcohol abuse is dangerous for your health.\n\n1.4 - Equipment: Bring clothing with a retro 1950s theme and adapted to the weather conditions (example: wear a hat in case of high heat). Wearing a hard shell helmet is not obligatory, but very strongly recommended. It is compulsory for minors.\n\n1.5 - Insurance and responsibilities: The association is insured for civil liability. It declines all responsibility in the event of theft, illness, default of a participant, accident or loss during the event. Registration constitutes a declaration of good health and ability to participate in the walk and taste the food products offered. Minors are under the responsibility of a responsible adult."
+      },
+      {
+        "title": "ARTICLE 2 - COMMITMENT",
+        "content": "2.1 - Registration terms: The commitment to the “circuits/walks” of La Bullecyclette (Saturday June 29, 2024) is nominative, firm and definitive.\nBeyond access to the course, the commitment includes the services following:\n● the bag\n● the route book\n● the refreshments\n● the musical entertainment\n● the champagne flute or the goblet\nOptional:\n● the bicycle rental The services linked to a route is only accessible to people registered on the said route and identified as such (route log). These services are only accessible at times indicated in the travel log. In the absence of registration on the dates and times defined in article 3 hereof, the participant will no longer be able to participate in the reserved rides, without the possibility of reimbursement from La Bullecyclette.\n\n2.2 - Withdrawal: Under of the provisions provided for in article L221-28 of the Consumer Code, the right of withdrawal is not applicable.\n\n2.3 - Cancellation - modification of the registration: The registration is firm, definitive and not modifiable (no change of route and/or date and/or time and/or participant). No refund, even partial, will be applied once online payment has been made.\n\n2.4 - Personal registration Registration on the courses is personal. Any participant who starts under a name that is not their own would contravene the general conditions of participation. In addition, he could not benefit from the insurance taken out by the organizers and, if necessary, was exposed to possible prosecution on their part.\n\nIt is specified here that each participant has, at the time of subscription, ( both by himself and by the buyer who has undertaken to declare for him), declared to be covered by current civil liability insurance on May 12, 13 and 14, 2023. In the absence of coverage on the part of the participant, the responsibility of the Association La Bulleyclette cannot be held liable."
+      },
+      {
+        "title": "ARTICLE 3 - WITHDRAWAL OF THE COMMITMENT PACKAGE",
+        "content": "To start, each participant must first have registered. Registration will take place upon presentation of tickets (printed or displayed on a mobile phone) and upon presentation of an identity document at Château Desbordes, rue de Champagne, 51190 AVIZE.\nRegistration required: Saturday June 29, 2024, between 8:30 a.m. and 10:00 a.m. or 10:30 a.m. (depending on the departure slot reserved). Beyond that, no departure will be permitted and no refund will be made."
+      },
+      {
+        "title": "ARTICLE 4 - IMAGE RIGHT and BRAND OWNERSHIP",
+        "content": "Acceptance of these regulations necessarily implies that the participant (buyer as participant) gives his consent to the organizers, the media and social networks covering the event to use his image which may appear in the photographs or videos taken on Saturday June 29, 2024 , from 8:30 a.m. to 11 p.m. This authorization is valid worldwide, for any use intended to promote the La Bullecyclette Festival and in all its forms (films, videos, press, websites, social networks, etc.). The use of these images may in no way harm the private life or reputation of the participant.\n\nAcceptance of the regulations necessarily implies that the legal representatives of a minor participant give their agreement to the Association La Bullecyclette to the media and social networks covering the event to use its image that may appear in photographs or videos taken on Saturday June 29, 2024 from 8:30 a.m. to 11 p.m. The use of these images may in no case infringe the private life or reputation of the child.\n\nIn accordance with the law of 06.01.1978, participants have a right of access, rectification and opposition to the processing of data concerning them by providing proof of their identity to the La Bullecyclette Association: labullecyclette@gmail.com.\n\nThe La Bullecyclette association claims the right of anticipation with regard to its name and this since the date of publication of existence in the official journal. Any communication about the event or use of images of the event must be done in compliance with the name of the event, the registered trademarks and with the official and prior agreement of the Association La Bullecyclette. Any photographic, video or cinema support produced during the event may only be used by participants or their companions for private purposes, unless there is specific authorization or accreditation from the La Bullecyclette Association. Consequently, any book project, short, medium or feature film, any publication on social networks and more generally any publication must have received prior express authorization from the Association La Bullecyclette. For this purpose, address is chosen at the head office of the association and by email: labullecyclette@gmail.com."
+      },
+      {
+        "title": "ARTICLE 5 - SAFETY, MECHANICAL ASSISTANCE AND ENVIRONMENTAL RESPECT",
+        "content": "The Bullecyclette is not a sporting competition within the meaning of the provisions of the Sports Code, in particular its articles R.331-6 and R.331-13. Each participant must comply with the Highway Code and signage specific to the route by not deviating from the official route. Wearing a helmet is not obligatory but strongly recommended. The participant declares to be fit to practice cycling and releases the organizers from any liability in the event of physical failure or accidents. Participants are responsible for their equipment and release the organizers from any liability in the event of theft or damage at the event venue or on the routes.\n\nParticipants also undertake to respect the fauna, flora and not to leave any trash on the course and its surroundings (refreshment and meal areas). Bins for waste management are placed at the refreshment and lunch locations. Participants undertake to respect all the instructions indicated by the organizers and volunteers.\nIt is strictly forbidden to smoke outside the designated areas.\n\nThe Bullecyclette is not a sporting competition but rather a hike. bike. However, it is important that participants check the extent of the guarantees (and exclusions) of their possible current insurance (civil liability in particular).\n\nIn the event of mechanical or bodily incidents, it is the emergency services which intervene on public roads, who will then be warned. Participants have in their travel diary the main telephone numbers to contact in the event of an emergency:\n● 112: European emergency call number;\n● 15: Samu number.\n● 17: Police Rescue number.\n● 18: Firefighter number;\n● 114: Emergency number for deaf and hard of hearing people\n\nIn case of abandonment, the participant can also contact the organization's emergency number to obtain assistance.Flying and fixed mechanical assistance will be implemented on the proposed route.\n\n5.1 - Use of public roads\nChoice of routes: The proposed routes take roads presenting no major danger in theory and with low traffic designed according to the requirements of the various local authorities for safety reasons. The participant must not stray from the official route.\n\nFlow of participants: The start of the course will be done in groups at the indicated time. The courses are completed at a free pace, without classification or performance measurement. This is not a competition. The proposed routes as well as the planned staggering of each group are likely to facilitate the flow of participants in traffic and avoid the massive platoon effect. The evolution of the flow of participants evolves according to each person's pace. The organizer reserves the right to regulate the flow of participants at any time.\n\n Marking on public roads\nThe LA Bullecyclette Association will place signs at several intersections for both participants and motorists. Each participant will also be invited to consult the LOGBOOK. In order to guarantee the route, marking on the ground will also be made with arrows using bombs in accordance with regulations. The disappearance of this temporary marking is carried out either naturally or by the care of the CTS within the framework of its delegation and this at the latest within 24 hours after the end of the event.\n\n5.2 - Safety and prevention\n Wearing a helmet\nWearing a hard shell helmet is strongly recommended. It is compulsory for minors. Outside built-up areas and with insufficient visibility, wearing a high visibility vest in compliance with regulations is mandatory.\n\nDuties of participants\n● Behavior\nParticipants do not benefit from priority of passage under any circumstances. They must apply the provisions of the Highway Code and those taken by the competent local authorities, respect the verbal and written instructions of the organizers and volunteers, and execute the injunctions of the police or gendarmerie services given in the In the interest of road safety and traffic, respect other road users. The personal responsibility of the participant remains full and complete with regard to all of these provisions, requirements, instructions and injunctions.\nParticipants must respect a safety space between each group formed to allow motor vehicles to carry out maneuvers. overtaking and overtaking in complete safety.\nAll participants are required to respect in all respects the requirements of the highway code, prefectural, departmental or municipal decrees regulating public traffic and to obey the injunctions issued by the police or of gendarmerie could give them in the interest of safety.\nParticipants never benefit from priority of passage.\nParticipants must not drive too close to the shoulder, to avoid ruts or gravel. In turns, they are required to keep as much as possible to the right.\nParticipants are required to ride two abreast or in single file. If the group has more than ten people, it is recommended to split it.\n\n● Equipment of the cycles\nThe cycles used by the participants meet the conditions of participation, are equipped in accordance with the provisions of the Highway Code and in good condition operation, particularly in terms of safety, signaling and braking systems.\n\nCourse assistants\nPrevention signs will be placed at points requiring increased vigilance. In the event that the security of participants needs to be reinforced, the presence of marshals is put in place at locations defined by the organizers. The latter have authorization to carry out traffic regulation actions for users (participants or third parties). In the event of an accident, the flagger must protect the victim(s) and secure the perimeter while waiting for help to arrive."
+      },
+      {
+        "title": "ARTICLE 6 - SUPPLIES",
+        "content": "Several refreshment points, meals (optional) and tastings will be offered on the routes of La Bullecyclette taking place on June 29, 2024. The four stops systematically offer water and a 10cl glass of champagne or fruit juice. At three of the four stops, food will also be given to each participant. No alcohol will be distributed to minors, even if accompanied. The organization declines all responsibility in the event of an incident and reserves the right to refuse service to a participant who is clearly intoxicated.\nThe use of a water bottle is strongly recommended for each participant."
+      },
+      {
+        "title": "ARTICLE 7 - ANIMALS",
+        "content": "Dogs are not tolerated at the event."
+      },
+      {
+        "title": "ARTICLE 8 - INFORMATION",
+        "content": "All information relating to the event is regularly updated on the website www.labullecyclette.com."
+      },
+      {
+        "title": "ARTICLE 9 - PROCESSING OF PERSONAL DATA",
+        "content": "Participants are informed that the personal data collected during online registration (by themselves or by a third party) on the ticketing platform are subject to computer processing intended exclusively to enable the organization of the event. La Bullecyclette.\n\nThe Association undertakes not to communicate to third parties the personal data thus collected.\n\nIn accordance with the law “information technology and freedoms” n°78-17 of January 6, 1978 amended by law n°2004-801 of August 6, 2004, participants benefit from a right of access and rectification to information concerning them. They can therefore send a letter to the following address: La Bullecyclette - 12 places Léon Bourgeois - 51190 AVIZE or by email: labullecyclette@gmail.com.\n\nThe information communicated by the buyer (both for himself and for the account of the participants that he/she registers) at the time of the reservation will not be transmitted to any other third party. This information will be considered confidential. They will be used only by the Association La Bullecyclette for processing the reservation and to reinforce and personalize the communication and the offer of services reserved for participants. All banking transactions on the registration module are secured by Weezevent, without intervention or data collection on the part of the La Bullecyclette Association.\n\nThe Association therefore does not keep any bank card numbers in its database. data."
+      },
+      {
+        "title": "ARTICLE 10 - CANCELLATION OF THE EVENT",
+        "content": "- Due to the organizer: in the event of an order from the Prefecture for bad weather conditions (storm warning for example), pandemic or for any other exceptional event or if the number of participants is insufficient, the event will be canceled and the participants reimbursed on written request.\nThe organizers reserve the right or may be forced by the competent authorities (local, departmental, national, etc.) to:\n● postpone departures,\n● modify the routes, the stages and/or catering places\n● to neutralize all or part of the hikes, walks or races\n● to cancel or postpone all or part of the event.\nSimple unfavorable weather conditions cannot constitute a reason for cancellation of the event.\n\n- Due to the participants: after the registration deadline, set for April 31 inclusive, all registrations will be final. In the event of non-participation, the registration amount remains with the organizer. No refund, even partial, will be made."
+      },
+      {
+        "title": "ARTICLE 11 - Request for Information - complaints",
+        "content": "Any request for information relating to registration procedures may be made:\n\n● by post to the association's head office: 12 place Léon Bourgeois, AVIZE\n● by email to the following address: labullecyclette @gmail.com\n● by telephone at 06.70.94.16.84."
+      },
+      {
+        "title": "ARTICLE 12 - MISCELLANEOUS",
+        "content": "The fact that any of these conditions is not invoked at a given time cannot be interpreted as a waiver of its application. In the event that any of these conditions is declared void or contrary to a provision of public order, it will be deemed unwritten and the other stipulations will remain in force."
+      },
+      {
+        "title": "ARTICLE 13 - APPLICABLE LAW",
+        "content": "The sale of this ticket office is governed and subject to French law. For any complaints, the buyer can contact the Association using the contact details mentioned in article 11 of these conditions. In the event of a dispute, the French courts and in particular the Courts of Chalon-en-Champagne have sole jurisdiction.\n\nFor any dispute relating to the online payment system, it is specified here that the La Bullecyclette association uses exclusively the Weezevent platform whose legal notices appear below:\n\nWEEZEVENT SAS company, Company form: SAS, Share capital: 72,212.00 euros, R.C.S.: Dijon 503 715 401 - Management number 2008 B 368, SIRET: 503 715 401 00017, intra-community VAT: FR93503715401, Head office: 14 rue de l'Est - 21000 DIJON, France, Correspondence: 10 Rue Morice - 92110 Clichy, Telephone: + 33 (0)1 86 65 24 00, Email address: contact@weezevent.com, Data Protection Officer: dpo@weezevent.com, Publication Director: Pierre-Henri DEBALLON\n\nHost: Amazon Web Services, Company Name: Amazon CS Ireland Ltd, https://aws .amazon.com/, Unit 27 - 6400 Cork Airport Business Park - Kinsale Road - Ireland\n\nWeezevent SAS is registered in the ORIAS register as an Insurance Intermediary Agent (MIA) under number 19004141 (site : www.orias.fr)."
+      },
+      {
+        "title": "ARTICLE 14 - ACCEPTANCE OF REGULATIONS",
+        "content": "The participants, represented where applicable by the Buyer defined in the article “Definitions” at the top of this document, in the La Bullecyclette festival acting, where applicable, both for themselves and for the people they represent, certify that they have read of the regulations and undertake to respect all of the articles above. I accept, myself and those I register as participants, without reservation or restriction, all of the clauses and waive any recourse against the organizers."
+      }
+    ]
   }
 }
